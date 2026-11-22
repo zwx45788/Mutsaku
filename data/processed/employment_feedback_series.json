@@ -1,0 +1,396 @@
+{
+ "source": "官方基础数据集「就业数据/本科生就业报告」2023/2024/2026 年版（麦可思培养质量跟踪评价）",
+ "scope_note": "全国专业类/学科门类口径，非单校数据；2025 年版 PDF 文字层字体加密不可解析，未使用。",
+ "records": [
+  {
+   "metric": "placement_rate",
+   "group": "计算机类",
+   "cohort": 2023,
+   "value": 83.2,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-7 2021~2023 届本科主要专业类学生毕业半年后的毕业去向落实率",
+   "text_line": 913,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "计算机类",
+   "cohort": 2022,
+   "value": 86.6,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-7 2021~2023 届本科主要专业类学生毕业半年后的毕业去向落实率",
+   "text_line": 913,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "计算机类",
+   "cohort": 2021,
+   "value": 90.2,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-7 2021~2023 届本科主要专业类学生毕业半年后的毕业去向落实率",
+   "text_line": 913,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2023,
+   "value": 89.4,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 729,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2022,
+   "value": 89.5,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 729,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2021,
+   "value": 90.6,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 729,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2023,
+   "value": 86.4,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 751,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2022,
+   "value": 86.0,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 751,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2021,
+   "value": 87.8,
+   "edition": "2024年中国本科生就业报告",
+   "table": "表 2-6 2021~2023 届本科各学科门类学生毕业半年后的毕业去向落实率",
+   "text_line": 751,
+   "text_sha256": "b9cb0598455221af1663eb097dc658cc918f84db2ef349ba8e432b43d697e9b0"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2025,
+   "value": 87.7,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 929,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2024,
+   "value": 89.6,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 929,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "工学",
+   "cohort": 2023,
+   "value": 89.4,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 929,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2025,
+   "value": 85.1,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 951,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2024,
+   "value": 86.7,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 951,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "全国本科",
+   "cohort": 2023,
+   "value": 86.4,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 2-5 2023~2025 届本科各学科门类毕业生毕业半年后的毕业去向落实率",
+   "text_line": 951,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "计算机类",
+   "cohort": 2025,
+   "value": 6897.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8042,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "计算机类",
+   "cohort": 2024,
+   "value": 6846.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8042,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "计算机类",
+   "cohort": 2023,
+   "value": 6771.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8042,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "计算机类",
+   "cohort": 2022,
+   "value": 6863.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8042,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "计算机类",
+   "cohort": 2021,
+   "value": 6886.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8042,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "工学",
+   "cohort": 2025,
+   "value": 7033.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8044,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "工学",
+   "cohort": 2024,
+   "value": 6841.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8044,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "工学",
+   "cohort": 2023,
+   "value": 6709.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8044,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "工学",
+   "cohort": 2022,
+   "value": 6610.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8044,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "工学",
+   "cohort": 2021,
+   "value": 6323.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8044,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "计算机类",
+   "cohort": 2025,
+   "value": 62.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8046,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "计算机类",
+   "cohort": 2024,
+   "value": 62.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8046,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "计算机类",
+   "cohort": 2023,
+   "value": 65.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8046,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "计算机类",
+   "cohort": 2022,
+   "value": 77.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8046,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "计算机类",
+   "cohort": 2021,
+   "value": 78.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8046,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "工学",
+   "cohort": 2025,
+   "value": 70.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8048,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "工学",
+   "cohort": 2024,
+   "value": 72.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8048,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "工学",
+   "cohort": 2023,
+   "value": 72.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8048,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "工学",
+   "cohort": 2022,
+   "value": 76.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8048,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "工学",
+   "cohort": 2021,
+   "value": 74.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 12-4 2021~2025 届计算机类专业毕业生主要就业质量指标",
+   "text_line": 8048,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "placement_rate",
+   "group": "人工智能专业",
+   "cohort": 2025,
+   "value": 85.4,
+   "edition": "2026年中国本科生就业报告",
+   "table": "第一章正文定量叙述",
+   "text_line": 589,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "major_relevance",
+   "group": "人工智能专业",
+   "cohort": 2025,
+   "value": 56.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "第一章正文定量叙述",
+   "text_line": 589,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "monthly_income",
+   "group": "人工智能专业",
+   "cohort": 2025,
+   "value": 7084.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "表 6-2 2025 届本科生毕业半年后月收入较高的前 30 位专业",
+   "text_line": 4149,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  },
+  {
+   "metric": "unrelated_due_to_unmet_requirements",
+   "group": "计算机类",
+   "cohort": 2025,
+   "value": 22.0,
+   "edition": "2026年中国本科生就业报告",
+   "table": "图 12-8 正文叙述",
+   "text_line": 8032,
+   "text_sha256": "686d1ca57642d75534dadb96cc3b155fdb75549078cb8996c0e403c68c739ce9"
+  }
+ ]
+}

@@ -1,0 +1,4092 @@
+{
+ "summary": {
+  "master_sha256": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+  "n_checks": 583,
+  "n_pass": 583,
+  "all_pass": true,
+  "runtime_seconds": 6.5
+ },
+ "checks": [
+  {
+   "group": "0 封印",
+   "item": "master_sha256",
+   "recomputed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "sealed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "pass": true
+  },
+  {
+   "group": "0 封印",
+   "item": "plan_snapshots ↔ master",
+   "recomputed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "sealed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/N",
+   "recomputed": 1718,
+   "sealed": 1718,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.46531,
+   "sealed": 0.46531,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.65983,
+   "sealed": 0.65983,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.57173,
+   "sealed": 0.57173,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.46308,
+   "sealed": 0.46308,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.71998,
+   "sealed": 0.71998,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.69644,
+   "sealed": 0.69644,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.74937,
+   "sealed": 0.74937,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.69534,
+   "sealed": 0.69534,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.47806,
+   "sealed": 0.47806,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.72735,
+   "sealed": 0.72735,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.71376,
+   "sealed": 0.71376,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.76911,
+   "sealed": 0.76911,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.70126,
+   "sealed": 0.70126,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.48349,
+   "sealed": 0.48349,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.73011,
+   "sealed": 0.73011,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.73937,
+   "sealed": 0.73937,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.79664,
+   "sealed": 0.79664,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.70784,
+   "sealed": 0.70784,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.48929,
+   "sealed": 0.48929,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.73318,
+   "sealed": 0.73318,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.86703,
+   "sealed": 0.86703,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.84321,
+   "sealed": 0.84321,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.80374,
+   "sealed": 0.80374,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.53214,
+   "sealed": 0.53214,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.74771,
+   "sealed": 0.74771,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.85907,
+   "sealed": 0.85907,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.84284,
+   "sealed": 0.84284,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.80374,
+   "sealed": 0.80374,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.52995,
+   "sealed": 0.52995,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/development_2024/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.74673,
+   "sealed": 0.74673,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B0_Freeze/delta",
+   "recomputed": 0.39376,
+   "sealed": 0.39376,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.34894,
+   "sealed": 0.34894,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.44053,
+   "sealed": 0.44053,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.16263,
+   "sealed": 0.16263,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.12671,
+   "sealed": 0.12671,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.19849,
+   "sealed": 0.19849,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.14531,
+   "sealed": 0.14531,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.11073,
+   "sealed": 0.11073,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.18062,
+   "sealed": 0.18062,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.1197,
+   "sealed": 0.1197,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.08881,
+   "sealed": 0.08881,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.1509,
+   "sealed": 0.1509,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": -0.00796,
+   "sealed": -0.00796,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": -0.01657,
+   "sealed": -0.01657,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/development_2024/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": -0.00135,
+   "sealed": -0.00135,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/N",
+   "recomputed": 2645,
+   "sealed": 2645,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.43396,
+   "sealed": 0.43396,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.65236,
+   "sealed": 0.65236,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.57469,
+   "sealed": 0.57469,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.47987,
+   "sealed": 0.47987,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.73216,
+   "sealed": 0.73216,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.63527,
+   "sealed": 0.63527,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.73417,
+   "sealed": 0.73417,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.66012,
+   "sealed": 0.66012,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.49825,
+   "sealed": 0.49825,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.74039,
+   "sealed": 0.74039,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.65547,
+   "sealed": 0.65547,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.74931,
+   "sealed": 0.74931,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.66734,
+   "sealed": 0.66734,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.50366,
+   "sealed": 0.50366,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.74256,
+   "sealed": 0.74256,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.69656,
+   "sealed": 0.69656,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.7743,
+   "sealed": 0.7743,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.67245,
+   "sealed": 0.67245,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.51184,
+   "sealed": 0.51184,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.74689,
+   "sealed": 0.74689,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.83065,
+   "sealed": 0.83065,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.82853,
+   "sealed": 0.82853,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.80372,
+   "sealed": 0.80372,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.54785,
+   "sealed": 0.54785,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.75944,
+   "sealed": 0.75944,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.82996,
+   "sealed": 0.82996,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.82872,
+   "sealed": 0.82872,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.80372,
+   "sealed": 0.80372,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.54818,
+   "sealed": 0.54818,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2025/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.75932,
+   "sealed": 0.75932,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B0_Freeze/delta",
+   "recomputed": 0.396,
+   "sealed": 0.396,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.36307,
+   "sealed": 0.36307,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.42906,
+   "sealed": 0.42906,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.19469,
+   "sealed": 0.19469,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.16421,
+   "sealed": 0.16421,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.22614,
+   "sealed": 0.22614,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.17449,
+   "sealed": 0.17449,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.14404,
+   "sealed": 0.14404,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.20363,
+   "sealed": 0.20363,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.1334,
+   "sealed": 0.1334,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.10604,
+   "sealed": 0.10604,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.15994,
+   "sealed": 0.15994,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": -0.00069,
+   "sealed": -0.00069,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": -0.0025,
+   "sealed": -0.0025,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2025/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.00097,
+   "sealed": 0.00097,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/N",
+   "recomputed": 351,
+   "sealed": 351,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.37263,
+   "sealed": 0.37263,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.63945,
+   "sealed": 0.63945,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.56395,
+   "sealed": 0.56395,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.45862,
+   "sealed": 0.45862,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.72756,
+   "sealed": 0.72756,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.61922,
+   "sealed": 0.61922,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.7248,
+   "sealed": 0.7248,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.64723,
+   "sealed": 0.64723,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.47226,
+   "sealed": 0.47226,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.73311,
+   "sealed": 0.73311,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.62817,
+   "sealed": 0.62817,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.73937,
+   "sealed": 0.73937,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.65551,
+   "sealed": 0.65551,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.47606,
+   "sealed": 0.47606,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.73501,
+   "sealed": 0.73501,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.67559,
+   "sealed": 0.67559,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.76059,
+   "sealed": 0.76059,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.65465,
+   "sealed": 0.65465,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.48207,
+   "sealed": 0.48207,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.73872,
+   "sealed": 0.73872,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.77018,
+   "sealed": 0.77018,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.81332,
+   "sealed": 0.81332,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.76537,
+   "sealed": 0.76537,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.51781,
+   "sealed": 0.51781,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.751,
+   "sealed": 0.751,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.77018,
+   "sealed": 0.77018,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.81571,
+   "sealed": 0.81571,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.76537,
+   "sealed": 0.76537,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.51946,
+   "sealed": 0.51946,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_CS_2022/replay_2026q1/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.75065,
+   "sealed": 0.75065,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B0_Freeze/delta",
+   "recomputed": 0.39755,
+   "sealed": 0.39755,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.29604,
+   "sealed": 0.29604,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.5046,
+   "sealed": 0.5046,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.15096,
+   "sealed": 0.15096,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.06579,
+   "sealed": 0.06579,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.2448,
+   "sealed": 0.2448,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.14201,
+   "sealed": 0.14201,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.05692,
+   "sealed": 0.05692,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.23092,
+   "sealed": 0.23092,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.09459,
+   "sealed": 0.09459,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.02237,
+   "sealed": 0.02237,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.182,
+   "sealed": 0.182,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.0,
+   "sealed": 0.0,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": 0.0,
+   "sealed": 0.0,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_CS_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.0,
+   "sealed": 0.0,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/N",
+   "recomputed": 1718,
+   "sealed": 1718,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.10499,
+   "sealed": 0.10499,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.46085,
+   "sealed": 0.46085,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.38806,
+   "sealed": 0.38806,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.34967,
+   "sealed": 0.34967,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.64517,
+   "sealed": 0.64517,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.36243,
+   "sealed": 0.36243,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.63163,
+   "sealed": 0.63163,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.5931,
+   "sealed": 0.5931,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.40491,
+   "sealed": 0.40491,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.67654,
+   "sealed": 0.67654,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.39413,
+   "sealed": 0.39413,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.65379,
+   "sealed": 0.65379,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.5931,
+   "sealed": 0.5931,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.40826,
+   "sealed": 0.40826,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.67811,
+   "sealed": 0.67811,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.48028,
+   "sealed": 0.48028,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.69672,
+   "sealed": 0.69672,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.64889,
+   "sealed": 0.64889,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.41628,
+   "sealed": 0.41628,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.68219,
+   "sealed": 0.68219,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.74153,
+   "sealed": 0.74153,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.79329,
+   "sealed": 0.79329,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.71366,
+   "sealed": 0.71366,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.44029,
+   "sealed": 0.44029,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.69371,
+   "sealed": 0.69371,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.81193,
+   "sealed": 0.81193,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.81263,
+   "sealed": 0.81263,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.76164,
+   "sealed": 0.76164,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.45803,
+   "sealed": 0.45803,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/development_2024/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.70126,
+   "sealed": 0.70126,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B0_Freeze/delta",
+   "recomputed": 0.70694,
+   "sealed": 0.70694,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.66687,
+   "sealed": 0.66687,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.74559,
+   "sealed": 0.74559,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.4495,
+   "sealed": 0.4495,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.40298,
+   "sealed": 0.40298,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.49466,
+   "sealed": 0.49466,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.41781,
+   "sealed": 0.41781,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.36894,
+   "sealed": 0.36894,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.45977,
+   "sealed": 0.45977,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.33166,
+   "sealed": 0.33166,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.28763,
+   "sealed": 0.28763,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.36886,
+   "sealed": 0.36886,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.07041,
+   "sealed": 0.07041,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": 0.04125,
+   "sealed": 0.04125,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/development_2024/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.09903,
+   "sealed": 0.09903,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/N",
+   "recomputed": 2645,
+   "sealed": 2645,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.07165,
+   "sealed": 0.07165,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.46844,
+   "sealed": 0.46844,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.41515,
+   "sealed": 0.41515,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.37338,
+   "sealed": 0.37338,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.65951,
+   "sealed": 0.65951,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.34005,
+   "sealed": 0.34005,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.62938,
+   "sealed": 0.62938,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.5885,
+   "sealed": 0.5885,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.42454,
+   "sealed": 0.42454,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.68954,
+   "sealed": 0.68954,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.37163,
+   "sealed": 0.37163,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.65134,
+   "sealed": 0.65134,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.5885,
+   "sealed": 0.5885,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.42917,
+   "sealed": 0.42917,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.69131,
+   "sealed": 0.69131,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.44219,
+   "sealed": 0.44219,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.68492,
+   "sealed": 0.68492,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.63286,
+   "sealed": 0.63286,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.43676,
+   "sealed": 0.43676,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.69511,
+   "sealed": 0.69511,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.71398,
+   "sealed": 0.71398,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.77428,
+   "sealed": 0.77428,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.72145,
+   "sealed": 0.72145,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.4544,
+   "sealed": 0.4544,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.70431,
+   "sealed": 0.70431,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.82434,
+   "sealed": 0.82434,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.80499,
+   "sealed": 0.80499,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.76709,
+   "sealed": 0.76709,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.47334,
+   "sealed": 0.47334,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2025/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.71253,
+   "sealed": 0.71253,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B0_Freeze/delta",
+   "recomputed": 0.75269,
+   "sealed": 0.75269,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.72521,
+   "sealed": 0.72521,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.77812,
+   "sealed": 0.77812,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.4843,
+   "sealed": 0.4843,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.44945,
+   "sealed": 0.44945,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.51667,
+   "sealed": 0.51667,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.45271,
+   "sealed": 0.45271,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.42053,
+   "sealed": 0.42053,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.48722,
+   "sealed": 0.48722,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.38215,
+   "sealed": 0.38215,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.3501,
+   "sealed": 0.3501,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.41419,
+   "sealed": 0.41419,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.11036,
+   "sealed": 0.11036,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": 0.08743,
+   "sealed": 0.08743,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2025/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.13125,
+   "sealed": 0.13125,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/N",
+   "recomputed": 351,
+   "sealed": 351,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.06223,
+   "sealed": 0.06223,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.47567,
+   "sealed": 0.47567,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.41364,
+   "sealed": 0.41364,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.37071,
+   "sealed": 0.37071,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.65794,
+   "sealed": 0.65794,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.27243,
+   "sealed": 0.27243,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.60974,
+   "sealed": 0.60974,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.57646,
+   "sealed": 0.57646,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.41696,
+   "sealed": 0.41696,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.68601,
+   "sealed": 0.68601,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.33135,
+   "sealed": 0.33135,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.63784,
+   "sealed": 0.63784,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.57646,
+   "sealed": 0.57646,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.41834,
+   "sealed": 0.41834,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.68705,
+   "sealed": 0.68705,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.39295,
+   "sealed": 0.39295,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.67493,
+   "sealed": 0.67493,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.63504,
+   "sealed": 0.63504,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.42314,
+   "sealed": 0.42314,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.69048,
+   "sealed": 0.69048,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.69652,
+   "sealed": 0.69652,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.78032,
+   "sealed": 0.78032,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.72473,
+   "sealed": 0.72473,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.43876,
+   "sealed": 0.43876,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.69948,
+   "sealed": 0.69948,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.72343,
+   "sealed": 0.72343,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.78853,
+   "sealed": 0.78853,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.76399,
+   "sealed": 0.76399,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.45419,
+   "sealed": 0.45419,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BTBU_AI_2022/replay_2026q1/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.70591,
+   "sealed": 0.70591,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B0_Freeze/delta",
+   "recomputed": 0.6612,
+   "sealed": 0.6612,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.57675,
+   "sealed": 0.57675,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.749,
+   "sealed": 0.749,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.451,
+   "sealed": 0.451,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.3634,
+   "sealed": 0.3634,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.5386,
+   "sealed": 0.5386,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.39208,
+   "sealed": 0.39208,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.28642,
+   "sealed": 0.28642,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.48788,
+   "sealed": 0.48788,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.33048,
+   "sealed": 0.33048,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.23174,
+   "sealed": 0.23174,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.43563,
+   "sealed": 0.43563,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.02691,
+   "sealed": 0.02691,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": -0.04384,
+   "sealed": -0.04384,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BTBU_AI_2022/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.08804,
+   "sealed": 0.08804,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/N",
+   "recomputed": 1718,
+   "sealed": 1718,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.35009,
+   "sealed": 0.35009,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.61459,
+   "sealed": 0.61459,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.50456,
+   "sealed": 0.50456,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.47343,
+   "sealed": 0.47343,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.71548,
+   "sealed": 0.71548,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.72681,
+   "sealed": 0.72681,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.7546,
+   "sealed": 0.7546,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.68599,
+   "sealed": 0.68599,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.51471,
+   "sealed": 0.51471,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.73558,
+   "sealed": 0.73558,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.76774,
+   "sealed": 0.76774,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.77829,
+   "sealed": 0.77829,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.71333,
+   "sealed": 0.71333,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.52399,
+   "sealed": 0.52399,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.74051,
+   "sealed": 0.74051,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.76704,
+   "sealed": 0.76704,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.77672,
+   "sealed": 0.77672,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.71261,
+   "sealed": 0.71261,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.52341,
+   "sealed": 0.52341,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.74021,
+   "sealed": 0.74021,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.87475,
+   "sealed": 0.87475,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.83395,
+   "sealed": 0.83395,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.79436,
+   "sealed": 0.79436,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.56634,
+   "sealed": 0.56634,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.76006,
+   "sealed": 0.76006,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.8778,
+   "sealed": 0.8778,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.83869,
+   "sealed": 0.83869,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.79658,
+   "sealed": 0.79658,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.57181,
+   "sealed": 0.57181,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/development_2024/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.7633,
+   "sealed": 0.7633,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B0_Freeze/delta",
+   "recomputed": 0.52771,
+   "sealed": 0.52771,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.48847,
+   "sealed": 0.48847,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.56899,
+   "sealed": 0.56899,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.15099,
+   "sealed": 0.15099,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.11759,
+   "sealed": 0.11759,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.18738,
+   "sealed": 0.18738,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.11006,
+   "sealed": 0.11006,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.08398,
+   "sealed": 0.08398,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.14212,
+   "sealed": 0.14212,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.11076,
+   "sealed": 0.11076,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.08443,
+   "sealed": 0.08443,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.14222,
+   "sealed": 0.14222,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.00305,
+   "sealed": 0.00305,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": -0.00762,
+   "sealed": -0.00762,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/development_2024/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.01415,
+   "sealed": 0.01415,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/N",
+   "recomputed": 2645,
+   "sealed": 2645,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.3341,
+   "sealed": 0.3341,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.61531,
+   "sealed": 0.61531,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.49996,
+   "sealed": 0.49996,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.4945,
+   "sealed": 0.4945,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.72882,
+   "sealed": 0.72882,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.66492,
+   "sealed": 0.66492,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.74407,
+   "sealed": 0.74407,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.67474,
+   "sealed": 0.67474,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.53177,
+   "sealed": 0.53177,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.74736,
+   "sealed": 0.74736,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.71155,
+   "sealed": 0.71155,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.76646,
+   "sealed": 0.76646,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.70684,
+   "sealed": 0.70684,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.54982,
+   "sealed": 0.54982,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.75534,
+   "sealed": 0.75534,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.70898,
+   "sealed": 0.70898,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.76519,
+   "sealed": 0.76519,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.70584,
+   "sealed": 0.70584,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.54911,
+   "sealed": 0.54911,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.75497,
+   "sealed": 0.75497,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.81762,
+   "sealed": 0.81762,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.81337,
+   "sealed": 0.81337,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.77817,
+   "sealed": 0.77817,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.57344,
+   "sealed": 0.57344,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.7673,
+   "sealed": 0.7673,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.83015,
+   "sealed": 0.83015,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.81713,
+   "sealed": 0.81713,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.78095,
+   "sealed": 0.78095,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.58238,
+   "sealed": 0.58238,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2025/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.7719,
+   "sealed": 0.7719,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B0_Freeze/delta",
+   "recomputed": 0.49606,
+   "sealed": 0.49606,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.46312,
+   "sealed": 0.46312,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.52973,
+   "sealed": 0.52973,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.16523,
+   "sealed": 0.16523,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.1367,
+   "sealed": 0.1367,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.19264,
+   "sealed": 0.19264,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.11861,
+   "sealed": 0.11861,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.09506,
+   "sealed": 0.09506,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.14222,
+   "sealed": 0.14222,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.12118,
+   "sealed": 0.12118,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.09781,
+   "sealed": 0.09781,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.14372,
+   "sealed": 0.14372,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.01254,
+   "sealed": 0.01254,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": 0.0024,
+   "sealed": 0.0024,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2025/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.02383,
+   "sealed": 0.02383,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/N",
+   "recomputed": 351,
+   "sealed": 351,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.24891,
+   "sealed": 0.24891,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B0_Freeze/jd_mean_readiness",
+   "recomputed": 0.58505,
+   "sealed": 0.58505,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B0_Freeze/worst_track_readiness",
+   "recomputed": 0.48562,
+   "sealed": 0.48562,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B0_Freeze/track_l1_overlap",
+   "recomputed": 0.45976,
+   "sealed": 0.45976,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B0_Freeze/track_ot_alignment",
+   "recomputed": 0.71593,
+   "sealed": 0.71593,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.65451,
+   "sealed": 0.65451,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B1_SingleTrack_MILP/jd_mean_readiness",
+   "recomputed": 0.73769,
+   "sealed": 0.73769,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B1_SingleTrack_MILP/worst_track_readiness",
+   "recomputed": 0.64685,
+   "sealed": 0.64685,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B1_SingleTrack_MILP/track_l1_overlap",
+   "recomputed": 0.50182,
+   "sealed": 0.50182,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B1_SingleTrack_MILP/track_ot_alignment",
+   "recomputed": 0.73624,
+   "sealed": 0.73624,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.68303,
+   "sealed": 0.68303,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B2_MultiTrack_Static/jd_mean_readiness",
+   "recomputed": 0.76184,
+   "sealed": 0.76184,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B2_MultiTrack_Static/worst_track_readiness",
+   "recomputed": 0.68127,
+   "sealed": 0.68127,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B2_MultiTrack_Static/track_l1_overlap",
+   "recomputed": 0.51389,
+   "sealed": 0.51389,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B2_MultiTrack_Static/track_ot_alignment",
+   "recomputed": 0.74176,
+   "sealed": 0.74176,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.68303,
+   "sealed": 0.68303,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B3_SingleShot_LLM/jd_mean_readiness",
+   "recomputed": 0.7602,
+   "sealed": 0.7602,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B3_SingleShot_LLM/worst_track_readiness",
+   "recomputed": 0.6806,
+   "sealed": 0.6806,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B3_SingleShot_LLM/track_l1_overlap",
+   "recomputed": 0.51316,
+   "sealed": 0.51316,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B3_SingleShot_LLM/track_ot_alignment",
+   "recomputed": 0.7414,
+   "sealed": 0.7414,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.77748,
+   "sealed": 0.77748,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B4_BiLevel_NoGuard/jd_mean_readiness",
+   "recomputed": 0.80794,
+   "sealed": 0.80794,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B4_BiLevel_NoGuard/worst_track_readiness",
+   "recomputed": 0.7703,
+   "sealed": 0.7703,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B4_BiLevel_NoGuard/track_l1_overlap",
+   "recomputed": 0.5377,
+   "sealed": 0.5377,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/B4_BiLevel_NoGuard/track_ot_alignment",
+   "recomputed": 0.75323,
+   "sealed": 0.75323,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.8036,
+   "sealed": 0.8036,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/Full_EvoAlign_OS/jd_mean_readiness",
+   "recomputed": 0.81435,
+   "sealed": 0.81435,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/Full_EvoAlign_OS/worst_track_readiness",
+   "recomputed": 0.77304,
+   "sealed": 0.77304,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/Full_EvoAlign_OS/track_l1_overlap",
+   "recomputed": 0.54808,
+   "sealed": 0.54808,
+   "pass": true
+  },
+  {
+   "group": "1 消融",
+   "item": "BISTU_CS_2025/replay_2026q1/Full_EvoAlign_OS/track_ot_alignment",
+   "recomputed": 0.75809,
+   "sealed": 0.75809,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B0_Freeze/delta",
+   "recomputed": 0.55469,
+   "sealed": 0.55469,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B0_Freeze/ci95_lo",
+   "recomputed": 0.46345,
+   "sealed": 0.46345,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B0_Freeze/ci95_hi",
+   "recomputed": 0.6505,
+   "sealed": 0.6505,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B1_SingleTrack_MILP/delta",
+   "recomputed": 0.14909,
+   "sealed": 0.14909,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_lo",
+   "recomputed": 0.07749,
+   "sealed": 0.07749,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B1_SingleTrack_MILP/ci95_hi",
+   "recomputed": 0.22966,
+   "sealed": 0.22966,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B2_MultiTrack_Static/delta",
+   "recomputed": 0.12057,
+   "sealed": 0.12057,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B2_MultiTrack_Static/ci95_lo",
+   "recomputed": 0.05881,
+   "sealed": 0.05881,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B2_MultiTrack_Static/ci95_hi",
+   "recomputed": 0.19614,
+   "sealed": 0.19614,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B3_SingleShot_LLM/delta",
+   "recomputed": 0.12057,
+   "sealed": 0.12057,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B3_SingleShot_LLM/ci95_lo",
+   "recomputed": 0.05881,
+   "sealed": 0.05881,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B3_SingleShot_LLM/ci95_hi",
+   "recomputed": 0.19614,
+   "sealed": 0.19614,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B4_BiLevel_NoGuard/delta",
+   "recomputed": 0.02612,
+   "sealed": 0.02612,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_lo",
+   "recomputed": -0.00069,
+   "sealed": -0.00069,
+   "pass": true
+  },
+  {
+   "group": "2 配对区间",
+   "item": "BISTU_CS_2025/replay_2026q1/Full-B4_BiLevel_NoGuard/ci95_hi",
+   "recomputed": 0.07174,
+   "sealed": 0.07174,
+   "pass": true
+  },
+  {
+   "group": "3 自然实验",
+   "item": "frozen_2022/jd_qual_rate_70",
+   "recomputed": 0.43396,
+   "sealed": 0.43396,
+   "pass": true
+  },
+  {
+   "group": "3 自然实验",
+   "item": "real_2025/jd_qual_rate_70",
+   "recomputed": 0.25049,
+   "sealed": 0.25049,
+   "pass": true
+  },
+  {
+   "group": "3 自然实验",
+   "item": "evoalign_forecast/jd_qual_rate_70",
+   "recomputed": 0.80972,
+   "sealed": 0.80972,
+   "pass": true
+  },
+  {
+   "group": "3 帕累托",
+   "item": "lite/jd_qual_rate_70",
+   "recomputed": 0.81656,
+   "sealed": 0.81656,
+   "pass": true
+  },
+  {
+   "group": "3 帕累托",
+   "item": "medium/jd_qual_rate_70",
+   "recomputed": 0.82996,
+   "sealed": 0.82996,
+   "pass": true
+  },
+  {
+   "group": "3 帕累托",
+   "item": "heavy/jd_qual_rate_70",
+   "recomputed": 0.82996,
+   "sealed": 0.82996,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "PKU_CS_2024/matched_l1_overlap",
+   "recomputed": 0.51565,
+   "sealed": 0.51565,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "PKU_CS_2024/matched_ot_alignment",
+   "recomputed": 0.74063,
+   "sealed": 0.74063,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "PKU_CS_2024/l1_overlap_dev2024",
+   "recomputed": 0.45588,
+   "sealed": 0.45588,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "U03_BUAA_CS_2025/matched_l1_overlap",
+   "recomputed": 0.41574,
+   "sealed": 0.41574,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "U03_BUAA_CS_2025/matched_ot_alignment",
+   "recomputed": 0.69416,
+   "sealed": 0.69416,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "U03_BUAA_CS_2025/l1_overlap_dev2024",
+   "recomputed": 0.43741,
+   "sealed": 0.43741,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_CS_2025/matched_l1_overlap",
+   "recomputed": 0.55251,
+   "sealed": 0.55251,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_CS_2025/matched_ot_alignment",
+   "recomputed": 0.74777,
+   "sealed": 0.74777,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_CS_2025/l1_overlap_dev2024",
+   "recomputed": 0.52401,
+   "sealed": 0.52401,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_AI_2025/matched_l1_overlap",
+   "recomputed": 0.50107,
+   "sealed": 0.50107,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_AI_2025/matched_ot_alignment",
+   "recomputed": 0.71891,
+   "sealed": 0.71891,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJTU_AI_2025/l1_overlap_dev2024",
+   "recomputed": 0.47244,
+   "sealed": 0.47244,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "CUP_CS_2024/matched_l1_overlap",
+   "recomputed": 0.45838,
+   "sealed": 0.45838,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "CUP_CS_2024/matched_ot_alignment",
+   "recomputed": 0.72264,
+   "sealed": 0.72264,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "CUP_CS_2024/l1_overlap_dev2024",
+   "recomputed": 0.4612,
+   "sealed": 0.4612,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_CS_2022/matched_l1_overlap",
+   "recomputed": 0.51734,
+   "sealed": 0.51734,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_CS_2022/matched_ot_alignment",
+   "recomputed": 0.75168,
+   "sealed": 0.75168,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_CS_2022/l1_overlap_dev2024",
+   "recomputed": 0.51734,
+   "sealed": 0.51734,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AI_2022/matched_l1_overlap",
+   "recomputed": 0.41644,
+   "sealed": 0.41644,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AI_2022/matched_ot_alignment",
+   "recomputed": 0.67932,
+   "sealed": 0.67932,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AI_2022/l1_overlap_dev2024",
+   "recomputed": 0.41644,
+   "sealed": 0.41644,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_SE_2022/matched_l1_overlap",
+   "recomputed": 0.52226,
+   "sealed": 0.52226,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_SE_2022/matched_ot_alignment",
+   "recomputed": 0.77456,
+   "sealed": 0.77456,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_SE_2022/l1_overlap_dev2024",
+   "recomputed": 0.52226,
+   "sealed": 0.52226,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AUTO_2024/matched_l1_overlap",
+   "recomputed": 0.33468,
+   "sealed": 0.33468,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AUTO_2024/matched_ot_alignment",
+   "recomputed": 0.64798,
+   "sealed": 0.64798,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BTBU_AUTO_2024/l1_overlap_dev2024",
+   "recomputed": 0.33468,
+   "sealed": 0.33468,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJUT_CS_SYLLABI/matched_l1_overlap",
+   "recomputed": 0.43509,
+   "sealed": 0.43509,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJUT_CS_SYLLABI/matched_ot_alignment",
+   "recomputed": 0.69332,
+   "sealed": 0.69332,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BJUT_CS_SYLLABI/l1_overlap_dev2024",
+   "recomputed": 0.43509,
+   "sealed": 0.43509,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BISTU_CS_2025/matched_l1_overlap",
+   "recomputed": 0.5455,
+   "sealed": 0.5455,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BISTU_CS_2025/matched_ot_alignment",
+   "recomputed": 0.75498,
+   "sealed": 0.75498,
+   "pass": true
+  },
+  {
+   "group": "4 任务1",
+   "item": "BISTU_CS_2025/l1_overlap_dev2024",
+   "recomputed": 0.5455,
+   "sealed": 0.5455,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/mpc_total_variation",
+   "recomputed": 9.59,
+   "sealed": 9.59,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/naive_total_variation",
+   "recomputed": 240.6,
+   "sealed": 240.6,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/oscillation_reduction_pct",
+   "recomputed": 96.02,
+   "sealed": 96.02,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/mpc_tracking_rmse",
+   "recomputed": 9.4,
+   "sealed": 9.4,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/naive_tracking_rmse",
+   "recomputed": 32.02,
+   "sealed": 32.02,
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "MPC/immediate_recommendation",
+   "recomputed": "HOLD_AND_PILOT（缺少同专业连续2届同口径就业追踪，触发数据门控：首年保持基准招生规模，先建立追踪台账再放开自动调招）",
+   "sealed": "HOLD_AND_PILOT（缺少同专业连续2届同口径就业追踪，触发数据门控：首年保持基准招生规模，先建立追踪台账再放开自动调招）",
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "就业反馈/2022",
+   "recomputed": "GREEN|HOLD|120.0",
+   "sealed": "GREEN|HOLD|120.0",
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "就业反馈/2023",
+   "recomputed": "GREEN|HOLD|120.0",
+   "sealed": "GREEN|HOLD|120.0",
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "就业反馈/2024",
+   "recomputed": "AMBER|WATCH (等待第 2 届确认)|120.0",
+   "sealed": "AMBER|WATCH (等待第 2 届确认)|120.0",
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "就业反馈/2025",
+   "recomputed": "RED|HOLD_TOTAL+REALLOCATE_TRACKS+TRIGGER_CURRICULUM_RSI|120.0",
+   "sealed": "RED|HOLD_TOTAL+REALLOCATE_TRACKS+TRIGGER_CURRICULUM_RSI|120.0",
+   "pass": true
+  },
+  {
+   "group": "5 招生调控",
+   "item": "就业反馈/2026",
+   "recomputed": "RED|HOLD_TOTAL+REALLOCATE_TRACKS+TRIGGER_CURRICULUM_RSI|120.0",
+   "sealed": "RED|HOLD_TOTAL+REALLOCATE_TRACKS+TRIGGER_CURRICULUM_RSI|120.0",
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/freeze/optimistic/mean_student_match",
+   "recomputed": 0.60832,
+   "sealed": 0.60832,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/freeze/baseline/mean_student_match",
+   "recomputed": 0.58279,
+   "sealed": 0.58279,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/freeze/pessimistic/mean_student_match",
+   "recomputed": 0.54714,
+   "sealed": 0.54714,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/full/optimistic/mean_student_match",
+   "recomputed": 0.73115,
+   "sealed": 0.73115,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/full/baseline/mean_student_match",
+   "recomputed": 0.69403,
+   "sealed": 0.69403,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_CS_2022/full/pessimistic/mean_student_match",
+   "recomputed": 0.64329,
+   "sealed": 0.64329,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/freeze/optimistic/mean_student_match",
+   "recomputed": 0.43238,
+   "sealed": 0.43238,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/freeze/baseline/mean_student_match",
+   "recomputed": 0.41455,
+   "sealed": 0.41455,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/freeze/pessimistic/mean_student_match",
+   "recomputed": 0.38823,
+   "sealed": 0.38823,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/full/optimistic/mean_student_match",
+   "recomputed": 0.73463,
+   "sealed": 0.73463,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/full/baseline/mean_student_match",
+   "recomputed": 0.69545,
+   "sealed": 0.69545,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BTBU_AI_2022/full/pessimistic/mean_student_match",
+   "recomputed": 0.63195,
+   "sealed": 0.63195,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/freeze/optimistic/mean_student_match",
+   "recomputed": 0.58272,
+   "sealed": 0.58272,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/freeze/baseline/mean_student_match",
+   "recomputed": 0.5586,
+   "sealed": 0.5586,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/freeze/pessimistic/mean_student_match",
+   "recomputed": 0.52453,
+   "sealed": 0.52453,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/full/optimistic/mean_student_match",
+   "recomputed": 0.69659,
+   "sealed": 0.69659,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/full/baseline/mean_student_match",
+   "recomputed": 0.66496,
+   "sealed": 0.66496,
+   "pass": true
+  },
+  {
+   "group": "6 多智能体沙盘",
+   "item": "BISTU_CS_2025/full/pessimistic/mean_student_match",
+   "recomputed": 0.61871,
+   "sealed": 0.61871,
+   "pass": true
+  },
+  {
+   "group": "7 ReplayBundle",
+   "item": "全部文件哈希一致",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "7 ReplayBundle",
+   "item": "根哈希一致",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "7 ReplayBundle",
+   "item": "绑定当前封印结果",
+   "recomputed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "sealed": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "预注册文件哈希完整",
+   "recomputed": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7",
+   "sealed": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7",
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "结果引用同一预注册",
+   "recomputed": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7",
+   "sealed": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7",
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "登记时间早于盲测数据抽取",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "冻结的方案快照未改动",
+   "recomputed": "e67b975ae8f5d54d668e029898f4ac4224e1fd3d93728b5ea14e639183c26778",
+   "sealed": "e67b975ae8f5d54d668e029898f4ac4224e1fd3d93728b5ea14e639183c26778",
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "执行脚本与登记版本一致",
+   "recomputed": "3550ec4b0dbb42ba8bc42b49b892b9d6d37d021fb540cea062a04174d7444f82",
+   "sealed": "3550ec4b0dbb42ba8bc42b49b892b9d6d37d021fb540cea062a04174d7444f82",
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/N",
+   "recomputed": 1004,
+   "sealed": 1004,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.46081,
+   "sealed": 0.46081,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.73175,
+   "sealed": 0.73175,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.75488,
+   "sealed": 0.75488,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.79859,
+   "sealed": 0.79859,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.86471,
+   "sealed": 0.86471,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.86415,
+   "sealed": 0.86415,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H1/ci95_lo",
+   "recomputed": 0.34328,
+   "sealed": 0.34328,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H2/ci95_lo",
+   "recomputed": 0.06797,
+   "sealed": 0.06797,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H3/ci95_lo",
+   "recomputed": 0.02804,
+   "sealed": 0.02804,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H4/ci95_lo",
+   "recomputed": -0.0037,
+   "sealed": -0.0037,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_CS_2022/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.12711,
+   "sealed": 0.12711,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.44958,
+   "sealed": 0.44958,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.49492,
+   "sealed": 0.49492,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.54197,
+   "sealed": 0.54197,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.77299,
+   "sealed": 0.77299,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.84501,
+   "sealed": 0.84501,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H1/ci95_lo",
+   "recomputed": 0.66273,
+   "sealed": 0.66273,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H2/ci95_lo",
+   "recomputed": 0.29769,
+   "sealed": 0.29769,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H3/ci95_lo",
+   "recomputed": 0.25406,
+   "sealed": 0.25406,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H4/ci95_lo",
+   "recomputed": 0.03714,
+   "sealed": 0.03714,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BTBU_AI_2022/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.31253,
+   "sealed": 0.31253,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.78603,
+   "sealed": 0.78603,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.80312,
+   "sealed": 0.80312,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.79963,
+   "sealed": 0.79963,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.87987,
+   "sealed": 0.87987,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.88048,
+   "sealed": 0.88048,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H1/ci95_lo",
+   "recomputed": 0.5115,
+   "sealed": 0.5115,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H2/ci95_lo",
+   "recomputed": 0.0464,
+   "sealed": 0.0464,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H3/ci95_lo",
+   "recomputed": 0.04759,
+   "sealed": 0.04759,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H4/ci95_lo",
+   "recomputed": 0.0,
+   "sealed": 0.0,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P1_jinji/BISTU_CS_2025/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/N",
+   "recomputed": 28238,
+   "sealed": 28238,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.44669,
+   "sealed": 0.44669,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.68428,
+   "sealed": 0.68428,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.70562,
+   "sealed": 0.70562,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.71139,
+   "sealed": 0.71139,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.81116,
+   "sealed": 0.81116,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.81091,
+   "sealed": 0.81091,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H1/ci95_lo",
+   "recomputed": 0.35208,
+   "sealed": 0.35208,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H2/ci95_lo",
+   "recomputed": 0.09562,
+   "sealed": 0.09562,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H3/ci95_lo",
+   "recomputed": 0.09084,
+   "sealed": 0.09084,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H4/ci95_lo",
+   "recomputed": -0.00147,
+   "sealed": -0.00147,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_CS_2022/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.13769,
+   "sealed": 0.13769,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.41528,
+   "sealed": 0.41528,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.44924,
+   "sealed": 0.44924,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.51126,
+   "sealed": 0.51126,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.75295,
+   "sealed": 0.75295,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.81191,
+   "sealed": 0.81191,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H1/ci95_lo",
+   "recomputed": 0.6627,
+   "sealed": 0.6627,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H2/ci95_lo",
+   "recomputed": 0.35006,
+   "sealed": 0.35006,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H3/ci95_lo",
+   "recomputed": 0.28945,
+   "sealed": 0.28945,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H4/ci95_lo",
+   "recomputed": 0.05205,
+   "sealed": 0.05205,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BTBU_AI_2022/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/B0_Freeze/jd_qual_rate_70",
+   "recomputed": 0.32934,
+   "sealed": 0.32934,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/B1_SingleTrack_MILP/jd_qual_rate_70",
+   "recomputed": 0.69307,
+   "sealed": 0.69307,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/B2_MultiTrack_Static/jd_qual_rate_70",
+   "recomputed": 0.72246,
+   "sealed": 0.72246,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/B3_SingleShot_LLM/jd_qual_rate_70",
+   "recomputed": 0.72021,
+   "sealed": 0.72021,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/B4_BiLevel_NoGuard/jd_qual_rate_70",
+   "recomputed": 0.81492,
+   "sealed": 0.81492,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/Full_EvoAlign_OS/jd_qual_rate_70",
+   "recomputed": 0.82261,
+   "sealed": 0.82261,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H1/ci95_lo",
+   "recomputed": 0.48203,
+   "sealed": 0.48203,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H1/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H2/ci95_lo",
+   "recomputed": 0.09147,
+   "sealed": 0.09147,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H2/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H3/ci95_lo",
+   "recomputed": 0.09403,
+   "sealed": 0.09403,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H3/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H4/ci95_lo",
+   "recomputed": 0.00483,
+   "sealed": 0.00483,
+   "pass": true
+  },
+  {
+   "group": "8 预注册盲测",
+   "item": "P2_national_ex_bj/BISTU_CS_2025/H4/判定",
+   "recomputed": true,
+   "sealed": true,
+   "pass": true
+  },
+  {
+   "group": "9 2025滚动复验",
+   "item": "真值文件哈希",
+   "recomputed": "1ce4a308ce4ee7ba091d239e8feccc492c8a4214eee0f3ef4dbf1fde1d780cde",
+   "sealed": "1ce4a308ce4ee7ba091d239e8feccc492c8a4214eee0f3ef4dbf1fde1d780cde",
+   "pass": true
+  },
+  {
+   "group": "9 2025滚动复验",
+   "item": "evoalign/hits",
+   "recomputed": "软件工程|智能科学与技术",
+   "sealed": "软件工程|智能科学与技术",
+   "pass": true
+  },
+  {
+   "group": "9 2025滚动复验",
+   "item": "evoalign/coverage",
+   "recomputed": 0.375,
+   "sealed": 0.375,
+   "pass": true
+  },
+  {
+   "group": "9 2025滚动复验",
+   "item": "persistence/hits",
+   "recomputed": "网络与新媒体",
+   "sealed": "网络与新媒体",
+   "pass": true
+  },
+  {
+   "group": "9 2025滚动复验",
+   "item": "persistence/coverage",
+   "recomputed": 0.125,
+   "sealed": 0.125,
+   "pass": true
+  }
+ ]
+}

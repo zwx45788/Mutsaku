@@ -1,0 +1,30 @@
+[
+ {
+  "gen": 1,
+  "status": "PROMOTED",
+  "delta_score": 0.01608,
+  "qual70": 0.73937,
+  "qwen_courses_adopted": [
+   "云原生数据架构与向量检索实战",
+   "具身智能系统：ROS与边缘控制"
+  ],
+  "lesson": "针对Gen1阶段后端、AI及系统轨道的高频技能缺口（特别是NoSQL/向量库、LLM微调/NLP、具身智能/ROS），创生3门高Bloom深度选修课以填补0.0就绪度空白，并升级数据库与操作系统核心课程模块以强化分布式与容器化能力。"
+ },
+ {
+  "gen": 2,
+  "status": "PROMOTED",
+  "delta_score": 0.07655,
+  "qual70": 0.85907,
+  "qwen_courses_adopted": [
+   "云原生数据架构与向量检索实战",
+   "鸿蒙应用开发与多端协同"
+  ],
+  "lesson": "Gen2聚焦于填补高影响缺口：后端轨道需强化现代并发与开源协作以应对分布式岗位；AI数据轨道急需补齐NLP/LLM微调核心能力；系统边缘轨道深化EDA与具身智能实战；云安全轨道提升K8s运维深度。策略为‘同源深改+定向实训包’，严禁跨学科硬塞。"
+ },
+ {
+  "gen": 4,
+  "status": "REJECTED",
+  "delta_score": -0.07062,
+  "lesson": "未通过GUARD门控(GUARD_REJECTED: delta=-0.0706, worst_ok=False, recent_ok=False)，下代需避开无效课程冗余。"
+ }
+]

@@ -1,0 +1,3260 @@
+{
+ "lite": {
+  "replay_2025": {
+   "jd_qual_rate_70": 0.81656,
+   "jd_mean_readiness": 0.81531,
+   "jd_skill_pass_rate": 0.9011,
+   "track_l1_overlap": 0.55465,
+   "track_ot_alignment": 0.76091,
+   "track_bloom_fidelity": 0.77299,
+   "track_emerging_readiness": 0.61443,
+   "agg_l1_overlap": 0.59974,
+   "agg_ot_alignment": 0.78819,
+   "track_capacity_match": 0.93593,
+   "worst_track_readiness": 0.79562,
+   "worst_track_qual_70": 0.78056,
+   "per_track": {
+    "fullstack_backend": {
+     "name_zh": "后端与全栈分布式工程",
+     "demand_share": 0.3514,
+     "student_share": 0.3667,
+     "jd_qual_rate_70": 0.78056,
+     "jd_mean_readiness": 0.79562,
+     "l1_overlap": 0.57494,
+     "ot_alignment": 0.76404,
+     "bloom_fidelity": 0.75329,
+     "emerging_readiness": 0.5237,
+     "n_ads": 942
+    },
+    "cloud_ops_sec": {
+     "name_zh": "云原生、测试运维与安全",
+     "demand_share": 0.293,
+     "student_share": 0.2733,
+     "jd_qual_rate_70": 0.83512,
+     "jd_mean_readiness": 0.82977,
+     "l1_overlap": 0.49858,
+     "ot_alignment": 0.73503,
+     "bloom_fidelity": 0.8046,
+     "emerging_readiness": 0.67205,
+     "n_ads": 810
+    },
+    "ai_data": {
+     "name_zh": "AI大模型与数据智能工程",
+     "demand_share": 0.2212,
+     "student_share": 0.27,
+     "jd_qual_rate_70": 0.7881,
+     "jd_mean_readiness": 0.80093,
+     "l1_overlap": 0.56092,
+     "ot_alignment": 0.78361,
+     "bloom_fidelity": 0.73548,
+     "emerging_readiness": 0.63768,
+     "n_ads": 567
+    },
+    "systems_edge": {
+     "name_zh": "系统底层、嵌入式与端侧智能",
+     "demand_share": 0.1344,
+     "student_share": 0.09,
+     "jd_qual_rate_70": 0.91668,
+     "jd_mean_readiness": 0.85908,
+     "l1_overlap": 0.61354,
+     "ot_alignment": 0.77181,
+     "bloom_fidelity": 0.81726,
+     "emerging_readiness": 0.68782,
+     "n_ads": 326
+    }
+   },
+   "explanatory_ad_salary_median": 17437.7,
+   "explanatory_ad_salary_conformal90": [
+    9604.1,
+    31660.6
+   ]
+  },
+  "solver_summary": {
+   "status": "OPTIMAL",
+   "feasible": true,
+   "budget_mode": "lite",
+   "multitrack": true,
+   "elective_quota_credits": 10.0,
+   "added_credits": 8.0,
+   "removed_credits": 6.0,
+   "upgraded_core_count": 4,
+   "faculty_fte_used": 2.2,
+   "faculty_fte_cap": 2.6,
+   "lab_units_used": 6.0,
+   "lab_units_cap": 7.0,
+   "solver_wall_time_ms": 58.81,
+   "constraint_checks": {
+    "student_graduation_credits_conserved": true,
+    "required_and_core_100pct_retained": true,
+    "faculty_fte_within_cap": true,
+    "lab_gpu_within_cap": true,
+    "prereq_dag_valid": true,
+    "domain_coherent_upgrades_only": true,
+    "streaming_zero_blocking_pairs": true,
+    "reform_budget_ok": true,
+    "zero_hard_violations": true
+   },
+   "actions": [
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "数字逻辑与数字系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 2,
+     "skills": [
+      "eda_ic_design",
+      "comp_arch",
+      "c_cpp",
+      "embedded_mcu"
+     ],
+     "module": {
+      "title": "嵌入式RTOS实时调度与C/C++底层驱动实验",
+      "target_skill": "embedded_mcu",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "在MCU/开发板上实现FreeRTOS多任务调度与外设中断驱动",
+      "assessment": "按实时响应抖动、内存占用与硬件联调通过率评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：嵌入式RTOS实时调度与C/C++底层驱动实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "操作系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 4,
+     "skills": [
+      "os_kernel",
+      "comp_arch",
+      "linux_shell"
+     ],
+     "module": {
+      "title": "Linux系统调优、Shell自动化与容器隔离实验",
+      "target_skill": "linux_shell",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "基于Linux命名空间/cgroup构建容器化服务并编写Shell巡检与压测脚本",
+      "assessment": "检验脚本健壮性、资源隔离指标与故障自愈日志",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：Linux系统调优、Shell自动化与容器隔离实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "信息安全",
+     "credits": 2.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "cyber_sec",
+      "ai_safety_privacy",
+      "comp_net"
+     ],
+     "module": {
+      "title": "企业级网络攻防、零信任与安全合规实验",
+      "target_skill": "cyber_sec",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "开展Web渗透测试、TLS双向认证与漏洞修复闭环实验",
+      "assessment": "按靶场漏洞修复率与安全审计报告完整性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：企业级网络攻防、零信任与安全合规实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "软件工程",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "soft_eng_arch",
+      "devops_sre",
+      "qa_testing"
+     ],
+     "module": {
+      "title": "CI/CD流水线与自动化质量工程实验",
+      "target_skill": "qa_testing",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "搭建GitHub Actions/GitLab CI自动化单元、集成与回归测试门禁",
+      "assessment": "按分支覆盖率、缺陷检出率与流水线可复现性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：CI/CD流水线与自动化质量工程实验"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "经济学原理",
+     "credits": 3.0,
+     "delta_credits": -3.0,
+     "semester": 5,
+     "skills": [
+      "tech_comm_ethics"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "经济管理综合实践",
+     "credits": 3.0,
+     "delta_credits": -3.0,
+     "semester": 6,
+     "skills": [
+      "hci_product",
+      "soft_eng_arch"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "深度学习导论与神经网络实践",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "deep_learning",
+      "ml_classic",
+      "python_eng"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "大数据技术基础与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "big_data_eng",
+      "data_mining_bi"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "嵌入式系统开发与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 5,
+     "skills": [
+      "embedded_mcu",
+      "c_cpp"
+     ],
+     "target_tracks": [
+      "systems_edge"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "云原生数据架构与向量检索实战",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "nosql_vector_db",
+      "dist_systems",
+      "cloud_k8s"
+     ],
+     "target_tracks": [
+      "fullstack_backend",
+      "cloud_ops_sec"
+     ],
+     "source": "qwen_gen1",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    }
+   ],
+   "track_electives": {
+    "fullstack_backend": [
+     {
+      "course_name": "金融信息可视化技术",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "ai_data": [
+     {
+      "course_name": "金融数据分析与软件",
+      "credits": 2.0,
+      "semester": 4
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "systems_edge": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "移动应用系统开发",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "嵌入式系统开发与应用",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ]
+   },
+   "capstone_actions_by_track": {
+    "fullstack_backend": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     }
+    ],
+    "ai_data": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     }
+    ],
+    "systems_edge": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     }
+    ]
+   },
+   "track_shares": {
+    "fullstack_backend": 0.36667,
+    "cloud_ops_sec": 0.27333,
+    "ai_data": 0.27,
+    "systems_edge": 0.09
+   },
+   "streaming_summary": {
+    "algorithm": "Student-Proposing Gale-Shapley Deferred Acceptance",
+    "decision_semester": 4,
+    "transfer_window_semester": 5,
+    "transfer_quota_rate": 0.1,
+    "n_students": 300,
+    "blocking_pairs": 0,
+    "is_stable": true,
+    "first_choice_satisfaction": 0.6333,
+    "top2_choice_satisfaction": 0.8433,
+    "max_utilization": 1.0,
+    "under_min_warnings": [
+     {
+      "track": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40
+     }
+    ],
+    "track_allocations": [
+     {
+      "id": "fullstack_backend",
+      "name": "后端与全栈分布式工程",
+      "assigned": 110,
+      "min_cap": 83,
+      "max_cap": 110,
+      "utilization": 1.0,
+      "demand_share": 0.3381,
+      "mean_score": 0.75
+     },
+     {
+      "id": "cloud_ops_sec",
+      "name": "云原生、测试运维与安全",
+      "assigned": 82,
+      "min_cap": 61,
+      "max_cap": 82,
+      "utilization": 1.0,
+      "demand_share": 0.2497,
+      "mean_score": 0.71
+     },
+     {
+      "id": "ai_data",
+      "name": "AI大模型与数据智能工程",
+      "assigned": 81,
+      "min_cap": 61,
+      "max_cap": 81,
+      "utilization": 1.0,
+      "demand_share": 0.2485,
+      "mean_score": 0.81
+     },
+     {
+      "id": "systems_edge",
+      "name": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40,
+      "max_cap": 55,
+      "utilization": 0.4909,
+      "demand_share": 0.1637,
+      "mean_score": 0.6
+     }
+    ],
+    "assignment": [
+     3,
+     1,
+     2,
+     1,
+     1,
+     3,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     1,
+     3,
+     1,
+     3,
+     3,
+     1,
+     2,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     2,
+     0,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     2,
+     3,
+     1,
+     0,
+     2,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     2,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     2,
+     1,
+     3,
+     2,
+     2,
+     2,
+     3,
+     1,
+     2,
+     0,
+     2,
+     1,
+     0,
+     3,
+     2,
+     1,
+     3,
+     3,
+     3,
+     1,
+     2,
+     3,
+     0,
+     2,
+     0,
+     3,
+     3,
+     1,
+     3,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     1,
+     0,
+     1,
+     1,
+     2,
+     1,
+     1,
+     0,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     1,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     2,
+     2,
+     3,
+     0,
+     2,
+     2,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     2,
+     3,
+     1,
+     0,
+     0,
+     2,
+     1,
+     2,
+     1,
+     3,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     3,
+     1,
+     0,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     2,
+     2,
+     2,
+     3,
+     1,
+     1,
+     2,
+     1,
+     0,
+     1,
+     0,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     2,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     2,
+     1
+    ]
+   }
+  }
+ },
+ "medium": {
+  "replay_2025": {
+   "jd_qual_rate_70": 0.82996,
+   "jd_mean_readiness": 0.82872,
+   "jd_skill_pass_rate": 0.8978,
+   "track_l1_overlap": 0.54818,
+   "track_ot_alignment": 0.75932,
+   "track_bloom_fidelity": 0.77955,
+   "track_emerging_readiness": 0.62397,
+   "agg_l1_overlap": 0.59181,
+   "agg_ot_alignment": 0.78437,
+   "track_capacity_match": 0.93593,
+   "worst_track_readiness": 0.80372,
+   "worst_track_qual_70": 0.80111,
+   "per_track": {
+    "fullstack_backend": {
+     "name_zh": "后端与全栈分布式工程",
+     "demand_share": 0.3514,
+     "student_share": 0.3667,
+     "jd_qual_rate_70": 0.80111,
+     "jd_mean_readiness": 0.81071,
+     "l1_overlap": 0.56764,
+     "ot_alignment": 0.76213,
+     "bloom_fidelity": 0.76175,
+     "emerging_readiness": 0.53338,
+     "n_ads": 942
+    },
+    "cloud_ops_sec": {
+     "name_zh": "云原生、测试运维与安全",
+     "demand_share": 0.293,
+     "student_share": 0.2733,
+     "jd_qual_rate_70": 0.83708,
+     "jd_mean_readiness": 0.85182,
+     "l1_overlap": 0.49489,
+     "ot_alignment": 0.73463,
+     "bloom_fidelity": 0.81034,
+     "emerging_readiness": 0.682,
+     "n_ads": 810
+    },
+    "ai_data": {
+     "name_zh": "AI大模型与数据智能工程",
+     "demand_share": 0.2212,
+     "student_share": 0.27,
+     "jd_qual_rate_70": 0.80575,
+     "jd_mean_readiness": 0.80372,
+     "l1_overlap": 0.55,
+     "ot_alignment": 0.77962,
+     "bloom_fidelity": 0.73948,
+     "emerging_readiness": 0.65022,
+     "n_ads": 567
+    },
+    "systems_edge": {
+     "name_zh": "系统底层、嵌入式与端侧智能",
+     "demand_share": 0.1344,
+     "student_share": 0.09,
+     "jd_qual_rate_70": 0.92882,
+     "jd_mean_readiness": 0.8676,
+     "l1_overlap": 0.61044,
+     "ot_alignment": 0.77235,
+     "bloom_fidelity": 0.82491,
+     "emerging_readiness": 0.69111,
+     "n_ads": 326
+    }
+   },
+   "explanatory_ad_salary_median": 17299.9,
+   "explanatory_ad_salary_conformal90": [
+    9528.2,
+    31410.4
+   ]
+  },
+  "solver_summary": {
+   "status": "OPTIMAL",
+   "feasible": true,
+   "budget_mode": "medium",
+   "multitrack": true,
+   "elective_quota_credits": 10.0,
+   "added_credits": 12.0,
+   "removed_credits": 11.0,
+   "upgraded_core_count": 6,
+   "faculty_fte_used": 3.29,
+   "faculty_fte_cap": 4.8,
+   "lab_units_used": 8.7,
+   "lab_units_cap": 14.0,
+   "solver_wall_time_ms": 37.05,
+   "constraint_checks": {
+    "student_graduation_credits_conserved": true,
+    "required_and_core_100pct_retained": true,
+    "faculty_fte_within_cap": true,
+    "lab_gpu_within_cap": true,
+    "prereq_dag_valid": true,
+    "domain_coherent_upgrades_only": true,
+    "streaming_zero_blocking_pairs": true,
+    "reform_budget_ok": true,
+    "zero_hard_violations": true
+   },
+   "actions": [
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "数字逻辑与数字系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 2,
+     "skills": [
+      "eda_ic_design",
+      "comp_arch",
+      "c_cpp",
+      "embedded_mcu"
+     ],
+     "module": {
+      "title": "嵌入式RTOS实时调度与C/C++底层驱动实验",
+      "target_skill": "embedded_mcu",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "在MCU/开发板上实现FreeRTOS多任务调度与外设中断驱动",
+      "assessment": "按实时响应抖动、内存占用与硬件联调通过率评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：嵌入式RTOS实时调度与C/C++底层驱动实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "操作系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 4,
+     "skills": [
+      "os_kernel",
+      "comp_arch",
+      "linux_shell"
+     ],
+     "module": {
+      "title": "Linux系统调优、Shell自动化与容器隔离实验",
+      "target_skill": "linux_shell",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "基于Linux命名空间/cgroup构建容器化服务并编写Shell巡检与压测脚本",
+      "assessment": "检验脚本健壮性、资源隔离指标与故障自愈日志",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：Linux系统调优、Shell自动化与容器隔离实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "JAVA核心编程",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 4,
+     "skills": [
+      "java_spring",
+      "dsa",
+      "soft_eng_arch",
+      "golang_rust"
+     ],
+     "module": {
+      "title": "Java到Go/Rust的高并发迁移实验",
+      "target_skill": "golang_rust",
+      "instruction_hours": 16,
+      "planned_bloom": 4.0,
+      "student_project": "将经典Spring Boot REST API重写为Gin或Axum框架并压测对比",
+      "assessment": "QPS提升20%以上且内存占用降低15%",
+      "domain_coherent": true,
+      "source": "qwen_gen2"
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：Java到Go/Rust的高并发迁移实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "信息安全",
+     "credits": 2.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "cyber_sec",
+      "ai_safety_privacy",
+      "comp_net"
+     ],
+     "module": {
+      "title": "企业级网络攻防、零信任与安全合规实验",
+      "target_skill": "cyber_sec",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "开展Web渗透测试、TLS双向认证与漏洞修复闭环实验",
+      "assessment": "按靶场漏洞修复率与安全审计报告完整性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：企业级网络攻防、零信任与安全合规实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "算法设计与分析",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 5,
+     "skills": [
+      "dsa",
+      "parallel_gpu"
+     ],
+     "module": {
+      "title": "GPU/CUDA并行算子加速与性能调优实验",
+      "target_skill": "parallel_gpu",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "实现矩阵乘/归约CUDA并行核函数并完成带宽与吞吐优化",
+      "assessment": "按相对CPU加速比、数值精度与Profiling分析评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：GPU/CUDA并行算子加速与性能调优实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "软件工程",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "soft_eng_arch",
+      "devops_sre",
+      "qa_testing"
+     ],
+     "module": {
+      "title": "CI/CD流水线与自动化质量工程实验",
+      "target_skill": "qa_testing",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "搭建GitHub Actions/GitLab CI自动化单元、集成与回归测试门禁",
+      "assessment": "按分支覆盖率、缺陷检出率与流水线可复现性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：CI/CD流水线与自动化质量工程实验"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "经济学原理",
+     "credits": 3.0,
+     "delta_credits": -3.0,
+     "semester": 5,
+     "skills": [
+      "tech_comm_ethics"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "Oracle数据库及应用",
+     "credits": 2.0,
+     "delta_credits": -2.0,
+     "semester": 6,
+     "skills": [
+      "sql_rdbms",
+      "data_mining_bi"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "移动应用系统开发",
+     "credits": 2.0,
+     "delta_credits": -2.0,
+     "semester": 6,
+     "skills": [
+      "mobile_harmony",
+      "java_spring",
+      "cloud_k8s"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "金融信息可视化技术",
+     "credits": 2.0,
+     "delta_credits": -2.0,
+     "semester": 6,
+     "skills": [
+      "data_mining_bi",
+      "web_frontend",
+      "python_eng"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "人工智能导论",
+     "credits": 2.0,
+     "delta_credits": -2.0,
+     "semester": 7,
+     "skills": [
+      "ml_classic",
+      "dsa",
+      "discrete_math"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "软件测试基础与质量保证",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "qa_testing",
+      "soft_eng_arch"
+     ],
+     "target_tracks": [
+      "cloud_ops_sec",
+      "fullstack_backend"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "深度学习导论与神经网络实践",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "deep_learning",
+      "ml_classic",
+      "python_eng"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "大数据技术基础与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "big_data_eng",
+      "data_mining_bi"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "嵌入式系统开发与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 5,
+     "skills": [
+      "embedded_mcu",
+      "c_cpp"
+     ],
+     "target_tracks": [
+      "systems_edge"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "云原生数据架构与向量检索实战",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "nosql_vector_db",
+      "dist_systems",
+      "cloud_k8s"
+     ],
+     "target_tracks": [
+      "fullstack_backend",
+      "cloud_ops_sec"
+     ],
+     "source": "qwen_gen1",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "鸿蒙应用开发与多端协同",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "mobile_harmony",
+      "web_frontend"
+     ],
+     "target_tracks": [
+      "fullstack_backend"
+     ],
+     "source": "qwen_gen2",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    }
+   ],
+   "track_electives": {
+    "fullstack_backend": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "鸿蒙应用开发与多端协同",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "软件测试基础与质量保证",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "ai_data": [
+     {
+      "course_name": "金融数据分析与软件",
+      "credits": 2.0,
+      "semester": 4
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "systems_edge": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "软件测试基础与质量保证",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "嵌入式系统开发与应用",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "鸿蒙应用开发与多端协同",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ]
+   },
+   "capstone_actions_by_track": {
+    "fullstack_backend": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     }
+    ],
+    "ai_data": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     }
+    ],
+    "systems_edge": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     }
+    ]
+   },
+   "track_shares": {
+    "fullstack_backend": 0.36667,
+    "cloud_ops_sec": 0.27333,
+    "ai_data": 0.27,
+    "systems_edge": 0.09
+   },
+   "streaming_summary": {
+    "algorithm": "Student-Proposing Gale-Shapley Deferred Acceptance",
+    "decision_semester": 4,
+    "transfer_window_semester": 5,
+    "transfer_quota_rate": 0.1,
+    "n_students": 300,
+    "blocking_pairs": 0,
+    "is_stable": true,
+    "first_choice_satisfaction": 0.6333,
+    "top2_choice_satisfaction": 0.8433,
+    "max_utilization": 1.0,
+    "under_min_warnings": [
+     {
+      "track": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40
+     }
+    ],
+    "track_allocations": [
+     {
+      "id": "fullstack_backend",
+      "name": "后端与全栈分布式工程",
+      "assigned": 110,
+      "min_cap": 83,
+      "max_cap": 110,
+      "utilization": 1.0,
+      "demand_share": 0.3381,
+      "mean_score": 0.75
+     },
+     {
+      "id": "cloud_ops_sec",
+      "name": "云原生、测试运维与安全",
+      "assigned": 82,
+      "min_cap": 61,
+      "max_cap": 82,
+      "utilization": 1.0,
+      "demand_share": 0.2497,
+      "mean_score": 0.71
+     },
+     {
+      "id": "ai_data",
+      "name": "AI大模型与数据智能工程",
+      "assigned": 81,
+      "min_cap": 61,
+      "max_cap": 81,
+      "utilization": 1.0,
+      "demand_share": 0.2485,
+      "mean_score": 0.81
+     },
+     {
+      "id": "systems_edge",
+      "name": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40,
+      "max_cap": 55,
+      "utilization": 0.4909,
+      "demand_share": 0.1637,
+      "mean_score": 0.6
+     }
+    ],
+    "assignment": [
+     3,
+     1,
+     2,
+     1,
+     1,
+     3,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     1,
+     3,
+     1,
+     3,
+     3,
+     1,
+     2,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     2,
+     0,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     2,
+     3,
+     1,
+     0,
+     2,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     2,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     2,
+     1,
+     3,
+     2,
+     2,
+     2,
+     3,
+     1,
+     2,
+     0,
+     2,
+     1,
+     0,
+     3,
+     2,
+     1,
+     3,
+     3,
+     3,
+     1,
+     2,
+     3,
+     0,
+     2,
+     0,
+     3,
+     3,
+     1,
+     3,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     1,
+     0,
+     1,
+     1,
+     2,
+     1,
+     1,
+     0,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     1,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     2,
+     2,
+     3,
+     0,
+     2,
+     2,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     2,
+     3,
+     1,
+     0,
+     0,
+     2,
+     1,
+     2,
+     1,
+     3,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     3,
+     1,
+     0,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     2,
+     2,
+     2,
+     3,
+     1,
+     1,
+     2,
+     1,
+     0,
+     1,
+     0,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     2,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     2,
+     1
+    ]
+   }
+  }
+ },
+ "heavy": {
+  "replay_2025": {
+   "jd_qual_rate_70": 0.82996,
+   "jd_mean_readiness": 0.82872,
+   "jd_skill_pass_rate": 0.8978,
+   "track_l1_overlap": 0.54818,
+   "track_ot_alignment": 0.75932,
+   "track_bloom_fidelity": 0.77955,
+   "track_emerging_readiness": 0.62397,
+   "agg_l1_overlap": 0.59181,
+   "agg_ot_alignment": 0.78437,
+   "track_capacity_match": 0.93593,
+   "worst_track_readiness": 0.80372,
+   "worst_track_qual_70": 0.80111,
+   "per_track": {
+    "fullstack_backend": {
+     "name_zh": "后端与全栈分布式工程",
+     "demand_share": 0.3514,
+     "student_share": 0.3667,
+     "jd_qual_rate_70": 0.80111,
+     "jd_mean_readiness": 0.81071,
+     "l1_overlap": 0.56764,
+     "ot_alignment": 0.76213,
+     "bloom_fidelity": 0.76175,
+     "emerging_readiness": 0.53338,
+     "n_ads": 942
+    },
+    "cloud_ops_sec": {
+     "name_zh": "云原生、测试运维与安全",
+     "demand_share": 0.293,
+     "student_share": 0.2733,
+     "jd_qual_rate_70": 0.83708,
+     "jd_mean_readiness": 0.85182,
+     "l1_overlap": 0.49489,
+     "ot_alignment": 0.73463,
+     "bloom_fidelity": 0.81034,
+     "emerging_readiness": 0.682,
+     "n_ads": 810
+    },
+    "ai_data": {
+     "name_zh": "AI大模型与数据智能工程",
+     "demand_share": 0.2212,
+     "student_share": 0.27,
+     "jd_qual_rate_70": 0.80575,
+     "jd_mean_readiness": 0.80372,
+     "l1_overlap": 0.55,
+     "ot_alignment": 0.77962,
+     "bloom_fidelity": 0.73948,
+     "emerging_readiness": 0.65022,
+     "n_ads": 567
+    },
+    "systems_edge": {
+     "name_zh": "系统底层、嵌入式与端侧智能",
+     "demand_share": 0.1344,
+     "student_share": 0.09,
+     "jd_qual_rate_70": 0.92882,
+     "jd_mean_readiness": 0.8676,
+     "l1_overlap": 0.61044,
+     "ot_alignment": 0.77235,
+     "bloom_fidelity": 0.82491,
+     "emerging_readiness": 0.69111,
+     "n_ads": 326
+    }
+   },
+   "explanatory_ad_salary_median": 17299.9,
+   "explanatory_ad_salary_conformal90": [
+    9528.2,
+    31410.4
+   ]
+  },
+  "solver_summary": {
+   "status": "OPTIMAL",
+   "feasible": true,
+   "budget_mode": "heavy",
+   "multitrack": true,
+   "elective_quota_credits": 10.0,
+   "added_credits": 12.0,
+   "removed_credits": 2.0,
+   "upgraded_core_count": 6,
+   "faculty_fte_used": 3.29,
+   "faculty_fte_cap": 6.8,
+   "lab_units_used": 8.7,
+   "lab_units_cap": 20.0,
+   "solver_wall_time_ms": 28.27,
+   "constraint_checks": {
+    "student_graduation_credits_conserved": true,
+    "required_and_core_100pct_retained": true,
+    "faculty_fte_within_cap": true,
+    "lab_gpu_within_cap": true,
+    "prereq_dag_valid": true,
+    "domain_coherent_upgrades_only": true,
+    "streaming_zero_blocking_pairs": true,
+    "reform_budget_ok": true,
+    "zero_hard_violations": true
+   },
+   "actions": [
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "数字逻辑与数字系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 2,
+     "skills": [
+      "eda_ic_design",
+      "comp_arch",
+      "c_cpp",
+      "embedded_mcu"
+     ],
+     "module": {
+      "title": "嵌入式RTOS实时调度与C/C++底层驱动实验",
+      "target_skill": "embedded_mcu",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "在MCU/开发板上实现FreeRTOS多任务调度与外设中断驱动",
+      "assessment": "按实时响应抖动、内存占用与硬件联调通过率评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：嵌入式RTOS实时调度与C/C++底层驱动实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "操作系统",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 4,
+     "skills": [
+      "os_kernel",
+      "comp_arch",
+      "linux_shell"
+     ],
+     "module": {
+      "title": "Linux系统调优、Shell自动化与容器隔离实验",
+      "target_skill": "linux_shell",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "基于Linux命名空间/cgroup构建容器化服务并编写Shell巡检与压测脚本",
+      "assessment": "检验脚本健壮性、资源隔离指标与故障自愈日志",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：Linux系统调优、Shell自动化与容器隔离实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "JAVA核心编程",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 4,
+     "skills": [
+      "java_spring",
+      "dsa",
+      "soft_eng_arch",
+      "golang_rust"
+     ],
+     "module": {
+      "title": "Java到Go/Rust的高并发迁移实验",
+      "target_skill": "golang_rust",
+      "instruction_hours": 16,
+      "planned_bloom": 4.0,
+      "student_project": "将经典Spring Boot REST API重写为Gin或Axum框架并压测对比",
+      "assessment": "QPS提升20%以上且内存占用降低15%",
+      "domain_coherent": true,
+      "source": "qwen_gen2"
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：Java到Go/Rust的高并发迁移实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "信息安全",
+     "credits": 2.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "cyber_sec",
+      "ai_safety_privacy",
+      "comp_net"
+     ],
+     "module": {
+      "title": "企业级网络攻防、零信任与安全合规实验",
+      "target_skill": "cyber_sec",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "开展Web渗透测试、TLS双向认证与漏洞修复闭环实验",
+      "assessment": "按靶场漏洞修复率与安全审计报告完整性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：企业级网络攻防、零信任与安全合规实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "算法设计与分析",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 5,
+     "skills": [
+      "dsa",
+      "parallel_gpu"
+     ],
+     "module": {
+      "title": "GPU/CUDA并行算子加速与性能调优实验",
+      "target_skill": "parallel_gpu",
+      "instruction_hours": 16,
+      "planned_bloom": 5.0,
+      "student_project": "实现矩阵乘/归约CUDA并行核函数并完成带宽与吞吐优化",
+      "assessment": "按相对CPU加速比、数值精度与Profiling分析评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：GPU/CUDA并行算子加速与性能调优实验"
+    },
+    {
+     "action": "UPGRADE_SYLLABUS",
+     "course_name": "软件工程",
+     "credits": 4.0,
+     "delta_credits": 0.0,
+     "semester": 6,
+     "skills": [
+      "soft_eng_arch",
+      "devops_sre",
+      "qa_testing"
+     ],
+     "module": {
+      "title": "CI/CD流水线与自动化质量工程实验",
+      "target_skill": "qa_testing",
+      "instruction_hours": 16,
+      "planned_bloom": 4.5,
+      "student_project": "搭建GitHub Actions/GitLab CI自动化单元、集成与回归测试门禁",
+      "assessment": "按分支覆盖率、缺陷检出率与流水线可复现性评分",
+      "domain_coherent": true
+     },
+     "domain_coherent": true,
+     "reason": "学科同源大纲现代化：CI/CD流水线与自动化质量工程实验"
+    },
+    {
+     "action": "REMOVE_ELECTIVE",
+     "course_name": "移动应用系统开发",
+     "credits": 2.0,
+     "delta_credits": -2.0,
+     "semester": 6,
+     "skills": [
+      "mobile_harmony",
+      "java_spring",
+      "cloud_k8s"
+     ],
+     "reason": "释放低匹配选修容量以引入方向课群"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "软件测试基础与质量保证",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "qa_testing",
+      "soft_eng_arch"
+     ],
+     "target_tracks": [
+      "cloud_ops_sec",
+      "fullstack_backend"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "深度学习导论与神经网络实践",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "deep_learning",
+      "ml_classic",
+      "python_eng"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "大数据技术基础与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "big_data_eng",
+      "data_mining_bi"
+     ],
+     "target_tracks": [
+      "ai_data"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "嵌入式系统开发与应用",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 5,
+     "skills": [
+      "embedded_mcu",
+      "c_cpp"
+     ],
+     "target_tracks": [
+      "systems_edge"
+     ],
+     "source": "seed_pool",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "云原生数据架构与向量检索实战",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "nosql_vector_db",
+      "dist_systems",
+      "cloud_k8s"
+     ],
+     "target_tracks": [
+      "fullstack_backend",
+      "cloud_ops_sec"
+     ],
+     "source": "qwen_gen1",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    },
+    {
+     "action": "ADD_ELECTIVE",
+     "course_name": "鸿蒙应用开发与多端协同",
+     "credits": 2.0,
+     "delta_credits": 2.0,
+     "semester": 6,
+     "skills": [
+      "mobile_harmony",
+      "web_frontend"
+     ],
+     "target_tracks": [
+      "fullstack_backend"
+     ],
+     "source": "qwen_gen2",
+     "reason": "按岗位族核心缺口增设方向选修课"
+    }
+   ],
+   "track_electives": {
+    "fullstack_backend": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "鸿蒙应用开发与多端协同",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "软件测试基础与质量保证",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "ai_data": [
+     {
+      "course_name": "金融数据分析与软件",
+      "credits": 2.0,
+      "semester": 4
+     },
+     {
+      "course_name": "大数据处理技术与应用",
+      "credits": 2.0,
+      "semester": 7
+     },
+     {
+      "course_name": "深度学习导论与神经网络实践",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "大数据技术基础与应用",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ],
+    "systems_edge": [
+     {
+      "course_name": "数据挖掘技术与工具",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "软件测试基础与质量保证",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "嵌入式系统开发与应用",
+      "credits": 2.0,
+      "semester": 5
+     },
+     {
+      "course_name": "云原生数据架构与向量检索实战",
+      "credits": 2.0,
+      "semester": 6
+     },
+     {
+      "course_name": "鸿蒙应用开发与多端协同",
+      "credits": 2.0,
+      "semester": 6
+     }
+    ]
+   },
+   "capstone_actions_by_track": {
+    "fullstack_backend": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "fullstack_backend",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "分布式微服务与遗留系统重构实训",
+      "delta_credits": 0.0
+     }
+    ],
+    "cloud_ops_sec": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "cloud_ops_sec",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "云原生SRE与智能体运维实战",
+      "delta_credits": 0.0
+     }
+    ],
+    "ai_data": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "ai_data",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "端到端LLM应用与多模态数据工程",
+      "delta_credits": 0.0
+     }
+    ],
+    "systems_edge": [
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "Linux操作系统实践",
+      "credits": 2.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训二",
+      "credits": 4.0,
+      "semester": 5,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "综合项目实训三",
+      "credits": 4.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "专业实习（开发技能实 习）",
+      "credits": 1.0,
+      "semester": 6,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（开发技能提 升）",
+      "credits": 1.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业实习（系统开发实 训）",
+      "credits": 2.0,
+      "semester": 7,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     },
+     {
+      "action": "ORIENT_CAPSTONE",
+      "track": "systems_edge",
+      "course_name": "毕业设计",
+      "credits": 9.0,
+      "semester": 8,
+      "package_title": "具身智能芯片栈与边缘控制集成",
+      "delta_credits": 0.0
+     }
+    ]
+   },
+   "track_shares": {
+    "fullstack_backend": 0.36667,
+    "cloud_ops_sec": 0.27333,
+    "ai_data": 0.27,
+    "systems_edge": 0.09
+   },
+   "streaming_summary": {
+    "algorithm": "Student-Proposing Gale-Shapley Deferred Acceptance",
+    "decision_semester": 4,
+    "transfer_window_semester": 5,
+    "transfer_quota_rate": 0.1,
+    "n_students": 300,
+    "blocking_pairs": 0,
+    "is_stable": true,
+    "first_choice_satisfaction": 0.6333,
+    "top2_choice_satisfaction": 0.8433,
+    "max_utilization": 1.0,
+    "under_min_warnings": [
+     {
+      "track": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40
+     }
+    ],
+    "track_allocations": [
+     {
+      "id": "fullstack_backend",
+      "name": "后端与全栈分布式工程",
+      "assigned": 110,
+      "min_cap": 83,
+      "max_cap": 110,
+      "utilization": 1.0,
+      "demand_share": 0.3381,
+      "mean_score": 0.75
+     },
+     {
+      "id": "cloud_ops_sec",
+      "name": "云原生、测试运维与安全",
+      "assigned": 82,
+      "min_cap": 61,
+      "max_cap": 82,
+      "utilization": 1.0,
+      "demand_share": 0.2497,
+      "mean_score": 0.71
+     },
+     {
+      "id": "ai_data",
+      "name": "AI大模型与数据智能工程",
+      "assigned": 81,
+      "min_cap": 61,
+      "max_cap": 81,
+      "utilization": 1.0,
+      "demand_share": 0.2485,
+      "mean_score": 0.81
+     },
+     {
+      "id": "systems_edge",
+      "name": "系统底层、嵌入式与端侧智能",
+      "assigned": 27,
+      "min_cap": 40,
+      "max_cap": 55,
+      "utilization": 0.4909,
+      "demand_share": 0.1637,
+      "mean_score": 0.6
+     }
+    ],
+    "assignment": [
+     3,
+     1,
+     2,
+     1,
+     1,
+     3,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     1,
+     3,
+     1,
+     3,
+     3,
+     1,
+     2,
+     0,
+     1,
+     0,
+     0,
+     1,
+     1,
+     2,
+     0,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     2,
+     3,
+     1,
+     0,
+     2,
+     0,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     1,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     2,
+     2,
+     2,
+     0,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     2,
+     1,
+     3,
+     2,
+     2,
+     2,
+     3,
+     1,
+     2,
+     0,
+     2,
+     1,
+     0,
+     3,
+     2,
+     1,
+     3,
+     3,
+     3,
+     1,
+     2,
+     3,
+     0,
+     2,
+     0,
+     3,
+     3,
+     1,
+     3,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     0,
+     3,
+     0,
+     1,
+     0,
+     1,
+     1,
+     2,
+     1,
+     1,
+     0,
+     2,
+     1,
+     2,
+     2,
+     3,
+     3,
+     1,
+     1,
+     1,
+     2,
+     2,
+     2,
+     1,
+     0,
+     1,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     1,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     0,
+     0,
+     0,
+     3,
+     0,
+     0,
+     2,
+     2,
+     3,
+     0,
+     2,
+     2,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     2,
+     3,
+     1,
+     0,
+     0,
+     2,
+     1,
+     2,
+     1,
+     3,
+     0,
+     0,
+     1,
+     0,
+     2,
+     1,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     1,
+     2,
+     2,
+     1,
+     0,
+     0,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     0,
+     0,
+     2,
+     0,
+     2,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     0,
+     0,
+     1,
+     0,
+     2,
+     0,
+     3,
+     1,
+     0,
+     2,
+     2,
+     2,
+     1,
+     1,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     1,
+     1,
+     0,
+     0,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     0,
+     2,
+     2,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     2,
+     2,
+     2,
+     3,
+     1,
+     1,
+     2,
+     1,
+     0,
+     1,
+     0,
+     1,
+     2,
+     0,
+     0,
+     3,
+     0,
+     0,
+     1,
+     0,
+     1,
+     0,
+     0,
+     2,
+     0,
+     1,
+     2,
+     0,
+     2,
+     0,
+     2,
+     1,
+     1,
+     2,
+     0,
+     1,
+     1,
+     1,
+     0,
+     0,
+     2,
+     1
+    ]
+   }
+  }
+ }
+}

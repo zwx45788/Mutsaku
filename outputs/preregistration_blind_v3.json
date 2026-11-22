@@ -1,0 +1,76 @@
+{
+ "title": "EvoAlign-OS 预注册独立盲测 v3",
+ "registered_utc": "2026-11-21T23:23:48.127373Z",
+ "rationale": "北京 2025 回放在研发中被查看过，只能称历史回放；本测试在冻结全部方案与评估代码后，在从未读取过的人群上一次性检验预先声明的假设。",
+ "frozen_master_sha256": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+ "frozen_files_sha256": {
+  "verified_master_results.json": "040949350bd4f1d8bc516a362e4ac274af6d7feb0923a85f0a59b831edfb1190",
+  "plan_snapshots.json": "e67b975ae8f5d54d668e029898f4ac4224e1fd3d93728b5ea14e639183c26778",
+  "dynamic_kg.json": "2a9d455d60f032084d3ddafac9553542aa4f03b61ab881336c082e8289fdcd6c",
+  "src/analytics/track_evaluator.py": "7e0cbe876fe163bc160f63a9cac70f85e39d04c100eac3e5f2fad835852eb1b1",
+  "src/analytics/gap_engine.py": "7ee09b90a6dfa90d6eb992ffdddfb0af2c986f44039ee34a5fab956ec13b95c7"
+ },
+ "this_script_sha256": "3550ec4b0dbb42ba8bc42b49b892b9d6d37d021fb540cea062a04174d7444f82",
+ "data_source": "work/modern_data/catalog.duckdb",
+ "data_table": "jobs_technical",
+ "base_filter_sql": "year IN (2025, 2026) AND broad_bachelor_accessible_entry = TRUE",
+ "populations": {
+  "P1_jinji": {
+   "label": "津冀（天津+河北）2025–2026Q1 本科可及入门技术岗",
+   "where": "(work_city LIKE '%天津%' OR work_city LIKE '%河北%' OR work_city IN ('石家庄','保定','廊坊','唐山','秦皇岛','邯郸','邢台','张家口','承德','沧州','衡水'))"
+  },
+  "P2_national_ex_bj": {
+   "label": "京外全国 2025–2026Q1 本科可及入门技术岗",
+   "where": "(work_city NOT LIKE '%北京%')"
+  }
+ },
+ "pre_registration_data_access": "登记前仅执行过按城市的行数统计（COUNT），未读取任何岗位文本、技能或指标",
+ "programs": [
+  "BTBU_CS_2022",
+  "BTBU_AI_2022",
+  "BISTU_CS_2025"
+ ],
+ "plans": "plan_snapshots.json 中各专业 B0–B4 与 Full_EvoAlign_OS 的逐方向课程清单（冻结，不重新求解、不调用 LLM）",
+ "primary_metric": "jd_qual_rate_70（岗位级达标率，雇主等权）",
+ "analysis": "雇主聚类配对自助法，n_boot=600，seed=42，双侧 95% 百分位区间",
+ "hypotheses": [
+  {
+   "id": "H1",
+   "ref": "B0_Freeze",
+   "type": "superiority",
+   "margin": 0.0,
+   "text": "Full 的岗位级达标率高于现状冻结（配对 95% 区间下界 > 0）"
+  },
+  {
+   "id": "H2",
+   "ref": "B2_MultiTrack_Static",
+   "type": "superiority",
+   "margin": 0.0,
+   "text": "Full 高于多轨静态基线（下界 > 0）"
+  },
+  {
+   "id": "H3",
+   "ref": "B3_SingleShot_LLM",
+   "type": "superiority",
+   "margin": 0.0,
+   "text": "Full 高于单轮 LLM 基线（下界 > 0）"
+  },
+  {
+   "id": "H4",
+   "ref": "B4_BiLevel_NoGuard",
+   "type": "non_inferiority",
+   "margin": -0.02,
+   "text": "Full 不劣于关闭 GUARD 的双环（下界 > −2pp）"
+  }
+ ],
+ "decision_rule": "主结论以 P1 津冀为准，P2 为稳健性；每条假设在每个专业上单独判定，不做事后删除或替换；结果无论成立与否全部报告",
+ "one_shot": true,
+ "withdrawn_prior_registrations": [
+  {
+   "file": "preregistration_blind_v3.withdrawn_1.json",
+   "sha256": "ef8090fe5f2d48b2962a8ec5cbae93b9ac9f84101510adcd207ae66e21dfa9f4",
+   "reason": "登记时 run() 分析代码尚未完成（脚本哈希不覆盖最终分析代码）；在读取任何盲测数据之前撤回并以完整脚本重新登记"
+  }
+ ],
+ "preregistration_sha256": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7"
+}

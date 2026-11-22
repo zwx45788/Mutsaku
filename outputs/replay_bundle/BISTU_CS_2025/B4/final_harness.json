@@ -1,0 +1,765 @@
+{
+ "elective_pool": [
+  {
+   "course_name": "Java企业级Web应用开发",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "dsa"
+   ],
+   "extracted_skills": [
+    {
+     "id": "java_spring",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "web_frontend",
+     "weight": 0.25,
+     "bloom": 3
+    },
+    {
+     "id": "sql_rdbms",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "Linux系统管理与脚本编程",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "cloud_ops_sec",
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "os_kernel"
+   ],
+   "extracted_skills": [
+    {
+     "id": "linux_shell",
+     "weight": 0.65,
+     "bloom": 4
+    },
+    {
+     "id": "os_kernel",
+     "weight": 0.35,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "软件测试基础与质量保证",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "cloud_ops_sec",
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "soft_eng_arch"
+   ],
+   "extracted_skills": [
+    {
+     "id": "qa_testing",
+     "weight": 0.65,
+     "bloom": 4
+    },
+    {
+     "id": "soft_eng_arch",
+     "weight": 0.35,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "深度学习导论与神经网络实践",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.4,
+   "lab_units": 1.2,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "python_eng"
+   ],
+   "extracted_skills": [
+    {
+     "id": "deep_learning",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "ml_classic",
+     "weight": 0.25,
+     "bloom": 4
+    },
+    {
+     "id": "python_eng",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "大数据技术基础与应用",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "dsa"
+   ],
+   "extracted_skills": [
+    {
+     "id": "big_data_eng",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "data_mining_bi",
+     "weight": 0.45,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "嵌入式系统开发与应用",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "comp_arch"
+   ],
+   "extracted_skills": [
+    {
+     "id": "embedded_mcu",
+     "weight": 0.6,
+     "bloom": 4
+    },
+    {
+     "id": "c_cpp",
+     "weight": 0.4,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "现代系统编程与并发架构",
+   "credits": 3.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "c_cpp"
+   ],
+   "extracted_skills": [
+    {
+     "id": "golang_rust",
+     "weight": 0.8,
+     "bloom": 5.0
+    },
+    {
+     "id": "dist_systems",
+     "weight": 0.2,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen2"
+  },
+  {
+   "course_name": "大模型微调与RAG应用开发",
+   "credits": 3.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "ai_data",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "python_eng"
+   ],
+   "extracted_skills": [
+    {
+     "id": "llm_posttrain",
+     "weight": 0.6,
+     "bloom": 5.0
+    },
+    {
+     "id": "agent_rag",
+     "weight": 0.4,
+     "bloom": 5.0
+    }
+   ],
+   "source": "qwen_gen2"
+  },
+  {
+   "course_name": "嵌入式实时系统与信号处理",
+   "credits": 3.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "systems_edge",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "comp_arch"
+   ],
+   "extracted_skills": [
+    {
+     "id": "control_signal",
+     "weight": 0.5,
+     "bloom": 4.0
+    },
+    {
+     "id": "iot_edge",
+     "weight": 0.3,
+     "bloom": 4.0
+    },
+    {
+     "id": "embedded_mcu",
+     "weight": 0.2,
+     "bloom": 5.0
+    }
+   ],
+   "source": "qwen_gen2"
+  },
+  {
+   "course_name": "开源工程实践与内核贡献",
+   "credits": 2.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "cloud_ops_sec",
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "linux_shell"
+   ],
+   "extracted_skills": [
+    {
+     "id": "open_source_collab",
+     "weight": 0.7,
+     "bloom": 5.0
+    },
+    {
+     "id": "devops_sre",
+     "weight": 0.3,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen2"
+  },
+  {
+   "course_name": "计算机图形学与实时渲染基础",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "linear_algebra_opt"
+   ],
+   "extracted_skills": [
+    {
+     "id": "graphics_game",
+     "weight": 0.8,
+     "bloom": 4.0
+    },
+    {
+     "id": "cv_multimodal",
+     "weight": 0.2,
+     "bloom": 3.5
+    }
+   ],
+   "source": "qwen_gen3"
+  },
+  {
+   "course_name": "物联网边缘智能与ROS机器人开发",
+   "credits": 3.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "fullstack_backend",
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "c_cpp"
+   ],
+   "extracted_skills": [
+    {
+     "id": "robotics_embodied",
+     "weight": 0.5,
+     "bloom": 4.0
+    },
+    {
+     "id": "iot_edge",
+     "weight": 0.3,
+     "bloom": 4.0
+    },
+    {
+     "id": "control_signal",
+     "weight": 0.2,
+     "bloom": 3.5
+    }
+   ],
+   "source": "qwen_gen3"
+  },
+  {
+   "course_name": "企业级遗留系统集成与ERP架构",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "fullstack_backend",
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "sql_rdbms"
+   ],
+   "extracted_skills": [
+    {
+     "id": "legacy_erp_vb",
+     "weight": 0.7,
+     "bloom": 4.0
+    },
+    {
+     "id": "soft_eng_arch",
+     "weight": 0.3,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen3"
+  },
+  {
+   "course_name": "GPU并行计算与CUDA加速实战",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "ai_data",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "python_eng"
+   ],
+   "extracted_skills": [
+    {
+     "id": "parallel_gpu",
+     "weight": 0.9,
+     "bloom": 4.0
+    },
+    {
+     "id": "mlops_eval",
+     "weight": 0.1,
+     "bloom": 3.5
+    }
+   ],
+   "source": "qwen_gen3"
+  },
+  {
+   "course_name": "具身智能系统与ROS2实战",
+   "credits": 3.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "fullstack_backend",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "c_cpp"
+   ],
+   "extracted_skills": [
+    {
+     "id": "robotics_embodied",
+     "weight": 0.625,
+     "bloom": 5.0
+    },
+    {
+     "id": "control_signal",
+     "weight": 0.375,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen4"
+  },
+  {
+   "course_name": "计算机图形学与实时渲染引擎",
+   "credits": 3.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "linear_algebra_opt"
+   ],
+   "extracted_skills": [
+    {
+     "id": "graphics_game",
+     "weight": 0.75,
+     "bloom": 5.0
+    },
+    {
+     "id": "cv_multimodal",
+     "weight": 0.25,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen4"
+  },
+  {
+   "course_name": "端侧大模型推理与优化",
+   "credits": 2.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "systems_edge",
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "embedded_mcu"
+   ],
+   "extracted_skills": [
+    {
+     "id": "llm_posttrain",
+     "weight": 0.4,
+     "bloom": 5.0
+    },
+    {
+     "id": "iot_edge",
+     "weight": 0.4,
+     "bloom": 4.0
+    },
+    {
+     "id": "parallel_gpu",
+     "weight": 0.2,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen4"
+  }
+ ],
+ "capstone_packages": {
+  "fullstack_backend": {
+   "title": "分布式微服务与遗留系统集成实训",
+   "skills": [
+    {
+     "id": "dist_systems",
+     "weight": 0.2961,
+     "bloom": 5.0
+    },
+    {
+     "id": "agent_rag",
+     "weight": 0.2194,
+     "bloom": 5.0
+    },
+    {
+     "id": "golang_rust",
+     "weight": 0.206,
+     "bloom": 5.0
+    },
+    {
+     "id": "sql_rdbms",
+     "weight": 0.1755,
+     "bloom": 4.0
+    },
+    {
+     "id": "soft_eng_arch",
+     "weight": 0.103,
+     "bloom": 5.0
+    }
+   ]
+  },
+  "cloud_ops_sec": {
+   "title": "云原生安全运维与信号处理集成",
+   "skills": [
+    {
+     "id": "control_signal",
+     "weight": 0.3008,
+     "bloom": 5.0
+    },
+    {
+     "id": "cyber_sec",
+     "weight": 0.2096,
+     "bloom": 5.0
+    },
+    {
+     "id": "cloud_k8s",
+     "weight": 0.2035,
+     "bloom": 5.0
+    },
+    {
+     "id": "devops_sre",
+     "weight": 0.1685,
+     "bloom": 5.0
+    },
+    {
+     "id": "qa_testing",
+     "weight": 0.1176,
+     "bloom": 4.0
+    }
+   ]
+  },
+  "ai_data": {
+   "title": "多模态数据智能与图形仿真平台",
+   "skills": [
+    {
+     "id": "graphics_game",
+     "weight": 0.2998,
+     "bloom": 5.0
+    },
+    {
+     "id": "llm_posttrain",
+     "weight": 0.224,
+     "bloom": 5.0
+    },
+    {
+     "id": "big_data_eng",
+     "weight": 0.2066,
+     "bloom": 5.0
+    },
+    {
+     "id": "data_mining_bi",
+     "weight": 0.1416,
+     "bloom": 4.0
+    },
+    {
+     "id": "mlops_eval",
+     "weight": 0.128,
+     "bloom": 4.0
+    }
+   ]
+  },
+  "systems_edge": {
+   "title": "端侧智能体与嵌入式AI部署",
+   "skills": [
+    {
+     "id": "eda_ic_design",
+     "weight": 0.2478,
+     "bloom": 5.0
+    },
+    {
+     "id": "llm_posttrain",
+     "weight": 0.2147,
+     "bloom": 5.0
+    },
+    {
+     "id": "robotics_embodied",
+     "weight": 0.2065,
+     "bloom": 5.0
+    },
+    {
+     "id": "c_cpp",
+     "weight": 0.1658,
+     "bloom": 5.0
+    },
+    {
+     "id": "control_signal",
+     "weight": 0.1652,
+     "bloom": 4.0
+    }
+   ]
+  }
+ },
+ "syllabus_modules": [
+  {
+   "base_index": 54,
+   "course_name": "汇编语言与微机接口技术",
+   "target_skill": "embedded_mcu",
+   "title": "微机接口与实时信号采集实验",
+   "instruction_hours": 16,
+   "planned_bloom": 4.5,
+   "student_project": "基于STM32的传感器数据流实时解析与滤波算法实现",
+   "assessment": "代码规范性(20%) + 信号处理精度(40%) + 实时性指标达标率(40%)",
+   "domain_coherent": true,
+   "source": "qwen_gen2"
+  },
+  {
+   "base_index": 55,
+   "course_name": "操作系统A",
+   "target_skill": "os_kernel",
+   "title": "Linux内核模块开发与容器底层原理",
+   "instruction_hours": 16,
+   "planned_bloom": 4.5,
+   "student_project": "编写简易字符设备驱动并分析Docker Namespace隔离机制",
+   "assessment": "驱动加载稳定性(30%) + 源码分析报告深度(40%) + 实验复现成功率(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen2"
+  },
+  {
+   "base_index": 38,
+   "course_name": "数据库原理与应用",
+   "target_skill": "sql_rdbms",
+   "title": "高并发数据库事务与NoSQL混合存储",
+   "instruction_hours": 16,
+   "planned_bloom": 4.5,
+   "student_project": "设计电商秒杀场景下的MySQL锁优化方案及Redis缓存一致性策略",
+   "assessment": "TPS/QPS性能提升幅度(40%) + 数据一致性验证(30%) + 架构文档完整性(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen2"
+  },
+  {
+   "base_index": 40,
+   "course_name": "人工智能原理与应用",
+   "target_skill": "agent_rag",
+   "title": "LLM智能体编排与检索增强生成实战",
+   "instruction_hours": 16,
+   "planned_bloom": 4.5,
+   "student_project": "构建基于LangChain的企业知识库问答Agent，包含工具调用与记忆管理",
+   "assessment": "回答准确率(F1 Score)(40%) + 幻觉抑制效果(30%) + 响应延迟优化(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen2"
+  },
+  {
+   "base_index": 67,
+   "course_name": "计算机体系结构",
+   "target_skill": "comp_arch",
+   "title": "异构计算体系结构与GPU并行加速",
+   "instruction_hours": 16,
+   "planned_bloom": 4.5,
+   "student_project": "对比CPU/GPU在矩阵运算中的性能差异并实现CUDA核函数优化",
+   "assessment": "加速比(Acceleration Ratio)(50%) + 内存带宽利用率分析(30%) + 代码优化报告(20%)",
+   "domain_coherent": true,
+   "source": "qwen_gen2"
+  },
+  {
+   "base_index": 38,
+   "course_name": "数据库原理与应用",
+   "target_skill": "nosql_vector_db",
+   "title": "向量数据库原理与非结构化数据存储",
+   "instruction_hours": 16,
+   "planned_bloom": 4.0,
+   "student_project": "使用Milvus/Pinecone实现图像特征向量存储与相似度搜索",
+   "assessment": "索引构建效率(30%) + 查询响应时间基准测试(40%) + SQL/NoSQL混合查询优化(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen3"
+  },
+  {
+   "base_index": 55,
+   "course_name": "操作系统A",
+   "target_skill": "linux_shell",
+   "title": "Linux内核模块加载与Shell脚本自动化运维",
+   "instruction_hours": 16,
+   "planned_bloom": 4.0,
+   "student_project": "编写Bash脚本实现系统监控告警及简单字符设备驱动加载",
+   "assessment": "脚本健壮性测试(40%) + 内核模块编译成功(30%) + 运维流程文档(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen3"
+  },
+  {
+   "base_index": 66,
+   "course_name": "编译原理",
+   "target_skill": "compiler_pl",
+   "title": "LLVM IR生成与中间表示优化",
+   "instruction_hours": 16,
+   "planned_bloom": 5.0,
+   "student_project": "实现一个小型语言子集到LLVM IR的编译器前端",
+   "assessment": "IR正确性验证(40%) + 优化Pass实现(30%) + 性能基准测试(30%)",
+   "domain_coherent": true,
+   "source": "qwen_gen4"
+  }
+ ],
+ "policy": {
+  "w_readiness": 1.0,
+  "w_dist": 0.02,
+  "w_emerg": 0.2,
+  "capstone_orient_ratio": 0.58,
+  "module_fraction": 0.36,
+  "swap_cap": 20.0,
+  "upgrade_cap": 7,
+  "fte_cap": 5.8,
+  "lab_cap": 18.0,
+  "max_menu_expand_credits": 20.0,
+  "track_priority_multipliers": {
+   "fullstack_backend": 2.8,
+   "cloud_ops_sec": 1.8,
+   "ai_data": 0.2,
+   "systems_edge": 0.12
+  },
+  "solver_time": 1.6
+ }
+}

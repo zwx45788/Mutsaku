@@ -1,0 +1,216 @@
+{
+ "program_id": "BTBU_CS_2022",
+ "mode": "single_shot_llm",
+ "generations_run": 1,
+ "accepted_promotions": 1,
+ "guard_rollbacks": 0,
+ "trace_final_sha256": "14f4ea40782d44438cd0a7aba8d9a985e17372e389cd27c302358240f40f5c46",
+ "history": [
+  {
+   "generation": 0,
+   "event": "INIT_H0",
+   "accepted": true,
+   "dev_score": 0.69692,
+   "active_best_score": 0.69692,
+   "dev_metrics": {
+    "jd_qual_rate_70": 0.71149,
+    "jd_mean_readiness": 0.78361,
+    "jd_skill_pass_rate": 0.84435,
+    "track_l1_overlap": 0.48626,
+    "track_ot_alignment": 0.7321,
+    "track_bloom_fidelity": 0.73192,
+    "track_emerging_readiness": 0.40251,
+    "agg_l1_overlap": 0.5483,
+    "agg_ot_alignment": 0.76842,
+    "track_capacity_match": 0.90499,
+    "worst_track_readiness": 0.70526,
+    "worst_track_qual_70": 0.52476,
+    "per_track": {
+     "fullstack_backend": {
+      "name_zh": "后端与全栈分布式工程",
+      "demand_share": 0.3602,
+      "student_share": 0.3667,
+      "jd_qual_rate_70": 0.74679,
+      "jd_mean_readiness": 0.78524,
+      "l1_overlap": 0.51771,
+      "ot_alignment": 0.74311,
+      "bloom_fidelity": 0.73497,
+      "emerging_readiness": 0.32758,
+      "n_ads": 660
+     },
+     "cloud_ops_sec": {
+      "name_zh": "云原生、测试运维与安全",
+      "demand_share": 0.3004,
+      "student_share": 0.2733,
+      "jd_qual_rate_70": 0.82411,
+      "jd_mean_readiness": 0.83569,
+      "l1_overlap": 0.43135,
+      "ot_alignment": 0.70527,
+      "bloom_fidelity": 0.79277,
+      "emerging_readiness": 0.59662,
+      "n_ads": 456
+     },
+     "ai_data": {
+      "name_zh": "AI大模型与数据智能工程",
+      "demand_share": 0.1814,
+      "student_share": 0.27,
+      "jd_qual_rate_70": 0.52476,
+      "jd_mean_readiness": 0.70526,
+      "l1_overlap": 0.48719,
+      "ot_alignment": 0.75059,
+      "bloom_fidelity": 0.62618,
+      "emerging_readiness": 0.26652,
+      "n_ads": 368
+     },
+     "systems_edge": {
+      "name_zh": "系统底层、嵌入式与端侧智能",
+      "demand_share": 0.158,
+      "student_share": 0.09,
+      "jd_qual_rate_70": 0.65119,
+      "jd_mean_readiness": 0.77782,
+      "l1_overlap": 0.51792,
+      "ot_alignment": 0.73679,
+      "bloom_fidelity": 0.73067,
+      "emerging_readiness": 0.36043,
+      "n_ads": 234
+     }
+    }
+   },
+   "recent_train_qual": 0.6711,
+   "new_courses_proposed": [],
+   "qwen_accepted_in_plan": [],
+   "meta_rationale": "初始化多轨道基准 Harness H0（常规 6 门选修池 + 无实训定向）",
+   "guard_decision": {
+    "passed": true,
+    "reason": "Baseline H0 initialized"
+   },
+   "chain_hash": "ec8a3de772a3737a"
+  },
+  {
+   "generation": 1,
+   "event": "PROMOTED_G1",
+   "accepted": true,
+   "dev_score": 0.71301,
+   "active_best_score": 0.71301,
+   "dev_metrics": {
+    "jd_qual_rate_70": 0.73937,
+    "jd_mean_readiness": 0.79664,
+    "jd_skill_pass_rate": 0.8565,
+    "track_l1_overlap": 0.48929,
+    "track_ot_alignment": 0.73318,
+    "track_bloom_fidelity": 0.751,
+    "track_emerging_readiness": 0.49826,
+    "agg_l1_overlap": 0.55209,
+    "agg_ot_alignment": 0.76957,
+    "track_capacity_match": 0.90499,
+    "worst_track_readiness": 0.70784,
+    "worst_track_qual_70": 0.57042,
+    "per_track": {
+     "fullstack_backend": {
+      "name_zh": "后端与全栈分布式工程",
+      "demand_share": 0.3602,
+      "student_share": 0.3667,
+      "jd_qual_rate_70": 0.78613,
+      "jd_mean_readiness": 0.80336,
+      "l1_overlap": 0.51838,
+      "ot_alignment": 0.74119,
+      "bloom_fidelity": 0.76486,
+      "emerging_readiness": 0.47006,
+      "n_ads": 660
+     },
+     "cloud_ops_sec": {
+      "name_zh": "云原生、测试运维与安全",
+      "demand_share": 0.3004,
+      "student_share": 0.2733,
+      "jd_qual_rate_70": 0.82585,
+      "jd_mean_readiness": 0.84345,
+      "l1_overlap": 0.43389,
+      "ot_alignment": 0.70628,
+      "bloom_fidelity": 0.80157,
+      "emerging_readiness": 0.64062,
+      "n_ads": 456
+     },
+     "ai_data": {
+      "name_zh": "AI大模型与数据智能工程",
+      "demand_share": 0.1814,
+      "student_share": 0.27,
+      "jd_qual_rate_70": 0.57042,
+      "jd_mean_readiness": 0.70784,
+      "l1_overlap": 0.491,
+      "ot_alignment": 0.75477,
+      "bloom_fidelity": 0.63449,
+      "emerging_readiness": 0.31834,
+      "n_ads": 368
+     },
+     "systems_edge": {
+      "name_zh": "系统底层、嵌入式与端侧智能",
+      "demand_share": 0.158,
+      "student_share": 0.09,
+      "jd_qual_rate_70": 0.68056,
+      "jd_mean_readiness": 0.80132,
+      "l1_overlap": 0.52633,
+      "ot_alignment": 0.74126,
+      "bloom_fidelity": 0.75706,
+      "emerging_readiness": 0.49853,
+      "n_ads": 234
+     }
+    }
+   },
+   "recent_train_qual": 0.70594,
+   "new_courses_proposed": [
+    "云原生数据架构与向量检索实战",
+    "大模型应用工程：RAG与Agent开发",
+    "具身智能系统：ROS与边缘控制"
+   ],
+   "qwen_accepted_in_plan": [
+    "云原生数据架构与向量检索实战",
+    "具身智能系统：ROS与边缘控制"
+   ],
+   "meta_rationale": "针对Gen1阶段后端、AI及系统轨道的高频技能缺口（特别是NoSQL/向量库、LLM微调/NLP、具身智能/ROS），创生3门高Bloom深度选修课以填补0.0就绪度空白，并升级数据库与操作系统核心课程模块以强化分布式与容器化能力。",
+   "guard_decision": {
+    "passed": true,
+    "reason": "GUARD_PASSED: dev_score 0.6969->...->0.7130 (delta=+0.0161), qual70=73.94%, worst_tk=70.78%"
+   },
+   "candidate_harness": {
+    "elective_pool": [
+     "Java企业级Web应用开发",
+     "Linux系统管理与脚本编程",
+     "软件测试基础与质量保证",
+     "深度学习导论与神经网络实践",
+     "大数据技术基础与应用",
+     "嵌入式系统开发与应用",
+     "云原生数据架构与向量检索实战",
+     "大模型应用工程：RAG与Agent开发",
+     "具身智能系统：ROS与边缘控制"
+    ],
+    "capstone_packages": {
+     "fullstack_backend": "常规软件开发综合实训",
+     "cloud_ops_sec": "常规系统运维与测试实训",
+     "ai_data": "常规机器学习与数据分析实训",
+     "systems_edge": "常规嵌入式与底层编程实训"
+    },
+    "syllabus_modules": [],
+    "policy": {
+     "w_readiness": 1.0,
+     "w_dist": 0.45,
+     "w_emerg": 0.2,
+     "capstone_orient_ratio": 0.0,
+     "module_fraction": 0.28,
+     "swap_cap": 16.0,
+     "upgrade_cap": 7,
+     "fte_cap": 4.8,
+     "lab_cap": 14.0,
+     "max_menu_expand_credits": 14.0,
+     "track_priority_multipliers": {
+      "fullstack_backend": 1.0,
+      "cloud_ops_sec": 1.0,
+      "ai_data": 1.0,
+      "systems_edge": 1.0
+     }
+    },
+    "genome_sha256": "ecc785591a950062d565555cdace8737ef11e65dbcc1272a24424f29d2f074af"
+   },
+   "chain_hash": "14f4ea40782d4443"
+  }
+ ]
+}

@@ -1,0 +1,803 @@
+{
+ "preregistration_file": "preregistration_blind_v3.json",
+ "preregistration_sha256": "0405330c886ea285dbdd9db176335343e7cbf1458bfcedcd480df8598a6e5ee7",
+ "registered_utc": "2026-11-21T23:23:48.127373Z",
+ "run_started_utc": "2026-11-21T23:24:02.571401Z",
+ "finished_utc": "2026-11-21T23:24:31.528056Z",
+ "frozen_master_sha256": "de9a8115c9cb11f92432052409ecd3f1b9b8333363a23c07169d03c5cde012e1",
+ "sealed_data": {
+  "P1_jinji": {
+   "path": "data/blind_holdout/sealed_v3/P1_jinji.parquet",
+   "sha256": "b3d25632ca5ffd653a6423f3fed819f40fda25599d8b2e8b0e4d16d80948b95e",
+   "extracted_utc": "2026-11-21T23:24:03.345561Z"
+  },
+  "P2_national_ex_bj": {
+   "path": "data/blind_holdout/sealed_v3/P2_national_ex_bj.parquet",
+   "sha256": "a545285ca662518bde51dd7f8975b79c4635dfeb3d55e737f2b5de926b806f9f",
+   "extracted_utc": "2026-11-21T23:24:04.307765Z"
+  }
+ },
+ "hypotheses_supported": {
+  "P1_jinji": "12/12",
+  "P2_national_ex_bj": "12/12"
+ },
+ "results": {
+  "P1_jinji": {
+   "label": "津冀（天津+河北）2025–2026Q1 本科可及入门技术岗",
+   "n_ads": 1004,
+   "n_employers": 339,
+   "track_demand_shares": {
+    "fullstack_backend": 0.29811,
+    "cloud_ops_sec": 0.44553,
+    "ai_data": 0.14448,
+    "systems_edge": 0.11189
+   },
+   "programs": {
+    "BTBU_CS_2022": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.46081,
+       "jd_mean_readiness": 0.68057,
+       "worst_track_readiness": 0.60419,
+       "track_l1_overlap": 0.452,
+       "track_ot_alignment": 0.71168
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.73175,
+       "jd_mean_readiness": 0.76247,
+       "worst_track_readiness": 0.71481,
+       "track_l1_overlap": 0.45694,
+       "track_ot_alignment": 0.71368
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.75488,
+       "jd_mean_readiness": 0.77467,
+       "worst_track_readiness": 0.74351,
+       "track_l1_overlap": 0.46292,
+       "track_ot_alignment": 0.71665
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.79859,
+       "jd_mean_readiness": 0.81681,
+       "worst_track_readiness": 0.75151,
+       "track_l1_overlap": 0.47224,
+       "track_ot_alignment": 0.72095
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.86471,
+       "jd_mean_readiness": 0.84359,
+       "worst_track_readiness": 0.815,
+       "track_l1_overlap": 0.49412,
+       "track_ot_alignment": 0.72761
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.86415,
+       "jd_mean_readiness": 0.84456,
+       "worst_track_readiness": 0.815,
+       "track_l1_overlap": 0.49559,
+       "track_ot_alignment": 0.72681
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.40334,
+       "ci95_lo": 0.34328,
+       "ci95_hi": 0.46318,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.13239,
+       "ci95_lo": 0.08849,
+       "ci95_hi": 0.17747,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.10927,
+       "ci95_lo": 0.06797,
+       "ci95_hi": 0.15021,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.06555,
+       "ci95_lo": 0.02804,
+       "ci95_hi": 0.10367,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": -0.00056,
+       "ci95_lo": -0.0037,
+       "ci95_hi": 0.00196,
+       "significant_positive": false,
+       "p_boot_one_sided": 0.68
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.40334,
+       "ci95_lo": 0.34328,
+       "ci95_hi": 0.46318,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.10927,
+       "ci95_lo": 0.06797,
+       "ci95_hi": 0.15021,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.06555,
+       "ci95_lo": 0.02804,
+       "ci95_hi": 0.10367,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": -0.00056,
+       "ci95_lo": -0.0037,
+       "ci95_hi": 0.00196,
+       "supported": true
+      }
+     ]
+    },
+    "BTBU_AI_2022": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.12711,
+       "jd_mean_readiness": 0.48812,
+       "worst_track_readiness": 0.41644,
+       "track_l1_overlap": 0.3379,
+       "track_ot_alignment": 0.63665
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.44958,
+       "jd_mean_readiness": 0.68109,
+       "worst_track_readiness": 0.60613,
+       "track_l1_overlap": 0.38733,
+       "track_ot_alignment": 0.66492
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.49492,
+       "jd_mean_readiness": 0.69959,
+       "worst_track_readiness": 0.60613,
+       "track_l1_overlap": 0.39125,
+       "track_ot_alignment": 0.66728
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.54197,
+       "jd_mean_readiness": 0.73652,
+       "worst_track_readiness": 0.66318,
+       "track_l1_overlap": 0.39834,
+       "track_ot_alignment": 0.67098
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.77299,
+       "jd_mean_readiness": 0.81812,
+       "worst_track_readiness": 0.73754,
+       "track_l1_overlap": 0.41686,
+       "track_ot_alignment": 0.67977
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.84501,
+       "jd_mean_readiness": 0.82215,
+       "worst_track_readiness": 0.77357,
+       "track_l1_overlap": 0.43807,
+       "track_ot_alignment": 0.68687
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.7179,
+       "ci95_lo": 0.66273,
+       "ci95_hi": 0.765,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.39543,
+       "ci95_lo": 0.33859,
+       "ci95_hi": 0.4538,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.35009,
+       "ci95_lo": 0.29769,
+       "ci95_hi": 0.40435,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.30305,
+       "ci95_lo": 0.25406,
+       "ci95_hi": 0.35334,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": 0.07202,
+       "ci95_lo": 0.03714,
+       "ci95_hi": 0.10464,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.7179,
+       "ci95_lo": 0.66273,
+       "ci95_hi": 0.765,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.35009,
+       "ci95_lo": 0.29769,
+       "ci95_hi": 0.40435,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.30305,
+       "ci95_lo": 0.25406,
+       "ci95_hi": 0.35334,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": 0.07202,
+       "ci95_lo": 0.03714,
+       "ci95_hi": 0.10464,
+       "supported": true
+      }
+     ]
+    },
+    "BISTU_CS_2025": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.31253,
+       "jd_mean_readiness": 0.60891,
+       "worst_track_readiness": 0.48717,
+       "track_l1_overlap": 0.45893,
+       "track_ot_alignment": 0.70769
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.78603,
+       "jd_mean_readiness": 0.78989,
+       "worst_track_readiness": 0.69344,
+       "track_l1_overlap": 0.49085,
+       "track_ot_alignment": 0.72244
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.80312,
+       "jd_mean_readiness": 0.80185,
+       "worst_track_readiness": 0.70382,
+       "track_l1_overlap": 0.49986,
+       "track_ot_alignment": 0.72586
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.79963,
+       "jd_mean_readiness": 0.79988,
+       "worst_track_readiness": 0.70301,
+       "track_l1_overlap": 0.49927,
+       "track_ot_alignment": 0.72555
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.87987,
+       "jd_mean_readiness": 0.84571,
+       "worst_track_readiness": 0.78053,
+       "track_l1_overlap": 0.52113,
+       "track_ot_alignment": 0.73396
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.88048,
+       "jd_mean_readiness": 0.84778,
+       "worst_track_readiness": 0.78288,
+       "track_l1_overlap": 0.52925,
+       "track_ot_alignment": 0.73787
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.56796,
+       "ci95_lo": 0.5115,
+       "ci95_hi": 0.61943,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.09446,
+       "ci95_lo": 0.05907,
+       "ci95_hi": 0.13404,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.07736,
+       "ci95_lo": 0.0464,
+       "ci95_hi": 0.10937,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.08085,
+       "ci95_lo": 0.04759,
+       "ci95_hi": 0.11406,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": 0.00061,
+       "ci95_lo": 0.0,
+       "ci95_hi": 0.00186,
+       "significant_positive": false,
+       "p_boot_one_sided": 0.3667
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.56796,
+       "ci95_lo": 0.5115,
+       "ci95_hi": 0.61943,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.07736,
+       "ci95_lo": 0.0464,
+       "ci95_hi": 0.10937,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.08085,
+       "ci95_lo": 0.04759,
+       "ci95_hi": 0.11406,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": 0.00061,
+       "ci95_lo": 0.0,
+       "ci95_hi": 0.00186,
+       "supported": true
+      }
+     ]
+    }
+   }
+  },
+  "P2_national_ex_bj": {
+   "label": "京外全国 2025–2026Q1 本科可及入门技术岗",
+   "n_ads": 28238,
+   "n_employers": 7273,
+   "track_demand_shares": {
+    "fullstack_backend": 0.3251,
+    "cloud_ops_sec": 0.35654,
+    "ai_data": 0.17197,
+    "systems_edge": 0.14639
+   },
+   "programs": {
+    "BTBU_CS_2022": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.44669,
+       "jd_mean_readiness": 0.65138,
+       "worst_track_readiness": 0.57029,
+       "track_l1_overlap": 0.48163,
+       "track_ot_alignment": 0.72859
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.68428,
+       "jd_mean_readiness": 0.74458,
+       "worst_track_readiness": 0.67952,
+       "track_l1_overlap": 0.4961,
+       "track_ot_alignment": 0.73498
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.70562,
+       "jd_mean_readiness": 0.76376,
+       "worst_track_readiness": 0.68788,
+       "track_l1_overlap": 0.50251,
+       "track_ot_alignment": 0.73804
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.71139,
+       "jd_mean_readiness": 0.78634,
+       "worst_track_readiness": 0.68952,
+       "track_l1_overlap": 0.50943,
+       "track_ot_alignment": 0.7412
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.81116,
+       "jd_mean_readiness": 0.82586,
+       "worst_track_readiness": 0.78571,
+       "track_l1_overlap": 0.53449,
+       "track_ot_alignment": 0.75075
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.81091,
+       "jd_mean_readiness": 0.82738,
+       "worst_track_readiness": 0.78571,
+       "track_l1_overlap": 0.53531,
+       "track_ot_alignment": 0.75025
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.36422,
+       "ci95_lo": 0.35208,
+       "ci95_hi": 0.37678,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.12664,
+       "ci95_lo": 0.11655,
+       "ci95_hi": 0.1366,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.10529,
+       "ci95_lo": 0.09562,
+       "ci95_hi": 0.11479,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.09953,
+       "ci95_lo": 0.09084,
+       "ci95_hi": 0.10789,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": -0.00024,
+       "ci95_lo": -0.00147,
+       "ci95_hi": 0.00109,
+       "significant_positive": false,
+       "p_boot_one_sided": 0.6367
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.36422,
+       "ci95_lo": 0.35208,
+       "ci95_hi": 0.37678,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.10529,
+       "ci95_lo": 0.09562,
+       "ci95_hi": 0.11479,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.09953,
+       "ci95_lo": 0.09084,
+       "ci95_hi": 0.10789,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": -0.00024,
+       "ci95_lo": -0.00147,
+       "ci95_hi": 0.00109,
+       "supported": true
+      }
+     ]
+    },
+    "BTBU_AI_2022": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.13769,
+       "jd_mean_readiness": 0.49373,
+       "worst_track_readiness": 0.44551,
+       "track_l1_overlap": 0.38604,
+       "track_ot_alignment": 0.66235
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.41528,
+       "jd_mean_readiness": 0.65144,
+       "worst_track_readiness": 0.62099,
+       "track_l1_overlap": 0.43395,
+       "track_ot_alignment": 0.69038
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.44924,
+       "jd_mean_readiness": 0.67702,
+       "worst_track_readiness": 0.62099,
+       "track_l1_overlap": 0.43853,
+       "track_ot_alignment": 0.6926
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.51126,
+       "jd_mean_readiness": 0.70961,
+       "worst_track_readiness": 0.65985,
+       "track_l1_overlap": 0.44801,
+       "track_ot_alignment": 0.69707
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.75295,
+       "jd_mean_readiness": 0.79364,
+       "worst_track_readiness": 0.72935,
+       "track_l1_overlap": 0.4628,
+       "track_ot_alignment": 0.70526
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.81191,
+       "jd_mean_readiness": 0.80811,
+       "worst_track_readiness": 0.76529,
+       "track_l1_overlap": 0.47727,
+       "track_ot_alignment": 0.71142
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.67421,
+       "ci95_lo": 0.6627,
+       "ci95_hi": 0.68656,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.39662,
+       "ci95_lo": 0.3847,
+       "ci95_hi": 0.40816,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.36266,
+       "ci95_lo": 0.35006,
+       "ci95_hi": 0.37454,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.30064,
+       "ci95_lo": 0.28945,
+       "ci95_hi": 0.31233,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": 0.05895,
+       "ci95_lo": 0.05205,
+       "ci95_hi": 0.06663,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.67421,
+       "ci95_lo": 0.6627,
+       "ci95_hi": 0.68656,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.36266,
+       "ci95_lo": 0.35006,
+       "ci95_hi": 0.37454,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.30064,
+       "ci95_lo": 0.28945,
+       "ci95_hi": 0.31233,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": 0.05895,
+       "ci95_lo": 0.05205,
+       "ci95_hi": 0.06663,
+       "supported": true
+      }
+     ]
+    },
+    "BISTU_CS_2025": {
+     "metrics": {
+      "B0_Freeze": {
+       "jd_qual_rate_70": 0.32934,
+       "jd_mean_readiness": 0.60095,
+       "worst_track_readiness": 0.48243,
+       "track_l1_overlap": 0.49008,
+       "track_ot_alignment": 0.72513
+      },
+      "B1_SingleTrack_MILP": {
+       "jd_qual_rate_70": 0.69307,
+       "jd_mean_readiness": 0.74985,
+       "worst_track_readiness": 0.67486,
+       "track_l1_overlap": 0.52307,
+       "track_ot_alignment": 0.74167
+      },
+      "B2_MultiTrack_Static": {
+       "jd_qual_rate_70": 0.72246,
+       "jd_mean_readiness": 0.76839,
+       "worst_track_readiness": 0.70511,
+       "track_l1_overlap": 0.54244,
+       "track_ot_alignment": 0.75036
+      },
+      "B3_SingleShot_LLM": {
+       "jd_qual_rate_70": 0.72021,
+       "jd_mean_readiness": 0.76687,
+       "worst_track_readiness": 0.70413,
+       "track_l1_overlap": 0.54188,
+       "track_ot_alignment": 0.75005
+      },
+      "B4_BiLevel_NoGuard": {
+       "jd_qual_rate_70": 0.81492,
+       "jd_mean_readiness": 0.81522,
+       "worst_track_readiness": 0.76374,
+       "track_l1_overlap": 0.55488,
+       "track_ot_alignment": 0.75623
+      },
+      "Full_EvoAlign_OS": {
+       "jd_qual_rate_70": 0.82261,
+       "jd_mean_readiness": 0.81931,
+       "worst_track_readiness": 0.76645,
+       "track_l1_overlap": 0.56328,
+       "track_ot_alignment": 0.76026
+      }
+     },
+     "paired_qual_ci95_full_minus": {
+      "B0_Freeze": {
+       "delta": 0.49326,
+       "ci95_lo": 0.48203,
+       "ci95_hi": 0.50469,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B1_SingleTrack_MILP": {
+       "delta": 0.12954,
+       "ci95_lo": 0.12069,
+       "ci95_hi": 0.13779,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B2_MultiTrack_Static": {
+       "delta": 0.10014,
+       "ci95_lo": 0.09147,
+       "ci95_hi": 0.10861,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B3_SingleShot_LLM": {
+       "delta": 0.1024,
+       "ci95_lo": 0.09403,
+       "ci95_hi": 0.1107,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      },
+      "B4_BiLevel_NoGuard": {
+       "delta": 0.00769,
+       "ci95_lo": 0.00483,
+       "ci95_hi": 0.01061,
+       "significant_positive": true,
+       "p_boot_one_sided": 0.0
+      }
+     },
+     "hypotheses": [
+      {
+       "id": "H1",
+       "ref": "B0_Freeze",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.49326,
+       "ci95_lo": 0.48203,
+       "ci95_hi": 0.50469,
+       "supported": true
+      },
+      {
+       "id": "H2",
+       "ref": "B2_MultiTrack_Static",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.10014,
+       "ci95_lo": 0.09147,
+       "ci95_hi": 0.10861,
+       "supported": true
+      },
+      {
+       "id": "H3",
+       "ref": "B3_SingleShot_LLM",
+       "type": "superiority",
+       "margin": 0.0,
+       "delta": 0.1024,
+       "ci95_lo": 0.09403,
+       "ci95_hi": 0.1107,
+       "supported": true
+      },
+      {
+       "id": "H4",
+       "ref": "B4_BiLevel_NoGuard",
+       "type": "non_inferiority",
+       "margin": -0.02,
+       "delta": 0.00769,
+       "ci95_lo": 0.00483,
+       "ci95_hi": 0.01061,
+       "supported": true
+      }
+     ]
+    }
+   }
+  }
+ },
+ "result_sha256": "5622c84fbe57cfa2961a42f91e14133e61a18b1bbe25e72d16e9d0efc49f8073"
+}

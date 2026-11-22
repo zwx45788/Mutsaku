@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EvoAlign-OS v2 · 产教智对双环多轨道自进化决策台</title>
+<style>
+  :root {
+    --navy: #152D42;
+    --teal: #0D9488;
+    --blue: #2563EB;
+    --amber: #D97706;
+    --rust: #C2410C;
+    --purple: #7C3AED;
+    --bg: #F4F7FB;
+    --card: #FFFFFF;
+    --border: #E2E8F0;
+    --text: #1E293B;
+    --muted: #64748B;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif; background: var(--bg); color: var(--text); line-height: 1.55; }
+  header { background: linear-gradient(135deg, #0F2337 0%, #1B365D 55%, #0F766E 100%); color: #fff; padding: 18px 28px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; box-shadow: 0 3px 14px rgba(15,35,55,0.18); }
+  header h1 { font-size: 20px; font-weight: 700; letter-spacing: 0.3px; }
+  header .sub { font-size: 12.5px; color: #CBD5E1; margin-top: 3px; }
+  .badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .badge { background: rgba(255,255,255,0.14); border: 1px solid rgba(255,255,255,0.28); border-radius: 999px; padding: 4px 12px; font-size: 12px; color: #fff; }
+  .badge.ok { background: rgba(13,148,136,0.38); border-color: #5EEAD4; }
+  nav { background: #fff; border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; gap: 4px; overflow-x: auto; position: sticky; top: 0; z-index: 20; }
+  nav button { background: none; border: none; border-bottom: 3px solid transparent; padding: 12px 15px; font-size: 13.5px; font-weight: 600; color: var(--muted); cursor: pointer; white-space: nowrap; transition: all 0.15s; }
+  nav button:hover { color: var(--navy); }
+  nav button.active { color: var(--teal); border-bottom-color: var(--teal); }
+  main { max-width: 1420px; margin: 18px auto 48px; padding: 0 22px; }
+  .tab { display: none; }
+  .tab.active { display: block; }
+  .grid { display: grid; gap: 16px; }
+  .g4 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
+  .g2 { grid-template-columns: repeat(auto-fit, minmax(460px, 1fr)); }
+  .card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px 20px; box-shadow: 0 1px 4px rgba(15,23,42,0.04); }
+  .card h2 { font-size: 15.5px; color: var(--navy); margin-bottom: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
+  .card h3 { font-size: 13.8px; color: var(--navy); margin: 14px 0 8px; }
+  .kpi-val { font-size: 27px; font-weight: 800; color: var(--navy); line-height: 1.2; }
+  .kpi-delta { font-size: 13px; font-weight: 700; color: var(--teal); margin-left: 6px; }
+  .kpi-sub { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.6px; margin-top: 6px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #EDF2F7; text-align: left; vertical-align: top; }
+  th { background: #F8FAFC; color: var(--navy); font-weight: 700; }
+  tr:hover td { background: #FAFCFF; }
+  .pill { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+  .p-add { background: #CCFBF1; color: #0F766E; }
+  .p-upg { background: #DBEAFE; color: #1D4ED8; }
+  .p-rem { background: #FEE2E2; color: #991B1B; }
+  .p-hold { background: #FEF3C7; color: #92400E; }
+  .p-rev { background: #F3E8FF; color: #6B21A8; }
+  .fig-img { display: block; width: 100%; height: auto; border-radius: 6px; border: 1px solid #E2E8F0; background: #fff; margin-top: 8px; }
+  .ctrl-row { display: flex; flex-wrap: wrap; gap: 14px; align-items: end; margin-bottom: 12px; }
+  .ctrl-item { display: flex; flex-direction: column; gap: 4px; font-size: 12.5px; }
+  .ctrl-item label { font-weight: 600; color: var(--navy); }
+  .ctrl-item select, .ctrl-item input { padding: 7px 10px; border: 1px solid #CBD5E1; border-radius: 6px; font-size: 13px; background: #fff; }
+  .btn { background: var(--navy); color: #fff; border: none; padding: 8px 16px; border-radius: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .btn:hover { background: var(--teal); }
+  .btn-group { display: flex; gap: 8px; }
+  .btn-outline { background: #fff; color: var(--navy); border: 1.5px solid var(--navy); padding: 5px 12px; border-radius: 6px; font-size: 12.5px; font-weight: 600; cursor: pointer; }
+  .btn-outline.active { background: var(--navy); color: #fff; }
+  .note { background: #F8FAFC; border-left: 4px solid var(--teal); padding: 10px 14px; font-size: 12.5px; color: #334155; border-radius: 0 6px 6px 0; margin-top: 10px; }
+  .warn-box { background: #FFFBEB; border-left: 4px solid var(--amber); padding: 10px 14px; font-size: 12.5px; color: #78350F; border-radius: 0 6px 6px 0; margin-top: 10px; }
+  .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 11.8px; }
+  .hl-row { background: #F0FDFA; font-weight: 700; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>EvoAlign-OS v2 · 产教智对双环多轨道自进化决策支持系统</h1>
+    <div class="sub">公共学科基础 + 四轨道 Gale-Shapley 分流 + 误差驱动双环 Meta-Harness RSI + 抗4年时滞 MPC + 红队治理闭环</div>
+  </div>
+  <div class="badges">
+    <span class="badge ok" id="mode-badge">加载中...</span>
+    <span class="badge mono" id="sha-badge">SHA256: —</span>
+  </div>
+</header>
+
+<nav>
+  <button class="active" onclick="showTab('overview', this)">总览与核心突破</button>
+  <button onclick="showTab('task1', this)">任务1: 11校差距与统计审计</button>
+  <button onclick="showTab('task2', this)">任务2: 多轨道课改/专业治理/MPC</button>
+  <button onclick="showTab('rsi', this)">核心创新: 误差驱动双环RSI与6组消融</button>
+  <button onclick="showTab('task3', this)">任务3: 4年推演/迁移与双自然实验</button>
+  <button onclick="showTab('task4', this)">任务4: 红队8类风险治理闭环</button>
+  <button onclick="showTab('whatif', this)">在线 What-If 实时求解</button>
+</nav>
+
+<main>
+  <!-- TAB 0: OVERVIEW -->
+  <section id="tab-overview" class="tab active">
+    <div class="grid g4" id="kpi-cards"></div>
+    <div class="card" style="margin-top:16px">
+      <h2>三专业受控回放汇总（2025 N=2,645 & 2026Q1 N=351 · 单一事实源）</h2>
+      <div id="three-program-summary"></div>
+      <img class="fig-img" loading="lazy" src="/figures/structural_repair_paired.png" alt="图7 雇主聚类配对95%置信区间增益图">
+      <div class="note" id="disclosure-box"></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h2>多源产教动态知识底座（10校×23方案 · 11/11官方口径核验通过）</h2>
+      <div id="data-summary"></div>
+    </div>
+  </section>
+
+  <!-- TAB 1: TASK 1 -->
+  <section id="tab-task1" class="tab">
+    <div class="card">
+      <h2>图 1 · 北京分层高校泛计算机专业与目标岗位族技能结构差距（0 空白行）</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig1_multi_uni_benchmark.png" alt="图1 11校分层技能结构差距热力图">
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card">
+        <h2>需求端统计检验与异常值审计（2024开发集 vs 2025/2026Q1回放）</h2>
+        <div id="anomaly-table"></div>
+        <h3>双模型 Schema 抽取信度 & Split Conformal 校准</h3>
+        <div id="reliability-box"></div>
+      </div>
+      <div class="card">
+        <h2>学院专业群分化度与同质化风险诊断</h2>
+        <div id="portfolio-diff"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TAB 2: TASK 2 -->
+  <section id="tab-task2" class="tab">
+    <div class="card">
+      <h2>
+        <span>微观层：北工商计科 2022 多轨道 CP-SAT Pareto 三策档案（100% 硬约束 + 学科同源）</span>
+        <span class="btn-group">
+          <button class="btn-outline" onclick="selectPareto('lite', this)">Lite 稳健微调</button>
+          <button class="btn-outline active" onclick="selectPareto('medium', this)">Medium 均衡演进(推荐)</button>
+          <button class="btn-outline" onclick="selectPareto('heavy', this)">Heavy 前沿重塑</button>
+        </span>
+      </h2>
+      <div id="pareto-detail"></div>
+    </div>
+    <div class="grid g2" style="margin-top:16px">
+      <div class="card">
+        <h2>宏观层：专业布点“增、调、删”全生命周期治理（4年 Teach-Out 护栏）</h2>
+        <div id="macro-portfolio-table"></div>
+      </div>
+      <div class="card">
+        <h2>大二末 Gale-Shapley 四轨道稳定分流（阻塞对 = 0）</h2>
+        <div id="streaming-box"></div>
+        <div id="mpc-summary"></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h2>图 4 · 抗 4 年时滞 Smith-Predictor 滞回 MPC 招生调控（北京实证回放 + 蛛网压测）</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig4_mpc_control.png" alt="图4 抗4年时滞MPC招生动态控制">
+    </div>
+  </section>
+
+  <!-- TAB 3: RSI & ABLATION -->
+  <section id="tab-rsi" class="tab">
+    <div class="card">
+      <h2>图 2 · 误差驱动双环 Meta-Harness RSI 跨代进化与 GUARD 退化拦截</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig2_rsi_evolution.png" alt="图2 误差驱动双环RSI逐代进化轨迹">
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h2>图 3 · 六组受控消融对照（B0 冻结 → B1 单轨 → B2 多轨静态 → B3 单轮LLM → B4 无GUARD → Full）</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig3_ablation_6way.png" alt="图3 六组受控消融实验">
+      <div id="ablation-table" style="margin-top:12px"></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h2>北工商计科逐代进化审计链（SHA-256 封印）与 Qwen 提案实录</h2>
+      <div id="rsi-history-table"></div>
+    </div>
+  </section>
+
+  <!-- TAB 4: TASK 3 -->
+  <section id="tab-task3" class="tab">
+    <div class="card">
+      <h2>图 5 · 4 年培养周期反事实与三情景推演 + Split Conformal 90% 广告月薪解释区间</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig5_dreamsim_scenarios.png" alt="图5 三情景推演与Conformal区间">
+      <div id="sim-3sc-table" style="margin-top:12px"></div>
+    </div>
+    <div class="card" style="margin-top:16px">
+      <h2>图 6 · 跨校/跨专业零样本 CRSI 迁移 & 红队 8 类对抗压测治理闭环</h2>
+      <img class="fig-img" loading="lazy" src="/figures/fig6_risk_and_transfer.png" alt="图6 跨校迁移与红队压测">
+      <div id="nat-exp-box" style="margin-top:12px"></div>
+    </div>
+  </section>
+
+  <!-- TAB 5: TASK 4 -->
+  <section id="tab-task4" class="tab">
+    <div class="card">
+      <h2>红队 8 类动作绑定对抗压测风险矩阵（裸改革 vs. EvoAlign-OS 治理闭环）</h2>
+      <div class="warn-box">
+        <strong>严谨口径：</strong>全部 8 类风险均直接运行在最新进化的多轨道方案上（25×Monte Carlo 极端冲击），展示“压力超限频次”从裸改革到治理闭环后的真实下降，不冒充现实世界发生概率。每项风险均绑定责任主体、预警红线、时间节点与回退预案。
+      </div>
+      <div id="risk-table"></div>
+    </div>
+  </section>
+
+  <!-- TAB 6: WHAT-IF -->
+  <section id="tab-whatif" class="tab">
+    <div class="card">
+      <h2>高校管理者在线 What-If 实时求解（FastAPI + OR-Tools CP-SAT + Gale-Shapley 四轨道分流）</h2>
+      <div class="ctrl-row">
+        <div class="ctrl-item">
+          <label>目标高校专业</label>
+          <select id="wi-prog">
+            <option value="BTBU_CS_2022">北京工商大学 · 计算机科学与技术(2022)</option>
+            <option value="BTBU_AI_2022">北京工商大学 · 人工智能(2022)</option>
+            <option value="BISTU_CS_2025">北京信息科技大学 · 计算机科学与技术(2025)</option>
+            <option value="BJTU_CS_2025">北京交通大学 · 计算机科学与技术(2025)</option>
+          </select>
+        </div>
+        <div class="ctrl-item">
+          <label>改革预算档位 (Pareto)</label>
+          <select id="wi-mode">
+            <option value="lite">Lite 稳健微调</option>
+            <option value="medium" selected>Medium 均衡演进(推荐)</option>
+            <option value="heavy">Heavy 前沿重塑</option>
+          </select>
+        </div>
+        <div class="ctrl-item">
+          <label>培养组织模式</label>
+          <select id="wi-mt">
+            <option value="true" selected>公共基础 + 四轨道分流</option>
+            <option value="false">传统单轨道培养</option>
+          </select>
+        </div>
+        <div class="ctrl-item">
+          <label>宏观情景</label>
+          <select id="wi-sc">
+            <option value="optimistic">乐观情景</option>
+            <option value="baseline" selected>基准情景</option>
+            <option value="pessimistic">悲观情景</option>
+          </select>
+        </div>
+        <div class="ctrl-item">
+          <label>师资达标率 (0.4-1.0)</label>
+          <input id="wi-fac" type="number" step="0.05" min="0.4" max="1.0" value="0.94">
+        </div>
+        <div class="ctrl-item">
+          <label>实践/毕设定向比例 (0-0.8)</label>
+          <input id="wi-cap" type="number" step="0.05" min="0.0" max="0.8" value="0.55">
+        </div>
+        <button class="btn" onclick="runWhatIf()">实时重算 CP-SAT 多轨道方案</button>
+      </div>
+      <div id="whatif-output" class="note">点击按钮即可调用本机 OR-Tools CP-SAT 与 Gale-Shapley 实时重算（需通过 <code>uvicorn</code> 启动本机服务；离线模式下其它全部 6 个标签页均内置完整核验数据与高清图表）。</div>
+    </div>
+  </section>
+</main>
+
+<script src="master_embed.js" onerror="void 0"></script>
+<script>
+window.__EMBEDDED_MASTER__ = window.__EMBEDDED_MASTER__ || null;
+let MASTER = null;
+
+function showTab(id, btn) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('nav button').forEach(b => b.classList.remove('active'));
+  document.getElementById('tab-' + id).classList.add('active');
+  if (btn) btn.classList.add('active');
+}
+function pct(v) { return (v * 100).toFixed(2) + '%'; }
+function pp(v) { return (v >= 0 ? '+' : '') + (v * 100).toFixed(2) + 'pp'; }
+
+async function boot() {
+  if (location.protocol === 'file:') {
+    document.querySelectorAll('img.fig-img[src^="/figures/"]').forEach(img => {
+      img.setAttribute('src', '../outputs' + img.getAttribute('src'));
+    });
+  }
+  let online = false;
+  try {
+    const r = await fetch('/api/master');
+    if (r.ok) { MASTER = await r.json(); online = true; }
+  } catch (e) {}
+  if (!MASTER && window.__EMBEDDED_MASTER__) {
+    MASTER = window.__EMBEDDED_MASTER__;
+  }
+  if (!MASTER) {
+    document.getElementById('mode-badge').textContent = '离线图表模式 · 实时求解需启动服务';
+    return;
+  }
+  document.getElementById('mode-badge').textContent = online ? '在线双模 (FastAPI + CP-SAT v2)' : '离线单文件核验回放 (v2)';
+  document.getElementById('sha-badge').textContent = 'SHA256: ' + (MASTER.master_sha256 || '').slice(0, 14);
+  renderAll();
+}
+
+function renderAll() {
+  const kg = MASTER.kg_stats;
+  const cPrimary = MASTER.cases.BTBU_CS_2022;
+  const r25 = cPrimary.results.replay_2025;
+  const b0 = r25.metrics.B0_Freeze;
+  const b2 = r25.metrics.B2_MultiTrack_Static;
+  const full = r25.metrics.Full_EvoAlign_OS;
+  const rsi = MASTER.rsi_full_evolution;
+  const mpc = MASTER.task2_mpc_enrollment.real_empirical_mpc.stability_comparison;
+  const rt = MASTER.task4_red_team_risks;
+
+  const kpis = [
+    {
+      t: '北工商计科 2025 岗位达标率',
+      v: pct(full.jd_qual_rate_70),
+      d: pp(full.jd_qual_rate_70 - b0.jd_qual_rate_70),
+      s: `B0冻结 ${pct(b0.jd_qual_rate_70)} → B2多轨静态 ${pct(b2.jd_qual_rate_70)} → Full ${pct(full.jd_qual_rate_70)} | 最弱轨道 ${pct(full.worst_track_readiness)}`
+    },
+    {
+      t: '误差驱动双环 RSI 进化',
+      v: `${rsi.accepted_promotions}/${rsi.generations_run} 代晋级`,
+      d: `${rsi.guard_rollbacks} 次 GUARD 拦截`,
+      s: `Qwen 真实多代提案入库 · 累计 ${rsi.token_ledger_stats.total_tokens.toLocaleString()} Tokens | 硬约束零违背`
+    },
+    {
+      t: '抗 4 年时滞实证 MPC 调控',
+      v: `-${mpc.oscillation_reduction_pct}%`,
+      d: `RMSE -${mpc.rmse_reduction_vs_naive_pct}%`,
+      s: `2018-2024 北京招聘强度驱动：总变差 ${mpc.naive_total_variation} → ${mpc.mpc_total_variation} 人`
+    },
+    {
+      t: '红队 8 类对抗压测治理闭环',
+      v: `${(rt.governed_mean_breach_rate*100).toFixed(1)}%`,
+      d: `-${rt.mean_breach_reduction_pp}pp`,
+      s: `平均压测超限频次从裸改革 ${(rt.ungoverned_mean_breach_rate*100).toFixed(1)}% 降至 ${(rt.governed_mean_breach_rate*100).toFixed(1)}%`
+    },
+  ];
+  document.getElementById('kpi-cards').innerHTML = kpis.map(k => `
+    <div class="card">
+      <div class="kpi-sub" style="margin:0 0 6px;font-weight:700;color:var(--navy)">${k.t}</div>
+      <div class="kpi-val">${k.v}<span class="kpi-delta">${k.d}</span></div>
+      <div class="kpi-sub">${k.s}</div>
+    </div>`).join('');
+
+  // Three-program table
+  const progNames = {BTBU_CS_2022:'北工商 · 计科(2022)', BTBU_AI_2022:'北工商 · 人工智能(2022)', BISTU_CS_2025:'北信科 · 计科(2025)'};
+  document.getElementById('three-program-summary').innerHTML = `
+    <table>
+      <tr><th>高校与专业</th><th>2025 B0冻结</th><th>2025 B2多轨静态</th><th>2025 B3单轮LLM</th><th>2025 Full双环RSI</th><th>Full − B0 (95% CI)</th><th>Full − B2 (95% CI)</th><th>2026Q1 Full</th></tr>
+      ${Object.entries(MASTER.cases).map(([pid, c]) => {
+        const m25 = c.results.replay_2025.metrics;
+        const m26 = c.results.replay_2026q1.metrics;
+        const ci0 = c.results.replay_2025.paired_qual_ci95.B0_Freeze.Full_EvoAlign_OS;
+        const ci2 = c.results.replay_2025.paired_qual_ci95.B2_MultiTrack_Static.Full_EvoAlign_OS;
+        return `<tr>
+          <td><strong>${progNames[pid]||pid}</strong></td>
+          <td>${pct(m25.B0_Freeze.jd_qual_rate_70)}</td>
+          <td>${pct(m25.B2_MultiTrack_Static.jd_qual_rate_70)}</td>
+          <td>${pct(m25.B3_SingleShot_LLM.jd_qual_rate_70)}</td>
+          <td><strong style="color:var(--teal)">${pct(m25.Full_EvoAlign_OS.jd_qual_rate_70)}</strong></td>
+          <td><strong>${pp(ci0.delta)}</strong> [${pp(ci0.ci95_lo)}, ${pp(ci0.ci95_hi)}]</td>
+          <td><strong>${pp(ci2.delta)}</strong> [${pp(ci2.ci95_lo)}, ${pp(ci2.ci95_hi)}]</td>
+          <td>${pct(m26.Full_EvoAlign_OS.jd_qual_rate_70)}</td>
+        </tr>`;
+      }).join('')}
+    </table>`;
+
+  const dd = MASTER.design_disclosures;
+  document.getElementById('disclosure-box').innerHTML = `
+    <strong>单一事实源与严谨边界声明：</strong>所有 7 张图与本台全部指标均实时读取同一份 SHA-256 封印文件 <code>verified_master_results.json</code>（无新旧混用）。
+    开发集=${dd.development_slice}；2025 与 2026Q1 统一采用 <code>broad_entry</code> 岗位口径历史回放，零人为 sigmoid 放大，大纲升级 100% 强制学科同源。`;
+
+  const rel = MASTER.extraction_reliability || {};
+  document.getElementById('data-summary').innerHTML = `
+    <table>
+      <tr><th>数据层</th><th>核验规模与来源</th></tr>
+      <tr><td><strong>供给端 · 北京 10 校培养方案</strong></td><td>${kg.universities} 所高校 × ${kg.programs} 份培养方案（${kg.total_courses} 门结构化课程，${kg.syllabus_enriched_unique} 门大纲增强，11/11 代表性方案全部通过官方 PDF/HTML 必选修与学分核验）</td></tr>
+      <tr><td><strong>需求端 · 全量招聘与紧缺目录</strong></td><td>${MASTER.primary_case.demand_warehouse} + 北京市 2025/2026 新质生产力紧缺人才目录（114 项核心岗位）</td></tr>
+      <tr><td><strong>宏观层 · 教育部专业审批全库</strong></td><td>MOE 2021–2024 备案/审批/调整/撤销全量结构化解析（含北京 349 条历史 + 98 条 2024 回放真值）</td></tr>
+      <tr><td><strong>抽取信度 & 薪资区间校准</strong></td><td>双模型盲审 Top-1 一致率 <strong>${rel.top1_skill_agreement ? pct(rel.top1_skill_agreement) : '—'}</strong>，Bloom MAE <strong>${rel.bloom_depth_mae ?? '—'}</strong>；Split Conformal 90% 校准覆盖率 <strong>${pct(MASTER.conformal_calibrator.calibration_empirical_coverage)}</strong></td></tr>
+    </table>`;
+
+  // Task 1
+  const d24 = MASTER.task1_gap_analysis.dev2024_demand_summary.anomaly_audit;
+  const d25 = MASTER.task1_replay2025_demand_audit;
+  const d26 = MASTER.task1_replay2026q1_demand_audit;
+  document.getElementById('anomaly-table').innerHTML = `
+    <table>
+      <tr><th>审计指标</th><th>2024 开发集</th><th>2025 回放集</th><th>2026Q1 回放集</th></tr>
+      <tr><td>有效岗位 / 独立雇主</td><td>${d24.total_ads} / ${d24.unique_employers}</td><td>${d25.total_ads} / ${d25.unique_employers}</td><td>${d26.total_ads} / ${d26.unique_employers}</td></tr>
+      <tr><td>雇主集中度 Gini / Top10占比</td><td>${d24.employer_gini} / ${pct(d24.top10_employer_ad_share)}</td><td>${d25.employer_gini} / ${pct(d25.top10_employer_ad_share)}</td><td>${d26.employer_gini} / ${pct(d26.top10_employer_ad_share)}</td></tr>
+      <tr><td>薪资缺失率 / 倒置异常</td><td>${pct(d24.salary_missing_rate)} / ${d24.salary_inverted_count}</td><td>${pct(d25.salary_missing_rate)} / ${d25.salary_inverted_count}</td><td>${pct(d26.salary_missing_rate)} / ${d26.salary_inverted_count}</td></tr>
+      <tr><td>log 薪资 MAD / IQR 异常</td><td>${d24.log_salary_mad_outliers} / ${d24.log_salary_iqr_outliers}</td><td>${d25.log_salary_mad_outliers} / ${d25.log_salary_iqr_outliers}</td><td>${d26.log_salary_mad_outliers} / ${d26.log_salary_iqr_outliers}</td></tr>
+      <tr><td>过短 JD / 零技能命中</td><td>${pct(d24.short_jd_rate)} / ${pct(d24.zero_skill_hit_rate)}</td><td>${pct(d25.short_jd_rate)} / ${pct(d25.zero_skill_hit_rate)}</td><td>${pct(d26.short_jd_rate)} / ${pct(d26.zero_skill_hit_rate)}</td></tr>
+    </table>`;
+  document.getElementById('reliability-box').innerHTML = `
+    <p style="font-size:12.5px">Split Conformal 校准器：<code>${MASTER.conformal_calibrator.method}</code>，校准样本 N=${MASTER.conformal_calibrator.calibration_n}，实测覆盖 <strong>${pct(MASTER.conformal_calibrator.calibration_empirical_coverage)}</strong>，对数半宽 q̂=${MASTER.conformal_calibrator.q_hat_log}。</p>`;
+
+  const pBTBU = MASTER.task1_gap_analysis.portfolio_differentiation.BTBU_college;
+  const pBJTU = MASTER.task1_gap_analysis.portfolio_differentiation.BJTU_college;
+  document.getElementById('portfolio-diff').innerHTML = `
+    <p style="font-size:12.5px;margin-bottom:8px">北工商 4 专业平均技能余弦相似度 <strong>${pBTBU.mean_skill_cosine}</strong>（分化度较高）；北交大计算机类 4 专业平均余弦相似度 <strong>${pBJTU.mean_skill_cosine}</strong>（平台课共享度高，需防高年级同质化）。</p>
+    <table>
+      <tr><th>专业对</th><th>课程 Jaccard</th><th>技能余弦</th><th>同质化风险</th></tr>
+      ${[...pBTBU.pairwise.slice(0,4), ...pBJTU.pairwise.slice(0,3)].map(p => `
+        <tr><td>${p.program_a} ↔ ${p.program_b}</td><td>${p.course_jaccard_overlap}</td><td>${p.skill_cosine_similarity}</td><td><span class="pill ${p.homogenization_risk==='HIGH'?'p-rem':p.homogenization_risk==='MEDIUM'?'p-hold':'p-add'}">${p.homogenization_risk}</span></td></tr>`).join('')}
+    </table>`;
+
+  // Task 2
+  selectPareto('medium');
+  const macro = MASTER.task2_macro_major_portfolio;
+  document.getElementById('macro-portfolio-table').innerHTML = `
+    <p style="font-size:12.5px;margin-bottom:8px">学院编制预算 <strong>${macro.college_fte_budget} FTE</strong>（现占 ${macro.current_total_fte} FTE）；4 年 Teach-Out 逐年释放编制：<strong>${macro.freed_fte_via_teach_out_y1_y4.join(' → ')} FTE</strong>，保障在校生 100% 平稳毕业。</p>
+    <table>
+      <tr><th>专业(代码)</th><th>生命周期</th><th>治理动作</th><th>依据与护栏</th></tr>
+      ${macro.decisions.slice(0,7).map(d => {
+        const cls = d.action.includes('ADD') ? 'p-add' : d.action.includes('REVOKE') ? 'p-rev' : d.action.includes('ADJUST') ? 'p-upg' : 'p-hold';
+        return `<tr><td><strong>${d.major_name}</strong><br><span class="mono">${d.major_code}</span></td><td>${d.lifecycle_before} → <strong>${d.lifecycle_after}</strong></td><td><span class="pill ${cls}">${d.action}</span></td><td>${d.reason}</td></tr>`;
+      }).join('')}
+    </table>`;
+
+  const st = MASTER.task2_pareto_trio.medium.solver_summary.streaming_summary;
+  document.getElementById('streaming-box').innerHTML = `
+    <p style="font-size:12.5px">大二末 <strong>Gale-Shapley 延迟接受匹配</strong>（N=300）：阻塞对=<strong>${st.blocking_pairs}</strong>（严格稳定），第一志愿满足率 <strong>${pct(st.first_choice_satisfaction)}</strong>，第 5 学期保留 10% 动态互转通道。</p>
+    <table>
+      <tr><th>培养方向轨道</th><th>市场需求份额</th><th>录取/上限</th><th>利用率</th></tr>
+      ${st.track_allocations.map(t => `<tr><td>${t.name}</td><td>${pct(t.demand_share)}</td><td>${t.assigned} / ${t.max_cap}</td><td>${pct(t.utilization)}</td></tr>`).join('')}
+    </table>`;
+  const efb = MASTER.task2_employment_feedback;
+  const efbRows = efb ? efb.signals.map((s, i) => {
+    const d = efb.decision_log[i];
+    const cls = d.state.startsWith('RED') ? 'p-rem' : d.state === 'AMBER' ? 'p-hold' : 'p-add';
+    const f = (v, suf) => v === null || v === undefined ? '—' : (v >= 0 ? '+' : '') + v + suf;
+    return `<tr><td>${s.cohort} 届 → ${d.decision_year} 年决策</td><td>${f(s.gap_placement_pp, 'pp')}</td><td>${f(s.gap_relevance_pp, 'pp')}</td><td>${s.gap_income_rel === null ? '—' : f(+(s.gap_income_rel * 100).toFixed(1), '%')}</td><td><span class="pill ${cls}">${d.state}</span></td><td>${d.action}</td></tr>`;
+  }).join('') : '';
+  document.getElementById('mpc-summary').innerHTML = `
+    <div class="warn-box"><strong>数据门控规则：</strong>${MASTER.task2_mpc_enrollment.immediate_recommendation}</div>
+    ${efb ? `<h3>就业反馈通道（官方《中国本科生就业报告》计算机类 vs 工学平均）</h3>
+    <table><tr><th>证据届别</th><th>落实率差</th><th>专业相关度差</th><th>月收入相对差</th><th>状态</th><th>动作</th></tr>${efbRows}</table>
+    <div class="note">触发阈值：落实率差 &lt; ${efb.rules.warn_placement_gap_pp}pp 或相关度差 &lt; ${efb.rules.warn_relevance_gap_pp}pp，连续 ${efb.rules.confirm_cohorts} 届确认；单次调幅 ≤ ${efb.rules.max_step_rate * 100}%，冷却 ${efb.rules.cooldown_years} 年，治理边界 [${efb.rules.governance_bounds.join(', ')}] 人。<br>${efb.current_recommendation.interpretation}</div>` : ''}`;
+
+  // RSI & Ablation
+  document.getElementById('ablation-table').innerHTML = `
+    <table>
+      <tr><th>对照组（北工商计科 2022）</th><th>2025 岗位达标率</th><th>2025 平均就绪度</th><th>2025 轨道 L1</th><th>2025 轨道 OT</th><th>最弱轨道底线</th><th>2026Q1 达标率</th></tr>
+      ${MASTER.ablation_6way_replay.map(a => `
+        <tr class="${a.arm_id==='Full_EvoAlign_OS'?'hl-row':''}">
+          <td>${a.arm_zh}</td>
+          <td><strong>${pct(a.replay_2025.jd_qual_rate_70)}</strong></td>
+          <td>${pct(a.replay_2025.jd_mean_readiness)}</td>
+          <td>${pct(a.replay_2025.track_l1_overlap)}</td>
+          <td>${pct(a.replay_2025.track_ot_alignment)}</td>
+          <td>${pct(a.replay_2025.worst_track_readiness)}</td>
+          <td>${pct(a.replay_2026q1.jd_qual_rate_70)}</td>
+        </tr>`).join('')}
+    </table>`;
+
+  document.getElementById('rsi-history-table').innerHTML = `
+    <table>
+      <tr><th>代次</th><th>事件</th><th>开发集综合分</th><th>岗位达标率</th><th>Qwen 新课入选方案</th><th>GUARD 门控与反思理由</th><th>链哈希</th></tr>
+      ${rsi.evolution_history.map(h => `
+        <tr>
+          <td>Gen ${h.generation}</td>
+          <td><span class="pill ${h.accepted?'p-add':'p-rem'}">${h.event}</span></td>
+          <td>${h.dev_score.toFixed(4)} → <strong>${h.active_best_score.toFixed(4)}</strong></td>
+          <td>${pct(h.dev_metrics.jd_qual_rate_70)}</td>
+          <td>${(h.qwen_accepted_in_plan||[]).join('；') || '—'}</td>
+          <td><strong>${h.guard_decision.reason}</strong><br><span style="color:var(--muted)">${h.meta_rationale}</span></td>
+          <td class="mono">${h.chain_hash}</td>
+        </tr>`).join('')}
+    </table>`;
+
+  // Task 3
+  const s3 = MASTER.task3_dream_sim_3scenarios;
+  const frz = MASTER.task3_counterfactual_freeze;
+  document.getElementById('sim-3sc-table').innerHTML = `
+    <table>
+      <tr><th>情景（2025 回放 N=2,645）</th><th>岗位级达标率</th><th>平均就绪度</th><th>轨道 OT 对齐</th><th>最弱轨道底线</th><th>解释性广告月薪 (90% Conformal)</th></tr>
+      <tr><td>反事实冻结（零调整）</td><td>${pct(frz.jd_qual_rate_70)}</td><td>${pct(frz.jd_mean_readiness)}</td><td>${pct(frz.track_ot_alignment)}</td><td>${pct(frz.worst_track_readiness)}</td><td>¥${frz.explanatory_ad_salary_median.toFixed(0)} [${frz.explanatory_ad_salary_conformal90[0].toFixed(0)}, ${frz.explanatory_ad_salary_conformal90[1].toFixed(0)}]</td></tr>
+      ${['optimistic','baseline','pessimistic'].map(k => {
+        const v = s3[k];
+        return `<tr><td><strong>${v.label}</strong></td><td><strong>${pct(v.jd_qual_rate_70)}</strong></td><td>${pct(v.jd_mean_readiness)}</td><td>${pct(v.track_ot_alignment)}</td><td>${pct(v.worst_track_readiness)}</td><td>¥${v.explanatory_ad_salary_median.toFixed(0)} [${v.explanatory_ad_salary_conformal90[0].toFixed(0)}, ${v.explanatory_ad_salary_conformal90[1].toFixed(0)}]</td></tr>`;
+      }).join('')}
+    </table>`;
+
+  const neC = MASTER.natural_experiments.micro_course_btbu_2022_to_2025;
+  const neM = MASTER.natural_experiments.macro_major_moe_2024_beijing;
+  const trB = MASTER.cross_school_transfer.BISTU_CS_2025_unseen_university;
+  const trA = MASTER.cross_school_transfer.BTBU_AI_2022_unseen_major;
+  document.getElementById('nat-exp-box').innerHTML = `
+    <table>
+      <tr><th>外部真实性与迁移验证</th><th>核心实证结果（2025 回放 / 2024 MOE）</th></tr>
+      <tr><td><strong>宏观专业布点自然实验</strong><br>(≤2023预测2024北京审批)</td><td>Top-5 命中 <strong>${neM.top5_hit_count}/5</strong>，覆盖 2024 年北京新增布点 <strong>${pct(neM.evoalign_top5_volume_coverage)}</strong>；对照“沿用 2021-2023 最热门专业”基线命中 ${neM.persistence_baseline_hit_count}/5、覆盖 ${pct(neM.persistence_baseline_volume_coverage)}</td></tr>
+      <tr><td><strong>微观课程自然实验</strong><br>(仅用≤2022数据预测改版)</td><td>2025 回放岗位达标率：2022 原方案 ${pct(neC.btbu_frozen_2022_on_replay2025.jd_qual_rate_70)}，高校实际 2025 改版 ${pct(neC.btbu_real_2025_on_replay2025.jd_qual_rate_70)}，EvoAlign 预测方案 <strong>${pct(neC.evoalign_pred_on_replay2025.jd_qual_rate_70)}</strong>（强制单轨对照 ${pct(neC.evoalign_pred_single_track_on_replay2025.jd_qual_rate_70)}）。<br>改版方向一致性：调整/删除课程重合 ${neC.direction_agreement.course_level.n_agreed} 门（随机期望 ${neC.direction_agreement.course_level.chance_expectation}，p=${neC.direction_agreement.course_level.hypergeom_p_value}）；新课技能召回 ${pct(neC.direction_agreement.skill_level.recall)}（p=${neC.direction_agreement.skill_level.hypergeom_p_value}，未达显著）</td></tr>
+      <tr><td><strong>跨校零样本迁移（北信科）</strong></td><td>加载北工商进化所得 H*+SIM（0 轮本地 LLM 调用）：冻结 ${pct(trB.baseline_freeze.jd_qual_rate_70)} → 冷启动 ${pct(trB.cold_start_H0.jd_qual_rate_70)} → <strong>热迁移 ${pct(trB.warm_transfer_Hstar_SIM.jd_qual_rate_70)}</strong></td></tr>
+      <tr><td><strong>跨专业零样本迁移（北工商AI）</strong></td><td>加载北工商计科 H*+SIM（0 轮本地 LLM 调用）：冻结 ${pct(trA.baseline_freeze.jd_qual_rate_70)} → 冷启动 ${pct(trA.cold_start_H0.jd_qual_rate_70)} → <strong>热迁移 ${pct(trA.warm_transfer_Hstar_SIM.jd_qual_rate_70)}</strong></td></tr>
+    </table>`;
+
+  // Task 4
+  document.getElementById('risk-table').innerHTML = `
+    <table>
+      <tr><th>编号 / 风险名称</th><th>绑定方案动作</th><th>压测超限（裸→治）</th><th>风险分</th><th>责任主体与预警红线</th><th>缓解措施与回退预案</th></tr>
+      ${rt.risk_matrix.map(r => `
+        <tr>
+          <td><strong>${r.id} ${r.name}</strong><br><span style="color:var(--muted)">对象: ${r.affected_group}</span></td>
+          <td>${r.bound_action}</td>
+          <td><span style="color:var(--rust)">${pct(r.ungoverned_breach_rate)}</span> → <strong style="color:var(--teal)">${pct(r.governed_breach_rate)}</strong><br><span style="color:var(--muted)">降 ${r.breach_reduction_pp}pp</span></td>
+          <td><span class="pill ${r.raw_risk_score>=15?'p-rem':'p-hold'}">${r.raw_risk_score}</span> → <span class="pill ${r.residual_risk_score>=12?'p-hold':'p-add'}">${r.residual_risk_score}</span></td>
+          <td><strong>${r.owner}</strong><br>红线: ${r.trigger}<br>节点: ${r.deadline}</td>
+          <td><strong>缓解:</strong> ${r.mitigation}<br><strong>回退:</strong> ${r.rollback}</td>
+        </tr>`).join('')}
+    </table>`;
+}
+
+function selectPareto(mode, btn) {
+  if (btn) {
+    btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+  const p = MASTER.task2_pareto_trio[mode];
+  const s = p.solver_summary;
+  const ev = p.replay_2025;
+  const checks = Object.entries(s.constraint_checks).map(([k,v]) => `<span class="pill ${v?'p-add':'p-rem'}" style="margin:2px">${k}: ${v?'✓':'✗'}</span>`).join(' ');
+  const acts = s.actions.map(a => {
+    const cls = a.action==='ADD_ELECTIVE'?'p-add':(a.action==='UPGRADE_SYLLABUS'?'p-upg':'p-rem');
+    return `<tr><td><span class="pill ${cls}">${a.action}</span></td><td><strong>${a.course_name}</strong></td><td>S${a.semester}</td><td>${a.credits}学分</td><td>${a.reason}</td></tr>`;
+  }).join('');
+  document.getElementById('pareto-detail').innerHTML = `
+    <div style="margin-bottom:8px;font-size:13px">
+      <strong>2025 回放：</strong>岗位达标率 <strong style="color:var(--teal)">${pct(ev.jd_qual_rate_70)}</strong> · 平均就绪度 <strong>${pct(ev.jd_mean_readiness)}</strong> · 轨道 OT <strong>${pct(ev.track_ot_alignment)}</strong> ·
+      增/删选修 <strong>+${s.added_credits}/-${s.removed_credits}学分</strong> · 同源大纲升级 <strong>${s.upgraded_core_count}门</strong> · 师资 <strong>${s.faculty_fte_used}/${s.faculty_fte_cap} FTE</strong>
+    </div>
+    <div style="margin-bottom:10px">${checks}</div>
+    <table><tr><th>动作</th><th>课程名称</th><th>学期</th><th>学分</th><th>依据与学科同源说明</th></tr>${acts}</table>`;
+}
+
+async function runWhatIf() {
+  const out = document.getElementById('whatif-output');
+  out.textContent = '正在调用本机 FastAPI + OR-Tools CP-SAT 多轨道联合求解...';
+  try {
+    const payload = {
+      program_id: document.getElementById('wi-prog').value,
+      budget_mode: document.getElementById('wi-mode').value,
+      multitrack: document.getElementById('wi-mt').value === 'true',
+      scenario: document.getElementById('wi-sc').value,
+      faculty_ramp: parseFloat(document.getElementById('wi-fac').value),
+      capstone_orient_ratio: parseFloat(document.getElementById('wi-cap').value),
+    };
+    const r = await fetch('/api/whatif', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(payload)});
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const d = await r.json();
+    out.innerHTML = `
+      <strong>实时求解成功（硬约束零违背=${d.feasible}，增/删选修 +${d.added_credits}/-${d.removed_credits}学分，同源大纲升级 ${d.upgraded_core_count} 门，师资 ${d.faculty_fte_used} FTE）</strong><br>
+      2024 开发集对比：岗位达标率 <strong>${pct(d.before_dev2024.jd_qual_rate_70)} → ${pct(d.after_dev2024.jd_qual_rate_70)}</strong>（${pp(d.after_dev2024.jd_qual_rate_70 - d.before_dev2024.jd_qual_rate_70)}） |
+      轨道 OT 对齐 <strong>${pct(d.before_dev2024.track_ot_alignment)} → ${pct(d.after_dev2024.track_ot_alignment)}</strong> |
+      最弱轨道就绪度 <strong>${pct(d.before_dev2024.worst_track_readiness)} → ${pct(d.after_dev2024.worst_track_readiness)}</strong>`;
+  } catch (e) {
+    out.innerHTML = `<span style="color:var(--rust)">实时接口不可用（当前为离线查看模式）。如需实时求解请运行 <code>uvicorn cockpit_server:app --app-dir evoalign_os/src/server --port 8080</code>。</span>`;
+  }
+}
+
+boot();
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+[
+ {
+  "gen": 1,
+  "status": "PROMOTED",
+  "delta_score": 0.04578,
+  "qual70": 0.48028,
+  "qwen_courses_adopted": [
+   "分布式系统架构与高并发实战",
+   "云原生DevOps与可观测性工程"
+  ],
+  "lesson": "针对后端/云原生/系统轨道中分布式、DevOps及具身智能等核心技能零就绪的致命缺口，创生高阶产教融合选修课以填补S5-S7能力真空，并同步升级操作系统与嵌入式核心课程模块以强化底层支撑。"
+ },
+ {
+  "gen": 2,
+  "status": "PROMOTED",
+  "delta_score": 0.16042,
+  "qual70": 0.77562,
+  "qwen_courses_adopted": [
+   "分布式系统架构与高并发实战",
+   "云原生DevOps与可观测性工程",
+   "现代Web全栈与向量检索实战"
+  ],
+  "lesson": "Gen2聚焦填补后端全栈前端/向量库、云原生安全攻防、AI大模型工程化部署及系统轨道具身智能四大高缺口，通过新增高阶选修课与核心课同源模块升级，强化产教融合实战能力。"
+ },
+ {
+  "gen": 4,
+  "status": "REJECTED",
+  "delta_score": -0.00251,
+  "lesson": "未通过GUARD门控(GUARD_REJECTED: delta=-0.0025, worst_ok=True, recent_ok=True)，下代需避开无效课程冗余。"
+ }
+]

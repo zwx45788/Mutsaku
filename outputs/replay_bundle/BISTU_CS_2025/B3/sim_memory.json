@@ -1,0 +1,8 @@
+[
+ {
+  "gen": 1,
+  "status": "REJECTED",
+  "delta_score": -0.00225,
+  "lesson": "未通过GUARD门控(GUARD_REJECTED: delta=-0.0022, worst_ok=True, recent_ok=False)，下代需避开无效课程冗余。"
+ }
+]

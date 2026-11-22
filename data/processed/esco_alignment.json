@@ -1,0 +1,1838 @@
+{
+ "source": "ESCO v1 (European Skills, Competences, Qualifications and Occupations) — official REST API https://ec.europa.eu/esco/api/search",
+ "retrieved_utc": "2026-11-21T22:38:45Z",
+ "method": "team-curated crosswalk of ESCO preferred labels; each label verified to exist by exact (case-insensitive) title match in the API search results",
+ "skills": {
+  "discrete_math": {
+   "en": "Discrete Mathematics & Logic",
+   "zh": "离散数学与数理逻辑",
+   "cs2023_ka": "MSF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/ef30e7f8-1ef0-4a6f-87ac-d6a701125305",
+     "label_en": "set theory",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+     "label_en": "mathematics",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/55e910e4-736d-44cf-bfa9-b15adc5d91d2",
+     "label_en": "algebra",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "linear_algebra_opt": {
+   "en": "Linear Algebra & Optimization",
+   "zh": "线性代数与最优化",
+   "cs2023_ka": "MSF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/55e910e4-736d-44cf-bfa9-b15adc5d91d2",
+     "label_en": "algebra",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/21dfab2e-f954-49ab-8fb6-18cc98cf10bb",
+     "label_en": "geometry",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/4339176e-3acd-4f7f-a5d9-445bee3d23f2",
+     "label_en": "mathematics",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0541"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "prob_stats": {
+   "en": "Probability & Statistical Modeling",
+   "zh": "概率统计与随机建模",
+   "cs2023_ka": "MSF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833",
+     "label_en": "statistics",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0542"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/b758675a-b03b-4e4b-897c-57ca14b1a3d0",
+     "label_en": "probability theory",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0542"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+     "label_en": "apply statistical analysis techniques",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "dsa": {
+   "en": "Data Structures & Algorithms",
+   "zh": "数据结构与算法设计",
+   "cs2023_ka": "AL",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/54924a2c-daca-40d3-9716-4b38ceb04f38",
+     "label_en": "algorithms",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+     "label_en": "computer science",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "comp_arch": {
+   "en": "Computer Organization & Architecture",
+   "zh": "计算机组成与体系结构",
+   "cs2023_ka": "AR",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/e043aeeb-78f5-4049-afbf-12bba52225bc",
+     "label_en": "hardware architectures",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef",
+     "label_en": "computer engineering",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/c77db25e-bb51-4a10-b2ad-99b48b1b4a37",
+     "label_en": "maintain computer hardware",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "os_kernel": {
+   "en": "Operating Systems & Concurrency",
+   "zh": "操作系统与内核机制",
+   "cs2023_ka": "OS",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/25b291b5-8245-4d9d-b391-86a8a31d7109",
+     "label_en": "use concurrent programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/89f6560b-2194-45c9-9ece-d33049a73eef",
+     "label_en": "computer engineering",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "linux_shell": {
+   "en": "Linux Administration & Shell Scripting",
+   "zh": "Linux系统与Shell运维",
+   "cs2023_ka": "OS",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/625b57ee-29d4-425b-bf99-9fd54dd021fe",
+     "label_en": "Kali Linux",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "comp_net": {
+   "en": "Computer Networks & Protocols",
+   "zh": "计算机网络与通信协议",
+   "cs2023_ka": "NC",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/6e4f75b4-c60f-4623-a9ba-760c8245753b",
+     "label_en": "ICT communications protocols",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/f9e788df-d68a-4f92-92c7-80e135fc35ff",
+     "label_en": "ICT networking hardware",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "compiler_pl": {
+   "en": "Compilers & Programming Languages",
+   "zh": "编译原理与编程语言理论",
+   "cs2023_ka": "FPL",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/6014921e-1d25-4039-adc2-04852d61880e",
+     "label_en": "ICT debugging tools",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/d31fab87-2a7d-485c-b699-2901ca294b15",
+     "label_en": "use functional programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "parallel_gpu": {
+   "en": "Parallel Computing & GPU/CUDA Optimization",
+   "zh": "并行计算与GPU/CUDA算力优化",
+   "cs2023_ka": "PDC",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/25b291b5-8245-4d9d-b391-86a8a31d7109",
+     "label_en": "use concurrent programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "c_cpp": {
+   "en": "C/C++ Systems Programming",
+   "zh": "C/C++系统级编程",
+   "cs2023_ka": "SDF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/b633eb55-8f1f-4ae6-ab4c-2022ffe2cb7f",
+     "label_en": "C++",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "python_eng": {
+   "en": "Python Engineering & Scientific Computing",
+   "zh": "Python工程与科学计算",
+   "cs2023_ka": "SDF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/ccd0a1d9-afda-43d9-b901-96344886e14d",
+     "label_en": "Python (computer programming)",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "java_spring": {
+   "en": "Java Backend & Spring Ecosystem",
+   "zh": "Java后端与企业级架构",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/19a8293b-8e95-4de3-983f-77484079c389",
+     "label_en": "Java (computer programming)",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/5b9cde20-f1b9-4adc-bfb3-dbf70b14138d",
+     "label_en": "use object-oriented programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "golang_rust": {
+   "en": "Go & Rust Modern Systems Development",
+   "zh": "Go/Rust现代并发与系统开发",
+   "cs2023_ka": "FPL",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/25b291b5-8245-4d9d-b391-86a8a31d7109",
+     "label_en": "use concurrent programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/d31fab87-2a7d-485c-b699-2901ca294b15",
+     "label_en": "use functional programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "web_frontend": {
+   "en": "Web Frontend & Interactive Engineering",
+   "zh": "Web前端与交互工程",
+   "cs2023_ka": "HCI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/3cd569a2-4f88-4c1e-9995-8dce8c5e51a7",
+     "label_en": "JavaScript",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/69bbd53f-fbb0-4476-b4b2-ef7844464e28",
+     "label_en": "web programming",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "mobile_harmony": {
+   "en": "Mobile & HarmonyOS Application Dev",
+   "zh": "移动应用与鸿蒙生态开发",
+   "cs2023_ka": "SPD",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/976455eb-5bbe-4493-ae64-ed16c3b009ea",
+     "label_en": "mobile operating systems",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/b8c01891-e3df-4a4b-948d-95b45e1788f5",
+     "label_en": "mobile device software frameworks",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "soft_eng_arch": {
+   "en": "Software Engineering & System Architecture",
+   "zh": "软件工程、敏捷与架构设计",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/2450c3b3-e78e-435b-b84d-e05d984e71dc",
+     "label_en": "software architecture models",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0611"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/2b7a79e5-84d8-4880-be66-3d9bb05bea17",
+     "label_en": "use software design patterns",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "qa_testing": {
+   "en": "Software Testing & Automated QA",
+   "zh": "软件测试、自动化QA与质量保障",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/7557f0f4-b8bc-4ac0-b91e-222ab1ba744f",
+     "label_en": "tools for ICT test automation",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/913e7e83-b8f8-4574-b1ca-1b38f3fd974a",
+     "label_en": "execute software tests",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "ai_native_se": {
+   "en": "AI-Native Software Engineering & Eval",
+   "zh": "AI原生软件工程与代码智能体评测",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/7d10fcb2-b368-48ab-996b-7c9fafcf68ed",
+     "label_en": "use automatic programming",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+     "label_en": "principles of artificial intelligence",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0619"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "dist_systems": {
+   "en": "Distributed Systems & High-Concurrency",
+   "zh": "分布式系统与高并发架构",
+   "cs2023_ka": "PDC",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/897b393f-e7e0-4248-a40d-d77119694e83",
+     "label_en": "distributed computing",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "cloud_k8s": {
+   "en": "Cloud Computing, Docker & Kubernetes",
+   "zh": "云计算、容器化与Kubernetes",
+   "cs2023_ka": "SF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/bd14968e-e409-45af-b362-3495ed7b10e0",
+     "label_en": "cloud technologies",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "devops_sre": {
+   "en": "DevOps, CI/CD & SRE Observability",
+   "zh": "DevOps、CI/CD与可观测性SRE",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/f0de4973-0a70-4644-8fd4-3a97080476f4",
+     "label_en": "DevOps",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+     "label_en": "tools for software configuration management",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "sql_rdbms": {
+   "en": "Relational Databases & SQL Tuning",
+   "zh": "关系数据库与SQL调优",
+   "cs2023_ka": "DM",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/598de5b0-5b58-4ea7-8058-a4bc4d18c742",
+     "label_en": "SQL",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/ab1e97ed-2319-4293-a8b7-072d2648822f",
+     "label_en": "database management systems",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "nosql_vector_db": {
+   "en": "NoSQL, Caching & Vector Databases",
+   "zh": "NoSQL、缓存与向量数据库",
+   "cs2023_ka": "DM",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/76ef6ed3-1658-4a1a-9593-204d799c6d0c",
+     "label_en": "NoSQL",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/0df2e216-68ae-4952-b9dc-3c2f2bc04fe3",
+     "label_en": "maintain database",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "big_data_eng": {
+   "en": "Big Data Pipelines & Lakehouse Engineering",
+   "zh": "大数据平台与实时数仓工程",
+   "cs2023_ka": "DM",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/47a49cd6-097d-457a-9f7b-c290c14930d5",
+     "label_en": "analyse big data",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/fecf8a0d-62c4-4e71-9b03-0f4fc2ad7bf5",
+     "label_en": "data models",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "data_mining_bi": {
+   "en": "Data Analytics, Visualization & BI",
+   "zh": "数据分析、可视化与商业智能",
+   "cs2023_ka": "DM",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/25f0ea33-b4a2-4f31-b7b4-7d20e827b180",
+     "label_en": "data mining",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/143769cb-b61e-47d8-a61e-eedfbec1016c",
+     "label_en": "business intelligence",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0413"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "ml_classic": {
+   "en": "Machine Learning & Statistical Learning",
+   "zh": "机器学习与统计学习",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+     "label_en": "utilise machine learning",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/382c11ed-20d5-4ae7-b60e-15fec527fa6c",
+     "label_en": "apply statistical analysis techniques",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "deep_learning": {
+   "en": "Deep Learning & PyTorch Architectures",
+   "zh": "深度学习与PyTorch神经网络",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+     "label_en": "utilise machine learning",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+     "label_en": "principles of artificial intelligence",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0619"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "nlp_text": {
+   "en": "NLP & Information Retrieval",
+   "zh": "自然语言处理与信息检索",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/fff0e2cd-d0bd-4b02-9daf-158b79d9688a",
+     "label_en": "natural language processing",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0231"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/696e3b5b-8b61-45af-ae4c-3ab700f197ec",
+     "label_en": "information extraction",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "cv_multimodal": {
+   "en": "Computer Vision & Multimodal AI",
+   "zh": "计算机视觉与多模态理解",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/12c82224-6394-4c3c-9831-2a8198ed1274",
+     "label_en": "optical character recognition software",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "llm_posttrain": {
+   "en": "LLM Fine-tuning, Alignment & Serving",
+   "zh": "大语言模型微调、对齐与推理部署",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+     "label_en": "utilise machine learning",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/fff0e2cd-d0bd-4b02-9daf-158b79d9688a",
+     "label_en": "natural language processing",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0231"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "agent_rag": {
+   "en": "AI Agents, RAG & Tool Orchestration",
+   "zh": "AI智能体、RAG与工具编排系统",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/e465a154-93f7-4973-9ce1-31659fe16dd2",
+     "label_en": "principles of artificial intelligence",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0619"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/696e3b5b-8b61-45af-ae4c-3ab700f197ec",
+     "label_en": "information extraction",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "rl_decision": {
+   "en": "Reinforcement Learning & Sequential Decision",
+   "zh": "强化学习与序贯决策优化",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+     "label_en": "utilise machine learning",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/3ce1fe19-7f9e-4070-941d-651673a5693b",
+     "label_en": "decision support systems",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0611"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "mlops_eval": {
+   "en": "MLOps, Data Flywheel & Model Evaluation",
+   "zh": "MLOps、数据闭环与模型评测治理",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8369c2d6-c100-4cf6-bd83-9668d8678433",
+     "label_en": "utilise machine learning",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/ed39edd3-44d0-4a16-9796-bfb99f92baf3",
+     "label_en": "ICT performance analysis methods",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "embedded_mcu": {
+   "en": "Embedded Systems, RTOS & MCU",
+   "zh": "嵌入式系统、RTOS与硬件接口",
+   "cs2023_ka": "AR",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/2180bd8c-86de-4889-8165-adac902eee9d",
+     "label_en": "embedded systems",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "iot_edge": {
+   "en": "IoT Sensing & Edge AI Computing",
+   "zh": "物联网感知与边缘智能计算",
+   "cs2023_ka": "NC",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/f049d050-12da-4e40-813a-2b5eb6df6b51",
+     "label_en": "Internet of Things",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0611"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "robotics_embodied": {
+   "en": "Robotics, ROS & Embodied AI",
+   "zh": "机器人控制、ROS与具身智能",
+   "cs2023_ka": "AI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/e87ec79a-c9ff-46f5-84fa-7a0f394cdf40",
+     "label_en": "robotics",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/7a950986-27fe-4b6c-adf3-88f211e77019",
+     "label_en": "robotic components",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "control_signal": {
+   "en": "Control Theory & Digital Signal Processing",
+   "zh": "自动控制原理与数字信号处理",
+   "cs2023_ka": "MSF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/bf1f763e-c505-46e7-8af3-e48f13ec5f44",
+     "label_en": "control engineering",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/cfa2be0d-96d5-4017-a866-962efb9c5070",
+     "label_en": "signal processing",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "cyber_sec": {
+   "en": "Cybersecurity, Cryptography & Defense",
+   "zh": "网络安全、密码学与攻防实践",
+   "cs2023_ka": "SEC",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/8088750d-8388-4170-a76f-48354c469c44",
+     "label_en": "cyber security",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "1031"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/d32db06e-bd06-4415-a7ab-1b0ee68caa9a",
+     "label_en": "ICT encryption",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "ai_safety_privacy": {
+   "en": "AI Safety, Privacy Computing & Governance",
+   "zh": "AI安全、隐私计算与数据合规治理",
+   "cs2023_ka": "SEP",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5",
+     "label_en": "data protection",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/7814e88f-c133-4c3b-b27f-857afa145d42",
+     "label_en": "ICT security legislation",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0421"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "graphics_game": {
+   "en": "Computer Graphics, Rendering & Game Dev",
+   "zh": "计算机图形学、渲染与交互仿真",
+   "cs2023_ka": "GIT",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/966f2fd3-3de6-42da-b87c-da924c6d7960",
+     "label_en": "digital game creation systems",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0211"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/f5b33464-4df9-4cf3-b468-b0a2d6b3ee85",
+     "label_en": "operate 3D computer graphics software",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "blockchain_fintech": {
+   "en": "FinTech, Quantitative Systems & Blockchain",
+   "zh": "金融科技、量化与区块链应用",
+   "cs2023_ka": "SPD",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/450054eb-ccdb-42a7-baf0-371aba515fe7",
+     "label_en": "financial engineering",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0412"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "hci_product": {
+   "en": "HCI, Product Design & Engineering Mgmt",
+   "zh": "人机交互、产品设计与工程管理",
+   "cs2023_ka": "HCI",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/9136cbf1-7916-4f1c-bc9a-0318ee1d6016",
+     "label_en": "human-computer interaction",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0611"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/29fb886c-6be0-4e93-9ea1-232881f2092a",
+     "label_en": "plan product management",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "tech_comm_ethics": {
+   "en": "Engineering Ethics & Technical Communication",
+   "zh": "工程伦理、科技写作与团队协作",
+   "cs2023_ka": "SEP",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/c32ad607-0c4d-4e34-b73f-668298f7bf13",
+     "label_en": "apply technical communication skills",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/b2f925ed-3ebd-4f78-b98e-d5d4678e83b5",
+     "label_en": "follow ethical code of conduct",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "transversal"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "legacy_erp_vb": {
+   "en": "Legacy Desktop/Oracle Forms/Older Stack",
+   "zh": "传统桌面/旧式数据库与遗留系统(衰退类)",
+   "cs2023_ka": "SPD",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/13bdd41a-2a18-441f-96db-41252c519413",
+     "label_en": "Visual Studio .NET",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/f0393af3-bcd9-41af-a36e-0cfb83b60081",
+     "label_en": "manage standard enterprise resource planning system",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [],
+     "isco": null
+    }
+   ]
+  },
+  "open_source_collab": {
+   "en": "Open-Source Engineering & Collaborative Dev",
+   "zh": "开源工程、Linux内核贡献与工程实践",
+   "cs2023_ka": "SE",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/b16200f4-4f39-4b8b-aa9d-3568054d6bdb",
+     "label_en": "Open source model",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0612"
+     ],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/9d2e926f-53d9-41f5-98f3-19dfaa687f3f",
+     "label_en": "tools for software configuration management",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "sector-specific"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "eda_ic_design": {
+   "en": "IC Design, EDA & Chip Software Stack",
+   "zh": "集成电路、EDA与芯片软件栈",
+   "cs2023_ka": "AR",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/6d12ac9b-5ec0-49b9-bd70-5a19352585cb",
+     "label_en": "design integrated circuits",
+     "label_zh": null,
+     "skill_type": [
+      "skill"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [],
+     "isco": null
+    },
+    {
+     "uri": "http://data.europa.eu/esco/skill/2b9f4584-da2e-44e2-a2fb-4dd4fc64c1a2",
+     "label_en": "integrated circuits",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0714"
+     ],
+     "isco": null
+    }
+   ]
+  },
+  "bio_sci_computing": {
+   "en": "Scientific Computing & AI4Science",
+   "zh": "科学计算、AI4Science与交叉应用",
+   "cs2023_ka": "MSF",
+   "concepts": [
+    {
+     "uri": "http://data.europa.eu/esco/skill/7b5cce4d-c7fe-4119-b48f-70aa05391787",
+     "label_en": "computer science",
+     "label_zh": null,
+     "skill_type": [
+      "knowledge"
+     ],
+     "reuse_level": [
+      "cross-sector"
+     ],
+     "isced_f": [
+      "0613"
+     ],
+     "isco": null
+    }
+   ]
+  }
+ },
+ "tracks": {
+  "fullstack_backend": [
+   {
+    "uri": "http://data.europa.eu/esco/occupation/f2b15a0e-e65a-438a-affb-29b9d50b77d1",
+    "label_en": "software developer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2512"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/c40a2919-48a9-40ea-b506-1f34f693496d",
+    "label_en": "web developer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2513"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/d0aa0792-4345-474b-9365-686cf4869d2e",
+    "label_en": "software architect",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2512"
+    ]
+   }
+  ],
+  "cloud_ops_sec": [
+   {
+    "uri": "http://data.europa.eu/esco/occupation/9e2e6e1e-363b-4e1b-a673-7bc0f7343300",
+    "label_en": "ICT system administrator",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2522"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/cf2b03cd-feb7-4f47-90f6-ff1ed6016d3d",
+    "label_en": "ICT network engineer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2523"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/106f79e4-6264-45f1-9e7a-297435cd684b",
+    "label_en": "software tester",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2519"
+    ]
+   }
+  ],
+  "ai_data": [
+   {
+    "uri": "http://data.europa.eu/esco/occupation/258e46f9-0075-4a2e-adae-1ff0477e0f30",
+    "label_en": "data scientist",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2511"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/35553663-deab-4d9a-bf22-15c1625d28e8",
+    "label_en": "ICT intelligent systems designer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2511"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/d3edb8f8-3a06-47a0-8fb9-9b212c006aa2",
+    "label_en": "data analyst",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2511"
+    ]
+   }
+  ],
+  "systems_edge": [
+   {
+    "uri": "http://data.europa.eu/esco/occupation/10469d70-78a3-4650-9e29-d04de13c62c1",
+    "label_en": "embedded system designer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2511"
+    ]
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/57af9090-55b4-4911-b2d0-86db01c00b02",
+    "label_en": "embedded systems software developer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": null
+   },
+   {
+    "uri": "http://data.europa.eu/esco/occupation/551a6797-3ca9-41fc-9dca-9a982a8fd8a6",
+    "label_en": "robotics engineer",
+    "label_zh": null,
+    "skill_type": [],
+    "reuse_level": [],
+    "isced_f": [],
+    "isco": [
+     "C2149"
+    ]
+   }
+  ]
+ },
+ "unverified_labels": [
+  {
+   "skill": "os_kernel",
+   "label": "operating systems",
+   "error": null
+  },
+  {
+   "skill": "linux_shell",
+   "label": "use scripting programming",
+   "error": "<HTTPError 403: 'Forbidden'>"
+  },
+  {
+   "skill": "linux_shell",
+   "label": "operating systems",
+   "error": null
+  },
+  {
+   "skill": "compiler_pl",
+   "label": "computer programming",
+   "error": null
+  },
+  {
+   "skill": "parallel_gpu",
+   "label": "parallel computing",
+   "error": null
+  },
+  {
+   "skill": "c_cpp",
+   "label": "computer programming",
+   "error": null
+  },
+  {
+   "skill": "cv_multimodal",
+   "label": "computer vision",
+   "error": null
+  },
+  {
+   "skill": "iot_edge",
+   "label": "smart devices",
+   "error": null
+  },
+  {
+   "skill": "blockchain_fintech",
+   "label": "blockchain consensus mechanisms",
+   "error": null
+  },
+  {
+   "skill": "blockchain_fintech",
+   "label": "blockchain openness",
+   "error": null
+  },
+  {
+   "skill": "bio_sci_computing",
+   "label": "bioinformatics",
+   "error": null
+  },
+  {
+   "track": "cloud_ops_sec",
+   "label": "ICT security engineer",
+   "error": null
+  }
+ ],
+ "coverage": {
+  "skills_with_verified_concept": 48,
+  "skills_total": 48,
+  "verified_skill_concepts": 89,
+  "verified_occupations": 12,
+  "unverified_labels": 12,
+  "api_calls": 113
+ }
+}

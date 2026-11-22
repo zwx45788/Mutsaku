@@ -1,0 +1,44 @@
+[
+ {
+  "gen": 1,
+  "status": "REJECTED",
+  "delta_score": -0.00225,
+  "lesson": "未通过GUARD门控(GUARD_REJECTED: delta=-0.0022, worst_ok=True, recent_ok=False)，下代需避开无效课程冗余。"
+ },
+ {
+  "gen": 2,
+  "status": "PROMOTED",
+  "delta_score": 0.07076,
+  "qual70": 0.86978,
+  "qwen_courses_adopted": [
+   "现代系统编程与并发架构",
+   "大模型微调与RAG应用开发",
+   "开源工程实践与内核贡献"
+  ],
+  "lesson": "针对Gen1失败诊断，本代聚焦填补高影响缺口：后端/全栈需强化Go/Rust并发与遗留系统兼容；云原生/安全需补齐控制信号基础与开源协作；AI数据急需LLM后训练与大数据工程实战；系统边缘重点攻克EDA芯片栈与机器人具身智能。策略为‘同源深改’，通过新增高阶选修课与定制Capstone包，严格遵循学科边界升级核心课程模块。"
+ },
+ {
+  "gen": 3,
+  "status": "REJECTED_BY_GUARD",
+  "lesson": "过度倾斜头部岗位轨道会导致弱势轨道达标率塌陷，必须保持四轨道均衡下限。"
+ },
+ {
+  "gen": 3,
+  "status": "PROMOTED",
+  "delta_score": 0.00774,
+  "qual70": 0.8778,
+  "qwen_courses_adopted": [
+   "现代系统编程与并发架构",
+   "嵌入式实时系统与信号处理",
+   "开源工程实践与内核贡献",
+   "企业级遗留系统集成与ERP架构"
+  ],
+  "lesson": "Gen3聚焦修复AI数据轨道的图形学/边缘计算缺口及后端轨道的具身智能/遗留系统盲区，通过新增跨域选修与同源核心课模块升级，平衡各轨道权重以防止单轨过拟合。"
+ },
+ {
+  "gen": 4,
+  "status": "REJECTED",
+  "delta_score": -0.00319,
+  "lesson": "未通过GUARD门控(GUARD_REJECTED: delta=-0.0032, worst_ok=True, recent_ok=True)，下代需避开无效课程冗余。"
+ }
+]

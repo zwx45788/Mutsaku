@@ -1,0 +1,385 @@
+{
+ "elective_pool": [
+  {
+   "course_name": "Java企业级Web应用开发",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "dsa"
+   ],
+   "extracted_skills": [
+    {
+     "id": "java_spring",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "web_frontend",
+     "weight": 0.25,
+     "bloom": 3
+    },
+    {
+     "id": "sql_rdbms",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "Linux系统管理与脚本编程",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "cloud_ops_sec",
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "os_kernel"
+   ],
+   "extracted_skills": [
+    {
+     "id": "linux_shell",
+     "weight": 0.65,
+     "bloom": 4
+    },
+    {
+     "id": "os_kernel",
+     "weight": 0.35,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "软件测试基础与质量保证",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 0.8,
+   "target_tracks": [
+    "cloud_ops_sec",
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "soft_eng_arch"
+   ],
+   "extracted_skills": [
+    {
+     "id": "qa_testing",
+     "weight": 0.65,
+     "bloom": 4
+    },
+    {
+     "id": "soft_eng_arch",
+     "weight": 0.35,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "深度学习导论与神经网络实践",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.4,
+   "lab_units": 1.2,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "python_eng"
+   ],
+   "extracted_skills": [
+    {
+     "id": "deep_learning",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "ml_classic",
+     "weight": 0.25,
+     "bloom": 4
+    },
+    {
+     "id": "python_eng",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "大数据技术基础与应用",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "ai_data"
+   ],
+   "prereq_skills": [
+    "dsa"
+   ],
+   "extracted_skills": [
+    {
+     "id": "big_data_eng",
+     "weight": 0.55,
+     "bloom": 4
+    },
+    {
+     "id": "data_mining_bi",
+     "weight": 0.45,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "嵌入式系统开发与应用",
+   "credits": 2.0,
+   "semester": 5,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.35,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "systems_edge"
+   ],
+   "prereq_skills": [
+    "comp_arch"
+   ],
+   "extracted_skills": [
+    {
+     "id": "embedded_mcu",
+     "weight": 0.6,
+     "bloom": 4
+    },
+    {
+     "id": "c_cpp",
+     "weight": 0.4,
+     "bloom": 4
+    }
+   ]
+  },
+  {
+   "course_name": "云原生数据架构与向量检索实战",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "fullstack_backend",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "sql_rdbms"
+   ],
+   "extracted_skills": [
+    {
+     "id": "nosql_vector_db",
+     "weight": 0.5,
+     "bloom": 5.0
+    },
+    {
+     "id": "dist_systems",
+     "weight": 0.3,
+     "bloom": 5.0
+    },
+    {
+     "id": "cloud_k8s",
+     "weight": 0.2,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen1"
+  },
+  {
+   "course_name": "大模型应用工程：RAG与Agent开发",
+   "credits": 3.0,
+   "semester": 7,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 24,
+   "faculty_fte": 0.46,
+   "lab_units": 1.4,
+   "target_tracks": [
+    "ai_data",
+    "cloud_ops_sec"
+   ],
+   "prereq_skills": [
+    "python_eng"
+   ],
+   "extracted_skills": [
+    {
+     "id": "llm_posttrain",
+     "weight": 0.4,
+     "bloom": 5.0
+    },
+    {
+     "id": "agent_rag",
+     "weight": 0.4,
+     "bloom": 5.0
+    },
+    {
+     "id": "nlp_text",
+     "weight": 0.2,
+     "bloom": 5.0
+    }
+   ],
+   "source": "qwen_gen1"
+  },
+  {
+   "course_name": "具身智能系统：ROS与边缘控制",
+   "credits": 2.0,
+   "semester": 6,
+   "category": "major_elective",
+   "required": false,
+   "lab_hours": 16,
+   "faculty_fte": 0.38,
+   "lab_units": 1.0,
+   "target_tracks": [
+    "systems_edge",
+    "fullstack_backend"
+   ],
+   "prereq_skills": [
+    "c_cpp"
+   ],
+   "extracted_skills": [
+    {
+     "id": "robotics_embodied",
+     "weight": 0.5,
+     "bloom": 5.0
+    },
+    {
+     "id": "control_signal",
+     "weight": 0.3,
+     "bloom": 5.0
+    },
+    {
+     "id": "iot_edge",
+     "weight": 0.2,
+     "bloom": 4.0
+    }
+   ],
+   "source": "qwen_gen1"
+  }
+ ],
+ "capstone_packages": {
+  "fullstack_backend": {
+   "title": "常规软件开发综合实训",
+   "skills": [
+    {
+     "id": "soft_eng_arch",
+     "weight": 0.5,
+     "bloom": 4
+    },
+    {
+     "id": "java_spring",
+     "weight": 0.3,
+     "bloom": 4
+    },
+    {
+     "id": "sql_rdbms",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  "cloud_ops_sec": {
+   "title": "常规系统运维与测试实训",
+   "skills": [
+    {
+     "id": "linux_shell",
+     "weight": 0.45,
+     "bloom": 4
+    },
+    {
+     "id": "qa_testing",
+     "weight": 0.35,
+     "bloom": 4
+    },
+    {
+     "id": "comp_net",
+     "weight": 0.2,
+     "bloom": 4
+    }
+   ]
+  },
+  "ai_data": {
+   "title": "常规机器学习与数据分析实训",
+   "skills": [
+    {
+     "id": "python_eng",
+     "weight": 0.4,
+     "bloom": 4
+    },
+    {
+     "id": "ml_classic",
+     "weight": 0.35,
+     "bloom": 4
+    },
+    {
+     "id": "data_mining_bi",
+     "weight": 0.25,
+     "bloom": 4
+    }
+   ]
+  },
+  "systems_edge": {
+   "title": "常规嵌入式与底层编程实训",
+   "skills": [
+    {
+     "id": "c_cpp",
+     "weight": 0.5,
+     "bloom": 4
+    },
+    {
+     "id": "embedded_mcu",
+     "weight": 0.5,
+     "bloom": 4
+    }
+   ]
+  }
+ },
+ "syllabus_modules": [],
+ "policy": {
+  "w_readiness": 1.0,
+  "w_dist": 0.45,
+  "w_emerg": 0.2,
+  "capstone_orient_ratio": 0.0,
+  "module_fraction": 0.28,
+  "swap_cap": 16.0,
+  "upgrade_cap": 7,
+  "fte_cap": 4.8,
+  "lab_cap": 14.0,
+  "max_menu_expand_credits": 14.0,
+  "track_priority_multipliers": {
+   "fullstack_backend": 1.0,
+   "cloud_ops_sec": 1.0,
+   "ai_data": 1.0,
+   "systems_edge": 1.0
+  }
+ }
+}

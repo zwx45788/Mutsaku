@@ -1,0 +1,110 @@
+{
+  "source_db": "work/modern_data/catalog.duckdb",
+  "year_breakdown": [
+    {
+      "year": 2018,
+      "total_tech": 318403,
+      "bj_tech": 67400,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2019,
+      "total_tech": 150287,
+      "bj_tech": 29671,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2020,
+      "total_tech": 166981,
+      "bj_tech": 30299,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2021,
+      "total_tech": 184952,
+      "bj_tech": 21483,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2022,
+      "total_tech": 41159,
+      "bj_tech": 1835,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2023,
+      "total_tech": 56240,
+      "bj_tech": 7688,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2024,
+      "total_tech": 72603,
+      "bj_tech": 5939,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2025,
+      "total_tech": 84959,
+      "bj_tech": 8122,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    },
+    {
+      "year": 2026,
+      "total_tech": 11476,
+      "bj_tech": 861,
+      "bj_entry_bach": 0,
+      "bj_broad_entry": 0
+    }
+  ],
+  "slices": {
+    "demand_nat_exp_2018_2022.parquet": {
+      "path": "evoalign_os/data/processed/demand_nat_exp_2018_2022.parquet",
+      "blind": false,
+      "rows": 150688,
+      "bytes": 48186032,
+      "sha256": "62efc577644940e7a37510bb11b00e728e4905eb9b915293ad05bbae42a93d65"
+    },
+    "demand_train_2018_2023.parquet": {
+      "path": "evoalign_os/data/processed/demand_train_2018_2023.parquet",
+      "blind": false,
+      "rows": 158376,
+      "bytes": 50390215,
+      "sha256": "3a212e055c4234eac3ed83f23c7a92103588483d482dacd0f1e57b0b48c12c0b"
+    },
+    "demand_dev_2024.parquet": {
+      "path": "evoalign_os/data/processed/demand_dev_2024.parquet",
+      "blind": false,
+      "rows": 5939,
+      "bytes": 1865816,
+      "sha256": "c7697509900917e38b717d11d3d7d867fa5144f751133585ba08a4a37dd317e1"
+    },
+    "demand_holdout_2025.parquet": {
+      "path": "evoalign_os/data/blind_holdout/demand_holdout_2025.parquet",
+      "blind": true,
+      "rows": 8122,
+      "bytes": 2517309,
+      "sha256": "c73c9d947fc0cf51967b23fa50fc6223e8c92a5a01b9f393c704571561f0b1ce"
+    },
+    "demand_drift_2026q1.parquet": {
+      "path": "evoalign_os/data/blind_holdout/demand_drift_2026q1.parquet",
+      "blind": true,
+      "rows": 861,
+      "bytes": 320541,
+      "sha256": "2dbcbd72b6d527ec9c660f5e64588aeaf08107fbb85a948d5c33c89d66453a38"
+    }
+  },
+  "beijing_enterprise_macro": {
+    "path": "evoalign_os/data/processed/beijing_enterprise_macro.parquet",
+    "rows": 4916,
+    "sha256": "dc8512e0283012ddcc0c8114cb2405af6f6d5efbbcef317be351cd007514cfcd"
+  }
+}
