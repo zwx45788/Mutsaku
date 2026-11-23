@@ -4,6 +4,10 @@
 # are stored and checked out with LF everywhere and never converted.
 * text=auto eol=lf
 
+# These CSVs were produced by Excel and legitimately contain CRLF; the manifest
+# hashes the exact bytes, so they must never be re-encoded.
+*.csv   -text
+
 # Explicit binary declarations (never diff/convert these).
 *.png   binary
 *.jpg   binary
