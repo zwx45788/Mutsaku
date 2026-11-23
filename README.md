@@ -57,12 +57,15 @@ PYTHONPATH=src python -m uvicorn server.cockpit_server:app --port 8765   # 在�
 
 驾驶舱各端点在**没有**招聘切片时的行为（已显式处理，不会 500）：
 
-| 端点 | 有切片 | 无切片 |
+| 端点 | 有切片 | 无切片（本材料包默认状态） |
 |---|---|---|
 | `GET /api/health`、`GET /api/master`、`GET /`、`/figures/*` | 正常 | 正常 |
 | `POST /api/mpc` | 正常 | 正常（合成轨迹基准） |
-| `POST /api/whatif` | 正常 | **503** + 中文说明缺哪两个 parquet、如何补、以及离线核验替代命令 |
+| `POST /api/whatif` | 正常（原始 parquet） | **正常** — 自动回退到 `data/verification/features_dev_2024.npz` 脱敏快照，响应中 `demand_source` 会标注来源 |
 | `POST /api/whatif`（`program_id` 不存在） | **404** + 可用专业列表 | 同左 |
+
+即：**23 个专业 × 3 档预算 × 3 个情景 × 单/多轨道，全部可在本材料包内实时重算**，无需那 100 MB 原始切片。
+回退时 `demand_source` 会写明 `de-identified snapshot features_dev_2024.npz`，因此结果可辨识、不会与 `replay_2025` 混淆。
 
 调用大模型需在本机环境变量中提供自己的千问 API 密钥；本材料不含任何密钥。
 

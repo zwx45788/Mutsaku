@@ -59,7 +59,7 @@ def _pdftotext(filename: str) -> str:
 
 
 @lru_cache(maxsize=16)
-def read_source(program: str):
+def _read_source_uncached(program: str):
     filename, _, _, _ = SOURCES[program]
     if program in ('BTBU_CS_2022', 'BTBU_CS_2025', 'BTBU_AI_2022', 'BTBU_AUTO_2024', 'BTBU_SE_2022', 'BISTU_CS_2025'):
         raw = _pdftotext(filename)
@@ -193,27 +193,38 @@ def read_source(program: str):
     return {}
 
 
+def read_source(program: str):
+    """Parsed official curriculum table for ``program``.
+
+    The original university PDF/HTML files are not distributed with this support package,
+    so when they (or ``pdftotext``) are unavailable this returns ``{}`` instead of raising.
+    Every ``reconcile`` branch already treats a missing course code as 'keep the bundled
+    value', which means the enriched catalogue in ``data/processed/`` is used as-is and the
+    semester/prerequisite information survives.
+    """
+    try:
+        return _read_source_uncached(program)
+    except FileNotFoundError as exc:
+        warnings.warn(f"read_source({program}): {exc}", stacklevel=2)
+        return {}
+
+
+def source_documents_available(program: str) -> bool:
+    """True when the raw official document for ``program`` is present in data/raw_public/."""
+    if program not in SOURCES:
+        return False
+    return (RAW / SOURCES[program][0]).exists()
+
+
 def reconcile(courses):
     program = courses[0].get('program_id') if courses else None
     if program not in SOURCES:
         return list(courses), None
     filename, official, elective_minimum, scope = SOURCES[program]
+    docs_present = source_documents_available(program)
 
     if program in ('BTBU_CS_2022', 'BTBU_CS_2025', 'BTBU_AI_2022', 'BTBU_AUTO_2024', 'BTBU_SE_2022', 'BISTU_CS_2025'):
-        try:
-            rows = read_source(program)
-        except FileNotFoundError as exc:
-            # Raw source documents are not bundled with the support package. The enriched
-            # catalogue already carries the reconciled semester/required flags, so fall back
-            # to it instead of destroying the prerequisite DAG.
-            warnings.warn(f"reconcile({program}): {exc} -- using bundled enriched catalogue as-is.", stacklevel=2)
-            return list(courses), {
-                'source': filename, 'graduation_credits': official,
-                'technical_elective_minimum': elective_minimum, 'scope': scope,
-                'reconciled_courses': 0, 'rows': len(courses),
-                'term_evidence': 'bundled_enriched_catalogue',
-                'source_documents_available': False,
-            }
+        rows = read_source(program)
         out = []
         for course in courses:
             row = dict(course)
@@ -237,6 +248,10 @@ def reconcile(courses):
             elif program == 'BTBU_SE_2022':
                 # Technical-only extract: mark non-core upper-division courses as major_elective if unverified
                 row.setdefault('term_evidence', 'syllabus_extract')
+            elif not docs_present:
+                # Raw document unavailable: keep the semester already reconciled into the bundled
+                # enriched catalogue rather than zeroing it (which would break the prerequisite DAG).
+                row.setdefault('term_evidence', 'bundled_enriched_catalogue')
             else:
                 row.update(term_evidence='unverified', semester=0, semester_raw=0)
             out.append(row)
@@ -245,6 +260,7 @@ def reconcile(courses):
             'technical_elective_minimum': elective_minimum, 'scope': scope,
             'reconciled_courses': sum(c.get('term_evidence') in ('official_course_code_table', 'official_nature_only') for c in out),
             'rows': len(out),
+            'source_documents_available': docs_present,
         }
 
     if program == 'U03_BUAA_CS_2025':

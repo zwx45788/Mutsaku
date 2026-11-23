@@ -34,6 +34,18 @@ from solver.streaming_and_mpc import simulate_enrollment_mpc
 OUT_DIR = ROOT / "outputs"
 WEB_DIR = ROOT / "web"
 PROC_DIR = ROOT / "data" / "processed"
+VER_DIR = ROOT / "data" / "verification"
+
+# The ~100 MB raw recruitment slices are not shipped with this support package, but
+# data/verification/*.npz already carries the exact per-JD feature matrices (48-skill hits,
+# employer-clustered weights, per-track partitions) that the evaluation and the CP-SAT
+# solver consume. Building the runtime context from those keeps the cockpit fully live
+# without the raw warehouse.
+_VERIFICATION_PRESETS = {
+    "development_2024": ("features_dev_2024.npz", "features_dev_2024.npz"),
+    "replay_2025": ("features_replay_2025.npz", "features_replay_2025.npz"),
+    "replay_2026q1": ("features_replay_2026q1.npz", "features_replay_2026q1.npz"),
+}
 
 app = FastAPI(title="EvoAlign-OS v2 产教智对双环多轨道决策台", version="2.0.0")
 app.add_middleware(
@@ -64,6 +76,51 @@ def _load_catalogue() -> Dict[str, Any]:
     return _CACHE["catalogue"]
 
 
+def _track_demand_from_npz(path: Path, kg: Dict[str, Any]) -> Dict[str, Any]:
+    """Build the same ``track_demand`` structure from a de-identified verification snapshot.
+
+    ``features_*.npz`` stores the already-classified per-track partitions, so no raw JD
+    titles are needed (``build_track_demand`` only derives them from titles when absent).
+    """
+    import numpy as np
+
+    from analytics.track_evaluator import TRACK_IDS, TRACK_META
+
+    z = np.load(path, allow_pickle=False)
+    labels = np.array([TRACK_IDS[i] for i in z["track_labels"]], dtype=object)
+    hits = z["hits"].astype(np.float64)
+    ad_weights = np.asarray(z["ad_weights"], dtype=np.float64)
+    tracks: Dict[str, Dict[str, Any]] = {}
+    for i, tk in enumerate(TRACK_IDS):
+        mask = labels == tk
+        if mask.any():
+            w = ad_weights[mask] / max(1e-12, ad_weights[mask].sum())
+            prevalence = (hits[mask] * w[:, None]).sum(axis=0)
+        else:
+            prevalence = np.zeros(hits.shape[1])
+        tracks[tk] = {
+            "track_id": tk,
+            "name_zh": TRACK_META[tk]["name_zh"],
+            "n_ads": int(z["track_n_ads"][i]),
+            "weight_share": round(float(z["track_weight_share"][i]), 5),
+            "demand_dist": np.asarray(z["track_demand_dist"][i], dtype=np.float64),
+            "prevalence": prevalence,
+            "mask": mask,
+        }
+    return {
+        "n_rows": int(hits.shape[0]),
+        "n_employers": int(z["n_employers"]),
+        "hits": hits,
+        "ad_weights": ad_weights,
+        "employers": np.asarray(z["employers"]),
+        "demand_dist": np.asarray(z["demand_dist"], dtype=np.float64),
+        "job_bloom": np.asarray(z["job_bloom"], dtype=np.float64),
+        "track_labels": labels,
+        "tracks": tracks,
+        "source": f"data/verification/{path.name}",
+    }
+
+
 def _get_runtime_context() -> Dict[str, Any]:
     if "ctx" not in _CACHE:
         cat = _load_catalogue()
@@ -71,26 +128,43 @@ def _get_runtime_context() -> Dict[str, Any]:
         train_p = PROC_DIR / "demand_train_2018_2023.parquet"
         dev_p = PROC_DIR / "demand_dev_2024.parquet"
         missing = [str(p) for p in (train_p, dev_p) if not p.is_file()]
-        if missing:
+        if not missing:
+            train_raw = extract_demand_profile([train_p], kg, min_year=2022, use_bj_shortage_calibration=False)
+            dev_raw = extract_demand_profile([dev_p], kg, use_bj_shortage_calibration=False)
+            _CACHE["ctx"] = {
+                "kg": kg,
+                "courses": courses,
+                "train_td": build_track_demand(train_raw, kg),
+                "dev_td": build_track_demand(dev_raw, kg),
+                "demand_source": "raw parquet slices",
+            }
+            return _CACHE["ctx"]
+
+        # Fallback: the raw ~100 MB recruitment slices are not shipped, but the de-identified
+        # snapshots in data/verification/ already contain the exact per-JD feature matrices
+        # (48-skill hits, employer-clustered weights, per-track partitions) that evaluation
+        # and the CP-SAT solver consume.
+        dev_npz = VER_DIR / "features_dev_2024.npz"
+        if not dev_npz.is_file():
             raise HTTPException(
                 status_code=503,
                 detail=(
-                    "在线实时求解所需的需求切片未随材料包分发（约 100 MB，见 README §3）："
-                    + " | ".join(missing)
-                    + "。请用 src/ingestion/build_demand_slices.py 从官方数据重新生成，"
-                    "或改用离线核验：python src/experiments/verify_key_results.py --root ."
+                    "需求数据缺失：既没有 data/processed/demand_train_2018_2023.parquet 与 "
+                    "demand_dev_2024.parquet（约 100 MB，见 README §3），也没有 "
+                    "data/verification/features_dev_2024.npz 脱敏快照。"
+                    "请用 src/ingestion/build_demand_slices.py 从官方数据生成切片，"
+                    "或改用离线核验：python src/experiments/verify_key_results.py"
                 ),
             )
-        try:
-            train_raw = extract_demand_profile([train_p], kg, min_year=2022, use_bj_shortage_calibration=False)
-            dev_raw = extract_demand_profile([dev_p], kg, use_bj_shortage_calibration=False)
-        except FileNotFoundError as exc:
-            raise HTTPException(status_code=503, detail=str(exc)) from exc
+        snapshot = _track_demand_from_npz(dev_npz, kg)
         _CACHE["ctx"] = {
             "kg": kg,
             "courses": courses,
-            "train_td": build_track_demand(train_raw, kg),
-            "dev_td": build_track_demand(dev_raw, kg),
+            # Only the dev-2024 split is bundled non-blind; use it for both the fit view and
+            # the evaluation view so the cockpit stays exhaustive and byte-reproducible.
+            "train_td": snapshot,
+            "dev_td": snapshot,
+            "demand_source": f"de-identified snapshot {dev_npz.name} (raw slices not bundled)",
         }
     return _CACHE["ctx"]
 
@@ -174,6 +248,7 @@ def run_whatif(req: WhatIfRequest) -> Dict[str, Any]:
         "feasible": sol["feasible"],
         "solver_status": sol.get("status"),
         "iis_conflicts": sol.get("iis_conflicts", []),
+        "demand_source": ctx.get("demand_source"),
         "elective_quota_credits": quota,
         "added_credits": sol["added_credits"],
         "removed_credits": sol["removed_credits"],

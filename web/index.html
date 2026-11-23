@@ -547,10 +547,11 @@ async function runWhatIf() {
       return;
     }
     out.innerHTML = `
-      <strong>实时求解成功（硬约束零违背=${d.feasible}，增/删选修 +${d.added_credits}/-${d.removed_credits}学分，同源大纲升级 ${d.upgraded_core_count} 门，师资 ${d.faculty_fte_used} FTE）</strong><br>
+      <strong>实时求解成功（硬约束零违背=${d.feasible}，求解状态 ${d.solver_status || '—'}，增/删选修 +${d.added_credits}/-${d.removed_credits}学分，同源大纲升级 ${d.upgraded_core_count} 门，师资 ${d.faculty_fte_used} FTE）</strong><br>
       2024 开发集对比：岗位达标率 <strong>${pct(d.before_dev2024.jd_qual_rate_70)} → ${pct(d.after_dev2024.jd_qual_rate_70)}</strong>（${pp(d.after_dev2024.jd_qual_rate_70 - d.before_dev2024.jd_qual_rate_70)}） |
       轨道 OT 对齐 <strong>${pct(d.before_dev2024.track_ot_alignment)} → ${pct(d.after_dev2024.track_ot_alignment)}</strong> |
-      最弱轨道就绪度 <strong>${pct(d.before_dev2024.worst_track_readiness)} → ${pct(d.after_dev2024.worst_track_readiness)}</strong>`;
+      最弱轨道就绪度 <strong>${pct(d.before_dev2024.worst_track_readiness)} → ${pct(d.after_dev2024.worst_track_readiness)}</strong>`
+      + (d.demand_source ? `<br><span class="note">需求数据来源：${d.demand_source}</span>` : '');
   } catch (e) {
     out.innerHTML = `<span style="color:var(--rust)">无法连接本机服务（当前为离线查看模式）。启动服务：<code>PYTHONPATH=src python -m uvicorn server.cockpit_server:app --port 8765</code>，然后在浏览器打开 <code>http://127.0.0.1:8765/</code>。</span>`;
   }
