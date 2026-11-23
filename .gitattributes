@@ -1,0 +1,16 @@
+# Byte-exact checkouts are mandatory: MANIFEST_SHA256.json and the sealed
+# ReplayBundle hashes are computed over the raw bytes in the repository.
+# Any newline translation on checkout would invalidate them, so text files
+# are stored and checked out with LF everywhere and never converted.
+* text=auto eol=lf
+
+# Explicit binary declarations (never diff/convert these).
+*.png   binary
+*.jpg   binary
+*.xlsx  binary
+*.npz   binary
+*.pdf   binary
+*.pptx  binary
+*.mp4   binary
+*.zip   binary
+*.parquet binary
