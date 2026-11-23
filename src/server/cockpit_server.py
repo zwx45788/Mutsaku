@@ -57,12 +57,35 @@ def _get_master() -> Dict[str, Any]:
     return _CACHE["master"]
 
 
+def _load_catalogue() -> Dict[str, Any]:
+    """Knowledge graph + curricula only (no demand slices). Always available in the support package."""
+    if "catalogue" not in _CACHE:
+        _CACHE["catalogue"] = {"kg": load_kg(), "courses": load_curricula()}
+    return _CACHE["catalogue"]
+
+
 def _get_runtime_context() -> Dict[str, Any]:
     if "ctx" not in _CACHE:
-        kg = load_kg()
-        courses = load_curricula()
-        train_raw = extract_demand_profile([PROC_DIR / "demand_train_2018_2023.parquet"], kg, min_year=2022, use_bj_shortage_calibration=False)
-        dev_raw = extract_demand_profile([PROC_DIR / "demand_dev_2024.parquet"], kg, use_bj_shortage_calibration=False)
+        cat = _load_catalogue()
+        kg, courses = cat["kg"], cat["courses"]
+        train_p = PROC_DIR / "demand_train_2018_2023.parquet"
+        dev_p = PROC_DIR / "demand_dev_2024.parquet"
+        missing = [str(p) for p in (train_p, dev_p) if not p.is_file()]
+        if missing:
+            raise HTTPException(
+                status_code=503,
+                detail=(
+                    "在线实时求解所需的需求切片未随材料包分发（约 100 MB，见 README §3）："
+                    + " | ".join(missing)
+                    + "。请用 src/ingestion/build_demand_slices.py 从官方数据重新生成，"
+                    "或改用离线核验：python src/experiments/verify_key_results.py --root ."
+                ),
+            )
+        try:
+            train_raw = extract_demand_profile([train_p], kg, min_year=2022, use_bj_shortage_calibration=False)
+            dev_raw = extract_demand_profile([dev_p], kg, use_bj_shortage_calibration=False)
+        except FileNotFoundError as exc:
+            raise HTTPException(status_code=503, detail=str(exc)) from exc
         _CACHE["ctx"] = {
             "kg": kg,
             "courses": courses,
@@ -108,10 +131,17 @@ def get_master() -> Dict[str, Any]:
 
 @app.post("/api/whatif")
 def run_whatif(req: WhatIfRequest) -> Dict[str, Any]:
-    ctx = _get_runtime_context()
-    base = [c for c in ctx["courses"] if c["program_id"] == req.program_id]
+    # Validate the programme against the bundled catalogue FIRST, so an unknown id is a
+    # 404 regardless of whether the (unbundled) demand slices are present.
+    catalogue = _load_catalogue()
+    base = [c for c in catalogue["courses"] if c["program_id"] == req.program_id]
     if not base:
-        base = [c for c in ctx["courses"] if c["program_id"] == "BTBU_CS_2022"]
+        available = sorted({c["program_id"] for c in catalogue["courses"]})
+        raise HTTPException(
+            status_code=404,
+            detail=f"Unknown program_id '{req.program_id}'. Available: {', '.join(available)}",
+        )
+    ctx = _get_runtime_context()
     base, pathway_audit = expected_pathway(base)
     quota = float((pathway_audit.get("official_requirements") or {}).get("technical_elective_minimum") or 12.0)
 
@@ -142,6 +172,8 @@ def run_whatif(req: WhatIfRequest) -> Dict[str, Any]:
         "scenario": req.scenario,
         "multitrack": req.multitrack,
         "feasible": sol["feasible"],
+        "solver_status": sol.get("status"),
+        "iis_conflicts": sol.get("iis_conflicts", []),
         "elective_quota_credits": quota,
         "added_credits": sol["added_credits"],
         "removed_credits": sol["removed_credits"],

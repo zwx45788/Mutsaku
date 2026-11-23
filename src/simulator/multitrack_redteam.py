@@ -7,6 +7,7 @@ from __future__ import annotations
 
 import copy
 import math
+from pathlib import Path
 from typing import Any, Dict, List, Optional
 
 import duckdb
@@ -363,18 +364,30 @@ def run_real_and_synthetic_mpc(baseline_intake: int = 120) -> Dict[str, Any]:
     1. Real Beijing tech hiring employer-normalized yearly demand index (2018-2024 observed + 2025-2031 damped projection),
     2. Standard 14-year synthetic Cobweb stress benchmark.
     """
+    root = Path(__file__).resolve().parents[2]
+    train_p = root / "data" / "processed" / "demand_train_2018_2023.parquet"
+    dev_p = root / "data" / "processed" / "demand_dev_2024.parquet"
+    missing = [str(p) for p in (train_p, dev_p) if not p.exists()]
+    if missing:
+        raise FileNotFoundError(
+            "Demand parquet slice(s) not found:\n  " + "\n  ".join(missing)
+            + "\n\nThese slices are not bundled with this support package (see README §3)."
+        )
     con = duckdb.connect()
-    rows = con.execute("""
+    rows = con.execute(
+        """
         SELECT year, COUNT(*) AS n_ads, COUNT(DISTINCT employer_key) AS n_emp
         FROM (
-            SELECT year, employer_key FROM read_parquet('evoalign_os/data/processed/demand_train_2018_2023.parquet')
+            SELECT year, employer_key FROM read_parquet(?)
             WHERE broad_bachelor_accessible_entry = TRUE
             UNION ALL
-            SELECT year, employer_key FROM read_parquet('evoalign_os/data/processed/demand_dev_2024.parquet')
+            SELECT year, employer_key FROM read_parquet(?)
             WHERE broad_bachelor_accessible_entry = TRUE
         )
         GROUP BY year ORDER BY year
-    """).fetchall()
+    """,
+        [str(train_p), str(dev_p)],
+    ).fetchall()
     con.close()
     return mpc_from_yearly_counts(rows, baseline_intake)
 

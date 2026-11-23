@@ -27,11 +27,15 @@ from scipy.spatial.distance import jensenshannon
 from scipy.stats import norm
 from sklearn.linear_model import Ridge
 
-sys.path.insert(0, "evoalign_os/src")
+_SRC_DIR = Path(__file__).resolve().parents[1]
+if str(_SRC_DIR) not in sys.path:
+    sys.path.insert(0, str(_SRC_DIR))
 from security.leakage_guard import guard_read_path
 from analytics.pathways import expected_pathway, role_family, tier_default
 
-PROC_DIR = Path("evoalign_os/data/processed")
+ROOT_DIR = Path(__file__).resolve().parents[2]
+PROC_DIR = ROOT_DIR / "data" / "processed"
+OUT_DIR = ROOT_DIR / "outputs"
 
 
 def load_kg() -> Dict[str, Any]:
@@ -157,6 +161,16 @@ def extract_demand_profile(
     Enforces LeakageGuard on all read paths!
     """
     guarded = [str(guard_read_path(p)) for p in parquet_paths]
+    missing = [p for p in guarded if not Path(p).exists()]
+    if missing:
+        raise FileNotFoundError(
+            "Demand parquet slice(s) not found:\n  "
+            + "\n  ".join(missing)
+            + "\n\nThese ~100 MB recruitment slices are NOT bundled with this support package "
+            "(see README §3). Regenerate them with src/ingestion/build_demand_slices.py, "
+            "or run the offline verification instead: "
+            "python src/experiments/verify_key_results.py --root ."
+        )
     skills = kg["skills"]
     skill_ids = kg["skill_ids"]
     k = len(skill_ids)
@@ -181,7 +195,7 @@ def extract_demand_profile(
             experience_raw, salary_min, salary_max, salary_valid, salary_mid,
             description_characters, skills, atomic_skills, description_redacted,
             explicit_bachelor_entry
-        FROM read_parquet({json.dumps(guarded)})
+        FROM read_parquet({json.dumps(guarded, ensure_ascii=False)})
         WHERE {' AND '.join(where_clauses)}
         {limit_sql}
     """
@@ -615,7 +629,7 @@ def run_task1_benchmark() -> Dict[str, Any]:
         "multi_university_benchmarks": benchmarks,
         "portfolio_differentiation": {"BTBU_college": btbu_port, "BJTU_college": bjtu_port},
     }
-    Path("evoalign_os/outputs/task1_gap_analysis_dev.json").write_text(
+    (OUT_DIR / "task1_gap_analysis_dev.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8"
     )
     return out

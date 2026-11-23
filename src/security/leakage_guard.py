@@ -14,7 +14,8 @@ _BLIND_AUDIT_REASON: contextvars.ContextVar[Optional[str]] = contextvars.Context
 )
 
 BLIND_DIR_NAME = "blind_holdout"
-AUDIT_LOG_PATH = Path("evoalign_os/outputs/blind_access_audit.jsonl")
+_ROOT_DIR = Path(__file__).resolve().parents[2]
+AUDIT_LOG_PATH = _ROOT_DIR / "outputs" / "blind_access_audit.jsonl"
 
 
 class DataLeakageViolation(PermissionError):

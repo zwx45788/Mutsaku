@@ -13,7 +13,8 @@ from typing import Any, Dict, List, Optional
 import httpx
 
 DEFAULT_BASE_URL = "https://maas.qianwenaiapi.com/compatible-mode/v1"
-DEFAULT_LEDGER_PATH = Path("evoalign_os/outputs/replay_ledger.jsonl")
+_ROOT_DIR = Path(__file__).resolve().parents[2]
+DEFAULT_LEDGER_PATH = _ROOT_DIR / "outputs" / "replay_ledger.jsonl"
 # Secrets live OUTSIDE the project tree on a Linux-native filesystem with 0600 permissions.
 # Lookup order: environment variables -> $QWEN_ENV_FILE -> ~/.config/evoalign_os/qwen.env.
 # (The Windows-mounted project drive cannot enforce POSIX permissions, so no key file is kept there.)

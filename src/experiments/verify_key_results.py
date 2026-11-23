@@ -5,8 +5,8 @@ without any solver, LLM or network call, recomputes employer-clustered paired bo
 the Task 1 benchmark overlaps, the empirical MPC replay and the employment-feedback decisions,
 then compares each value with the sealed master file.
 
-Usage (from the directory that contains evoalign_os/):
-    python evoalign_os/src/experiments/verify_key_results.py --root evoalign_os
+Usage (anywhere, no arguments required):
+    python src/experiments/verify_key_results.py
 """
 from __future__ import annotations
 
@@ -21,6 +21,7 @@ from pathlib import Path
 import numpy as np
 
 TOL = 1.2e-5
+DEFAULT_ROOT = Path(__file__).resolve().parents[2]
 
 
 def canonical_sha256(obj) -> str:
@@ -29,10 +30,10 @@ def canonical_sha256(obj) -> str:
 
 def main() -> int:
     ap = argparse.ArgumentParser()
-    ap.add_argument("--root", default="evoalign_os")
+    ap.add_argument("--root", default=str(DEFAULT_ROOT), help="Repository root (defaults to the checkout containing this script).")
     ap.add_argument("--out", default=None)
     args = ap.parse_args()
-    root = Path(args.root)
+    root = Path(args.root).resolve()
     sys.path.insert(0, str(root / "src"))
     from analytics.gap_engine import compute_supply_profile, exact_wasserstein_1  # noqa: E402
     from analytics.track_evaluator import TRACK_IDS, evaluate_multitrack_plan, paired_employer_bootstrap_ci  # noqa: E402

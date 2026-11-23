@@ -6,6 +6,7 @@ from functools import lru_cache
 from pathlib import Path
 import re
 import subprocess
+import warnings
 
 from bs4 import BeautifulSoup
 
@@ -37,10 +38,24 @@ BISTU_COURSE = re.compile(r'(必修|选修)\s+(通识|学科|专业)(理论|实�
 
 
 def _pdftotext(filename: str) -> str:
-    return subprocess.run(
-        ['pdftotext', '-layout', str(RAW / filename), '-'],
-        check=True, capture_output=True, text=True
-    ).stdout
+    src = RAW / filename
+    if not src.exists():
+        raise FileNotFoundError(
+            f"Source curriculum file not bundled: {src}\n"
+            "The original university PDF/HTML documents are NOT included in this support package "
+            "(only their extracted results are). Re-derive them with src/ingestion/parse_curricula_and_syllabi.py, "
+            "or use the already-reconciled data/processed/university_curricula_enriched.json."
+        )
+    try:
+        return subprocess.run(
+            ['pdftotext', '-layout', str(src), '-'],
+            check=True, capture_output=True, text=True
+        ).stdout
+    except FileNotFoundError as exc:
+        raise FileNotFoundError(
+            "The 'pdftotext' binary (poppler-utils) was not found on PATH. "
+            "Install it, or use the already-reconciled data/processed/university_curricula_enriched.json."
+        ) from exc
 
 
 @lru_cache(maxsize=16)
@@ -185,7 +200,20 @@ def reconcile(courses):
     filename, official, elective_minimum, scope = SOURCES[program]
 
     if program in ('BTBU_CS_2022', 'BTBU_CS_2025', 'BTBU_AI_2022', 'BTBU_AUTO_2024', 'BTBU_SE_2022', 'BISTU_CS_2025'):
-        rows = read_source(program)
+        try:
+            rows = read_source(program)
+        except FileNotFoundError as exc:
+            # Raw source documents are not bundled with the support package. The enriched
+            # catalogue already carries the reconciled semester/required flags, so fall back
+            # to it instead of destroying the prerequisite DAG.
+            warnings.warn(f"reconcile({program}): {exc} -- using bundled enriched catalogue as-is.", stacklevel=2)
+            return list(courses), {
+                'source': filename, 'graduation_credits': official,
+                'technical_elective_minimum': elective_minimum, 'scope': scope,
+                'reconciled_courses': 0, 'rows': len(courses),
+                'term_evidence': 'bundled_enriched_catalogue',
+                'source_documents_available': False,
+            }
         out = []
         for course in courses:
             row = dict(course)

@@ -21,7 +21,7 @@ import json
 from pathlib import Path
 from typing import Any, Dict, List, Optional
 
-SERIES = Path("evoalign_os/data/processed/employment_feedback_series.json")
+SERIES = Path(__file__).resolve().parents[2] / "data" / "processed" / "employment_feedback_series.json"
 RULES = {
     "warn_placement_gap_pp": -3.0,
     "warn_relevance_gap_pp": -5.0,

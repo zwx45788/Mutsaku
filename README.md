@@ -8,11 +8,15 @@
 ```bash
 python -m venv .venv && . .venv/bin/activate      # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
-python src/experiments/verify_key_results.py --root .
+python src/experiments/verify_key_results.py
 ```
 
-脚本读取封印结果、`outputs/plan_snapshots.json`（各对照组逐方向课程清单）与 `data/verification/`（脱敏逐岗位特征矩阵），
+脚本自动定位仓库根目录（无需 `--root`，可在任意工作目录下调用），读取封印结果、
+`outputs/plan_snapshots.json`（各对照组逐方向课程清单）与 `data/verification/`（脱敏逐岗位特征矩阵），
 重新计算并逐项比对，输出 `outputs/verification_report.json`。当前结果：**583/583 项一致**。
+
+`outputs/verification_report.json` 是运行产物（含 `runtime_seconds`），因此**不在** `MANIFEST_SHA256.json`
+的校验清单内；用 `--out <path>` 可写到别处。
 
 | 复核组 | 内容 |
 |---|---|
@@ -50,6 +54,16 @@ PYTHONPATH=src python -m uvicorn server.cockpit_server:app --port 8765   # 在�
 ```
 
 离线驾驶舱：直接打开 `web/index.html`（图表与全部结果可查看，实时重算需启动上述服务）。
+
+驾驶舱各端点在**没有**招聘切片时的行为（已显式处理，不会 500）：
+
+| 端点 | 有切片 | 无切片 |
+|---|---|---|
+| `GET /api/health`、`GET /api/master`、`GET /`、`/figures/*` | 正常 | 正常 |
+| `POST /api/mpc` | 正常 | 正常（合成轨迹基准） |
+| `POST /api/whatif` | 正常 | **503** + 中文说明缺哪两个 parquet、如何补、以及离线核验替代命令 |
+| `POST /api/whatif`（`program_id` 不存在） | **404** + 可用专业列表 | 同左 |
+
 调用大模型需在本机环境变量中提供自己的千问 API 密钥；本材料不含任何密钥。
 
 ## 4. 目录
